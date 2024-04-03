@@ -1,0 +1,8 @@
+---
+title: "Get transactions by hash"
+slug: "gettransactionsbyhash"
+excerpt: "<p><b>5 credits per API call</b></p>\n<p>Get transactions by hash on the following blockchains:</p>\n<ul>\n<li>Celo - celo / celo-testnet</li>\n<li>Ethereum - ethereum / ethereum-sepolia</li>\n<li>BNB (Binance) Smart Chain - bsc / bsc-testnet</li>\n<li>Polygon - polygon / polygon-mumbai</li>\n<li>Tezos - tezos-mainnet</li>\n<li>Horizen EON - eon-mainnet</li>\n<li>Chiliz - chiliz-mainnet</li>\n</ul>\n<p>To get started:</p>\n<ul>\n<li>Provide a chain name and transaction hash, and our API will return a list of transactions with that hash.</li>\n<li>The response will contain all the relevant information about specified transactions such as their block number, IDs of involved token, and more.</li>\n</ul>"
+hidden: false
+createdAt: "Mon Feb 05 2024 09:07:05 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Mon Feb 05 2024 09:07:06 GMT+0000 (Coordinated Universal Time)"
+---

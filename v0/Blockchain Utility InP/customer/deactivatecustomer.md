@@ -1,0 +1,8 @@
+---
+title: "Deactivate customer"
+slug: "deactivatecustomer"
+excerpt: "<h4>2 credits per API call.</h4><br/><p>Deactivate customer is not able to do any operation. Customer can be deactivated only when all their accounts are already deactivated.</p>"
+hidden: false
+createdAt: "Mon Feb 05 2024 09:09:14 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Mon Feb 05 2024 11:24:14 GMT+0000 (Coordinated Universal Time)"
+---
