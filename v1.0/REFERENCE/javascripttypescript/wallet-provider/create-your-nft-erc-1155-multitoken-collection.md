@@ -2,7 +2,7 @@
 title: "Create your NFT (ERC-1155 MultiToken) Collection"
 slug: "create-your-nft-erc-1155-multitoken-collection"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Fri Mar 15 2024 13:08:46 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:08:52 GMT+0000 (Coordinated Universal Time)"

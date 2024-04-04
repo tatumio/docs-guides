@@ -2,7 +2,7 @@
 title: "Supported Fiats"
 slug: "supported-fiats"
 excerpt: "This page lists all the Fiat currencies Tatum supports for Exchange Rate Submodule."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:50:14 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:18:49 GMT+0000 (Coordinated Universal Time)"

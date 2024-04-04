@@ -2,7 +2,7 @@
 title: "Notifications for Virtual Accounts"
 slug: "va-notifications"
 excerpt: ""
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Sun Feb 25 2024 12:28:15 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:42:36 GMT+0000 (Coordinated Universal Time)"

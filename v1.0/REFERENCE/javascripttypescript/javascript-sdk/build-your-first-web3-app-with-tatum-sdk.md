@@ -2,7 +2,7 @@
 title: "Build your first web3 app with Tatum SDK"
 slug: "build-your-first-web3-app-with-tatum-sdk"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 12:06:03 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Feb 22 2024 13:53:11 GMT+0000 (Coordinated Universal Time)"

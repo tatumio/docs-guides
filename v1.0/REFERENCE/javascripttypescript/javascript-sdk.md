@@ -2,7 +2,7 @@
 title: "Get Started with JS/TS SDK"
 slug: "javascript-sdk"
 excerpt: "Tatum offers a very powerful JS/TS SDK which can help developers to make dapps easier and quicker."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 12:02:28 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 13:49:53 GMT+0000 (Coordinated Universal Time)"

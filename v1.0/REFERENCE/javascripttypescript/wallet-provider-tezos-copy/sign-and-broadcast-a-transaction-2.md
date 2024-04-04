@@ -2,7 +2,7 @@
 title: "Sign and Broadcast a Transaction"
 slug: "sign-and-broadcast-a-transaction-2"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Fri Mar 15 2024 14:29:10 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 14:29:10 GMT+0000 (Coordinated Universal Time)"

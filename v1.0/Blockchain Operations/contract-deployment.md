@@ -2,7 +2,7 @@
 title: "📝 Contract Deployment & Managament"
 slug: "contract-deployment"
 excerpt: ""
-category: 65c0c794d329e30077a0638d
+category: 65e9ba02205d9900590782fe
 hidden: false
 createdAt: "Thu Mar 07 2024 13:31:58 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:51:52 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Quick Start"
 slug: "quick-start"
 excerpt: "Fastest SDK to get you started"
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:42:07 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Feb 22 2024 13:42:20 GMT+0000 (Coordinated Universal Time)"

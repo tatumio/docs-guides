@@ -2,7 +2,7 @@
 title: "getStateFinalityCheckpoints"
 slug: "rpc-ethereum-getstatefinalitycheckpoints"
 excerpt: "Ethereum RPC"
-category: 65a9112c408e3a004ae466df
+category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []

@@ -2,7 +2,7 @@
 title: "🐒 NFTs"
 slug: "nfts-1"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:00:50 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:30:28 GMT+0000 (Coordinated Universal Time)"

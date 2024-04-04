@@ -2,7 +2,7 @@
 title: "Get current rates for multiple crypto assets at once"
 slug: "get-current-rates-for-multiple-crypto-assets-at-once"
 excerpt: "This endpoint allows you to obtain current exchange rates between fiat/crypto or fiat/fiat."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:49:21 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:17:36 GMT+0000 (Coordinated Universal Time)"

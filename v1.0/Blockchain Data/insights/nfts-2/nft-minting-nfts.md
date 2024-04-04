@@ -2,7 +2,7 @@
 title: "Minting NFTs"
 slug: "nft-minting-nfts"
 excerpt: ""
-category: 65c0c716d716fe0040919d8b
+category: 65e9ba6715ec3b004bc82075
 hidden: true
 createdAt: "Sat Feb 17 2024 14:17:24 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:22:32 GMT+0000 (Coordinated Universal Time)"

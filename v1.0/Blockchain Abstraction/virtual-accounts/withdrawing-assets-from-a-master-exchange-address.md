@@ -2,7 +2,7 @@
 title: "Withdrawing Assets from a Master Exchange Address"
 slug: "withdrawing-assets-from-a-master-exchange-address"
 excerpt: ""
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Thu Feb 08 2024 14:08:18 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:42:17 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Transfer fungible tokens like USDT"
 slug: "transfer-fungible-tokens-like-usdt"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Fri Mar 15 2024 13:10:47 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:11:02 GMT+0000 (Coordinated Universal Time)"

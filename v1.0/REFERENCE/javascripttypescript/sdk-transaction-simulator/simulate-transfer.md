@@ -2,7 +2,7 @@
 title: "Simulate Transfer"
 slug: "simulate-transfer"
 excerpt: "This function helps you to simulate a native transfer by passing a payload to   the function simulateTransfer of the extension '@tatumio/transaction-simulator'"
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:44:29 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:07:16 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Submodules"
 slug: "submodules"
 excerpt: "A quick overview of th different submodules in Tatum SDK and how they simplify blockchain development. These submodules include RPC, Notification, NFT, Address, and Wallet Provider."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:02:51 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Feb 22 2024 13:40:45 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Create your NFT Collection"
 slug: "create-your-nft-collection"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Fri Mar 15 2024 13:03:48 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:03:49 GMT+0000 (Coordinated Universal Time)"

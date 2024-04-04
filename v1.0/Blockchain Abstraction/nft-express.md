@@ -2,7 +2,7 @@
 title: "🐒 NFT Express"
 slug: "nft-express"
 excerpt: "Mint NFTs without coding or owning crypto"
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Thu Mar 07 2024 13:34:37 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 12:41:16 GMT+0000 (Coordinated Universal Time)"

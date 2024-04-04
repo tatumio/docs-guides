@@ -2,7 +2,7 @@
 title: "Get all fungible tokens the wallet holds"
 slug: "get-all-fungible-tokens-the-wallet-holds"
 excerpt: "This function helps you to fetch all the fungible tokens a wallet holds, all   you have to do is pass the address to the function parameter and chain while initialising the SDK."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:39:37 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:36:30 GMT+0000 (Coordinated Universal Time)"

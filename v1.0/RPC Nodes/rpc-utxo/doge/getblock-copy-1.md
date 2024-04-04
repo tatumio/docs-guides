@@ -2,7 +2,7 @@
 title: "getblockhash"
 slug: "getblock-copy-1"
 excerpt: ""
-category: 65a9112c408e3a004ae466df
+category: 65c5e93c623cad004b45d505
 hidden: true
 createdAt: "Wed Mar 27 2024 07:23:01 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Wed Mar 27 2024 07:30:11 GMT+0000 (Coordinated Universal Time)"

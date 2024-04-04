@@ -2,7 +2,7 @@
 title: "Adding more tokens"
 slug: "adding-more-tokens"
 excerpt: "Tatum Virtual Accounts can support any existing or new ERC-20 (or compatible) token which is not included out of the box. This guide explains how."
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Tue Feb 06 2024 16:31:22 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:42:00 GMT+0000 (Coordinated Universal Time)"

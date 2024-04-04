@@ -2,7 +2,7 @@
 title: "💲 Exchange rates"
 slug: "sdk-exchange-rates"
 excerpt: "Exchange rate submodule helps any web3 app developer to quickly query exchange   rate of a crypto against more than 165 fiat currencies."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:47:38 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 14:09:03 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Get all assets the wallet holds"
 slug: "get-all-assets-the-wallet-holds"
 excerpt: "This endpoint can help you fetch all the Assets a wallet holds including   native tokens, fungible tokens, non fungible tokens & multitokens."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:42:26 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:57:45 GMT+0000 (Coordinated Universal Time)"

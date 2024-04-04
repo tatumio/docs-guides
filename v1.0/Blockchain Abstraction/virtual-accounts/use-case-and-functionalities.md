@@ -2,7 +2,7 @@
 title: "Use Case and Functionalities"
 slug: "use-case-and-functionalities"
 excerpt: ""
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Tue Feb 06 2024 16:29:08 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:41:46 GMT+0000 (Coordinated Universal Time)"

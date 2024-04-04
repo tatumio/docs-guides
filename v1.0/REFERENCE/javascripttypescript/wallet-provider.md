@@ -2,7 +2,7 @@
 title: "💻 Wallet Provider MetaMask"
 slug: "wallet-provider"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:51:46 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:55:24 GMT+0000 (Coordinated Universal Time)"

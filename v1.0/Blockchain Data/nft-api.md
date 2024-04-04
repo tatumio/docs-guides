@@ -2,7 +2,7 @@
 title: "NFT API"
 slug: "nft-api"
 excerpt: "NFT API is a sub product of Blockchain Data that aims to help you get any NFT related on-chain data you would need to add NFT functionality in your web3 app."
-category: 65c0c716d716fe0040919d8b
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Mon Feb 05 2024 11:31:36 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 12 2024 11:47:59 GMT+0000 (Coordinated Universal Time)"

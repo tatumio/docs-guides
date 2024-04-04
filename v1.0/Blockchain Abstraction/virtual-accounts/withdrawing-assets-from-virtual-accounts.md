@@ -2,7 +2,7 @@
 title: "Withdrawing Assets: Introduction"
 slug: "withdrawing-assets-from-virtual-accounts"
 excerpt: ""
-category: 65a8e44fccf94800381cd6f8
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Tue Feb 06 2024 16:32:52 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:42:10 GMT+0000 (Coordinated Universal Time)"

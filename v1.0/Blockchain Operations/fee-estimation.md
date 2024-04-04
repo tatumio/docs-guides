@@ -2,7 +2,7 @@
 title: "💶 Fee Estimation"
 slug: "fee-estimation"
 excerpt: ""
-category: 65c0c794d329e30077a0638d
+category: 65e9ba02205d9900590782fe
 hidden: false
 createdAt: "Thu Feb 22 2024 14:37:27 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 12:23:24 GMT+0000 (Coordinated Universal Time)"

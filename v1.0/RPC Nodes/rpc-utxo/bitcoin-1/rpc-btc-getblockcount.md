@@ -2,7 +2,7 @@
 title: "getblockcount"
 slug: "rpc-btc-getblockcount"
 excerpt: "Bitcoin RPC"
-category: 65a9112c408e3a004ae466df
+category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   description: "Bitcoin RPC"

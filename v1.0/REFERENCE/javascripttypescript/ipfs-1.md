@@ -2,7 +2,7 @@
 title: "💿 IPFS"
 slug: "ipfs-1"
 excerpt: ""
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:46:20 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:09:42 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "💶 Fee Estimation"
 slug: "sdk-fee-estimation"
 excerpt: "The Fee submodule is a part of the Tatum SDK, which allows developers to interact with various blockchain networks. It specifically provides functionalities related to retrieving gas fees."
-category: 65a9112c408e3a004ae366df
+category: 65d73feeb4be160ab098d70d
 hidden: false
 createdAt: "Thu Feb 22 2024 13:51:01 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:20:37 GMT+0000 (Coordinated Universal Time)"

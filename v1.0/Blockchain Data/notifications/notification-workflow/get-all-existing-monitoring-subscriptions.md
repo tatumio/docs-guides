@@ -2,7 +2,7 @@
 title: "Get all existing monitoring subscriptions"
 slug: "get-all-existing-monitoring-subscriptions"
 excerpt: ""
-category: 65c0c716d716fe0040919d8b
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Thu Mar 07 2024 13:25:45 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 13:39:54 GMT+0000 (Coordinated Universal Time)"

@@ -2,7 +2,7 @@
 title: "Notification Workflow"
 slug: "notification-workflow"
 excerpt: ""
-category: 65c0c716d716fe0040919d8b
+category: 65e9ba6715ec3b004bc82075
 hidden: false
 createdAt: "Thu Mar 07 2024 12:48:57 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 14:19:04 GMT+0000 (Coordinated Universal Time)"
