@@ -2,6 +2,7 @@
 title: "Supported Crypto Currencies"
 slug: "supported-crypto-currencies"
 excerpt: "This page lists all the cryptocurrencies Tatum supports for the Exchange rate submodule."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:49:43 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:18:22 GMT+0000 (Coordinated Universal Time)"

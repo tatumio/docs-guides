@@ -2,6 +2,7 @@
 title: "VA - TRON withdrawal error: offchain.tron.tx.failed"
 slug: "tron-withdrawal-error-offchaintrontxfailed"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Thu Feb 08 2024 20:16:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:27:32 GMT+0000 (Coordinated Universal Time)"

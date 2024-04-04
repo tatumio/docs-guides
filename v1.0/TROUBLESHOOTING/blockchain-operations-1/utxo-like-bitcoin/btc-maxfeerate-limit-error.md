@@ -2,6 +2,7 @@
 title: "BTC - Maxfeerate Limit Error"
 slug: "btc-maxfeerate-limit-error"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 10:13:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 10:13:24 GMT+0000 (Coordinated Universal Time)"

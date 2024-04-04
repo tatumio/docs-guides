@@ -2,6 +2,7 @@
 title: "getblock"
 slug: "rpc-btc-getblock"
 excerpt: "Bitcoin RPC"
+category: 65a9112c408e3a004ae466df
 hidden: false
 metadata: 
   image: []

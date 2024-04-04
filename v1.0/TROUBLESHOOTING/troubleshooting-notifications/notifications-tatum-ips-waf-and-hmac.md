@@ -2,6 +2,7 @@
 title: "Notifications - Tatum IPs, WAF and HMAC"
 slug: "notifications-tatum-ips-waf-and-hmac"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Thu Feb 08 2024 20:42:38 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Feb 08 2024 20:43:29 GMT+0000 (Coordinated Universal Time)"

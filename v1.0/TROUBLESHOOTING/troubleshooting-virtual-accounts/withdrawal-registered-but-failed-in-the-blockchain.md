@@ -2,6 +2,7 @@
 title: "VA - Withdrawal registered in ledger but failed in the blockchain"
 slug: "withdrawal-registered-but-failed-in-the-blockchain"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Thu Feb 08 2024 19:59:37 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:27:26 GMT+0000 (Coordinated Universal Time)"

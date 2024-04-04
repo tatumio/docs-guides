@@ -2,6 +2,7 @@
 title: "eth_getTransactionByHash"
 slug: "rpc-ethereum-eth_gettransactionbyhash"
 excerpt: "Ethereum RPC"
+category: 65a9112c408e3a004ae466df
 hidden: false
 metadata: 
   image: []

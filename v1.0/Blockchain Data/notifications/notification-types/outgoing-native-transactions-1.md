@@ -2,6 +2,7 @@
 title: "Outgoing native transactions"
 slug: "outgoing-native-transactions-1"
 excerpt: "Master Your Outgoing Transactions with OUTGOING_NATIVE_TX Notifications"
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 14:06:06 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 14:06:06 GMT+0000 (Coordinated Universal Time)"

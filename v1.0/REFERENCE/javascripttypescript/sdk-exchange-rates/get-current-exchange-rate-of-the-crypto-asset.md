@@ -2,6 +2,7 @@
 title: "Get current exchange rate of the crypto asset"
 slug: "get-current-exchange-rate-of-the-crypto-asset"
 excerpt: "This endpoint allows you to obtain current exchange rate between fiat/crypto or fiat/fiat."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:48:40 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:15:40 GMT+0000 (Coordinated Universal Time)"

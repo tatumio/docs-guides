@@ -2,6 +2,7 @@
 title: "Build your own custom transaction"
 slug: "build-your-own-custom-transaction"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:12:52 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:13:47 GMT+0000 (Coordinated Universal Time)"

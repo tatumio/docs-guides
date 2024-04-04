@@ -2,6 +2,7 @@
 title: "NFT - Transaction Pending"
 slug: "nft-polygon-matic-transaction-pending"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Fri Jan 26 2024 08:50:32 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Jan 26 2024 13:13:22 GMT+0000 (Coordinated Universal Time)"

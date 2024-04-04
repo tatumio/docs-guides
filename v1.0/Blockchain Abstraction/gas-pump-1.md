@@ -2,6 +2,7 @@
 title: "💶 Gas Pump"
 slug: "gas-pump-1"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f8
 hidden: false
 createdAt: "Thu Mar 07 2024 13:34:58 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 12:36:45 GMT+0000 (Coordinated Universal Time)"

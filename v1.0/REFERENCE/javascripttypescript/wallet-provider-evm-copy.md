@@ -2,6 +2,7 @@
 title: "💻  Wallet Provider Tron"
 slug: "wallet-provider-evm-copy"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:19:14 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 14:13:06 GMT+0000 (Coordinated Universal Time)"

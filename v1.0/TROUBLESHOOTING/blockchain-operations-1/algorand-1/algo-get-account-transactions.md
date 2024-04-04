@@ -2,6 +2,7 @@
 title: "Algo - Get Account Transactions"
 slug: "algo-get-account-transactions"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Mon Feb 12 2024 12:13:05 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 12 2024 12:15:25 GMT+0000 (Coordinated Universal Time)"

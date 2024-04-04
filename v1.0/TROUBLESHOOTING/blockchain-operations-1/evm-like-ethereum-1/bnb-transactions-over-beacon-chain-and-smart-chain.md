@@ -2,6 +2,7 @@
 title: "BNB - Transactions over Beacon Chain and Smart Chain"
 slug: "bnb-transactions-over-beacon-chain-and-smart-chain"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 11:56:01 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 11:56:05 GMT+0000 (Coordinated Universal Time)"

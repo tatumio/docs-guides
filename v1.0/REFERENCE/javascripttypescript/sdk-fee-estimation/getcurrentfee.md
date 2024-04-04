@@ -2,6 +2,7 @@
 title: "getCurrentFee"
 slug: "getcurrentfee"
 excerpt: "This function fetches real-time gas fee data, including slow, medium, and fast fees, based on the most recent recalculation, providing transparency for blockchain transaction cost estimation."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:51:18 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:23:12 GMT+0000 (Coordinated Universal Time)"

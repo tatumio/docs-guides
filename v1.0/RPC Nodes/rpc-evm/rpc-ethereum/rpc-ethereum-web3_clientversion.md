@@ -2,6 +2,7 @@
 title: "web3_clientVersion"
 slug: "rpc-ethereum-web3_clientversion"
 excerpt: "Ethereum RPC"
+category: 65a9112c408e3a004ae466df
 hidden: false
 metadata: 
   image: []

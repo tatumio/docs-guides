@@ -2,6 +2,7 @@
 title: "What are Non Fungible Tokens?"
 slug: "what-are-non-fungible-tokens"
 excerpt: ""
+category: 65a9112c408e3a004ae365df
 hidden: true
 createdAt: "Thu Jan 18 2024 11:58:03 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Feb 27 2024 13:34:37 GMT+0000 (Coordinated Universal Time)"

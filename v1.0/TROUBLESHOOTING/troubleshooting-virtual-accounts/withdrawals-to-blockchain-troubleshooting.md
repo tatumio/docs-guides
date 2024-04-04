@@ -2,6 +2,7 @@
 title: "VA - Withdrawals to Blockchain Troubleshooting"
 slug: "withdrawals-to-blockchain-troubleshooting"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Thu Feb 08 2024 14:53:28 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:27:05 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Create your Fungible Token"
 slug: "create-your-nft-collection-copy-1"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:04:12 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:06:57 GMT+0000 (Coordinated Universal Time)"

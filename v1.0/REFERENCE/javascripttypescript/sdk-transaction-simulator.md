@@ -2,6 +2,7 @@
 title: "🧾 Transaction Simulator"
 slug: "sdk-transaction-simulator"
 excerpt: "Transaction Simulator integrates seamlessly with Tatum SDK to provide   transaction simulation capabilities for EVM-based blockchains."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:44:10 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 14:21:00 GMT+0000 (Coordinated Universal Time)"

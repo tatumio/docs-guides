@@ -2,6 +2,7 @@
 title: "Fee Estimate, GasPrice and Insufficient funds Error"
 slug: "fee-estimate-gasprice-and-insufficient-funds"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 11:04:59 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 11:05:14 GMT+0000 (Coordinated Universal Time)"

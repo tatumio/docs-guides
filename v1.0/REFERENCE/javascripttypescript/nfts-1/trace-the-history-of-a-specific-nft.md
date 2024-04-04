@@ -2,6 +2,7 @@
 title: "Trace the history of a specific NFT"
 slug: "trace-the-history-of-a-specific-nft"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:04:25 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:32:09 GMT+0000 (Coordinated Universal Time)"

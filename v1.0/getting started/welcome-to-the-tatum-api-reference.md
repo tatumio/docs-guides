@@ -2,6 +2,7 @@
 title: "Welcome to the Tatum API Reference!"
 slug: "welcome-to-the-tatum-api-reference"
 excerpt: ""
+category: 65c0c807b4d77e006316ec5d
 hidden: false
 createdAt: "Mon Feb 05 2024 12:35:35 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 05 2024 12:35:35 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "VA - Withdrawals from a Gas Pump deposit address"
 slug: "va-withdrawals-from-a-gas-pump-deposit-address"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 22:33:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:35:12 GMT+0000 (Coordinated Universal Time)"

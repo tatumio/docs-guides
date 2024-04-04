@@ -2,6 +2,7 @@
 title: "BNB - BEP2 and BEP20 Token Transfers"
 slug: "bnb-bep2-and-bep20-token-transfers"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 11:48:13 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 11:48:18 GMT+0000 (Coordinated Universal Time)"

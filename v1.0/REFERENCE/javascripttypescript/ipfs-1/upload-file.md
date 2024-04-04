@@ -2,6 +2,7 @@
 title: "Upload File"
 slug: "upload-file"
 excerpt: "This function helps a user to upload a new file on the Inter Planetary File Storage"
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:47:07 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:11:19 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "BNB - Beacon Chain Account Balance Attributes"
 slug: "bnb-beacon-chain-account-balance-attributes"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 11:44:34 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 11:44:39 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Generate Address"
 slug: "generate-address"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:31:32 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:32:01 GMT+0000 (Coordinated Universal Time)"

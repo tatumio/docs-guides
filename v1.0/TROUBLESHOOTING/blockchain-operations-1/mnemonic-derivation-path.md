@@ -2,6 +2,7 @@
 title: "Mnemonic Derivation Path"
 slug: "mnemonic-derivation-path"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Mon Jan 29 2024 10:19:43 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 05 2024 08:42:10 GMT+0000 (Coordinated Universal Time)"

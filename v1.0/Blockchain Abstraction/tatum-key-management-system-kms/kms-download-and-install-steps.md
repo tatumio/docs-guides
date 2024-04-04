@@ -2,6 +2,7 @@
 title: "Download and Install KMS"
 slug: "kms-download-and-install-steps"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f8
 hidden: false
 createdAt: "Sun Feb 11 2024 15:34:57 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:15:16 GMT+0000 (Coordinated Universal Time)"

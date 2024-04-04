@@ -2,6 +2,7 @@
 title: "Get all sent notifications"
 slug: "get-all-sent-notifications"
 excerpt: ""
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 13:23:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 13:39:42 GMT+0000 (Coordinated Universal Time)"

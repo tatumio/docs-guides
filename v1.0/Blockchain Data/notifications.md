@@ -2,6 +2,7 @@
 title: "📮 Notifications"
 slug: "notifications"
 excerpt: "What is a Notification on a Blockchain?"
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Feb 22 2024 14:38:05 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:21:18 GMT+0000 (Coordinated Universal Time)"

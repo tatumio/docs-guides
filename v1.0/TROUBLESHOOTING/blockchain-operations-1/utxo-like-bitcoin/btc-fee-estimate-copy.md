@@ -2,6 +2,7 @@
 title: "BCASH - Fee Estimate"
 slug: "btc-fee-estimate-copy"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 22:15:27 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:18:32 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Outgoing internal transactions"
 slug: "outgoing-internal-transactions-1"
 excerpt: "Enhance Your Smart Contract Monitoring with OUTGOING_INTERNAL_TX Notifications"
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 14:18:23 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 14:18:24 GMT+0000 (Coordinated Universal Time)"

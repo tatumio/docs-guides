@@ -2,6 +2,7 @@
 title: "📦 Marketplace"
 slug: "marketplace-1"
 excerpt: ""
+category: 65c0c794d329e30077a0638d
 hidden: false
 createdAt: "Thu Mar 07 2024 13:32:23 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 12:59:21 GMT+0000 (Coordinated Universal Time)"

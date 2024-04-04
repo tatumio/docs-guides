@@ -2,6 +2,7 @@
 title: "UTXO based nodes - Unsupported methods"
 slug: "utxo-based-nodes-unsupported-methods"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Tue Feb 06 2024 16:44:43 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Feb 06 2024 16:44:43 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Get all NFTs the wallet holds"
 slug: "get-all-nfts-the-wallet-holds"
 excerpt: "This function helps you to fetch all the NFT's a wallet holds, all you have to do is pass the address to the function parameter and chain while initialising the sdk."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:01:32 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:13:42 GMT+0000 (Coordinated Universal Time)"

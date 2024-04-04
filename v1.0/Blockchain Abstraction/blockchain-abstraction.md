@@ -2,6 +2,7 @@
 title: "Overview"
 slug: "blockchain-abstraction"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f8
 hidden: false
 createdAt: "Tue Feb 06 2024 16:27:08 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 26 2024 21:28:20 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Notifications - XRP, KMS and failed transactions"
 slug: "notifications-xrp-kms-and-failed-transactions"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 16:29:24 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 16:29:28 GMT+0000 (Coordinated Universal Time)"

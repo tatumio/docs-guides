@@ -2,6 +2,7 @@
 title: "Get the contractaddress or tokenaddress from a transaction hash"
 slug: "getting-the-contractaddress-or-tokenaddress-from-a-transaction-hash"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Mon Feb 12 2024 12:21:27 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 07:26:39 GMT+0000 (Coordinated Universal Time)"

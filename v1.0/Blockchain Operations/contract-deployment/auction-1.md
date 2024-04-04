@@ -2,6 +2,7 @@
 title: "🏛️ Auction"
 slug: "auction-1"
 excerpt: ""
+category: 65c0c794d329e30077a0638d
 hidden: false
 createdAt: "Thu Mar 07 2024 13:32:13 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 12:57:56 GMT+0000 (Coordinated Universal Time)"

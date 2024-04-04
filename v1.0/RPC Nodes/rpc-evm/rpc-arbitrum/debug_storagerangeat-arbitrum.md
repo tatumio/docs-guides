@@ -2,6 +2,7 @@
 title: "debug_storageRangeAt (Arbitrum)"
 slug: "debug_storagerangeat-arbitrum"
 excerpt: "Arbitrum RPC"
+category: 65a9112c408e3a004ae466df
 hidden: false
 metadata: 
   image: []

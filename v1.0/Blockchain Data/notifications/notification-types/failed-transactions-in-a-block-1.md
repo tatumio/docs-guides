@@ -2,6 +2,7 @@
 title: "Failed transactions in a block"
 slug: "failed-transactions-in-a-block-1"
 excerpt: "Stay Ahead of Failed Transactions with FAILED_TXS_PER_BLOCK Notifications"
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 14:28:39 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 14:28:59 GMT+0000 (Coordinated Universal Time)"

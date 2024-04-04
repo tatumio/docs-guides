@@ -2,6 +2,7 @@
 title: "BTC - RBF and stuck transactions in the mempool"
 slug: "bitcoin-replace-by-fee-and-stuck-transactions-in-the-mempool"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Mon Jan 29 2024 11:06:09 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Feb 09 2024 08:48:40 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "KMS - Solana and Generating Addresses"
 slug: "kms-solana-and-generating-addresses"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 12:52:39 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 12:52:47 GMT+0000 (Coordinated Universal Time)"

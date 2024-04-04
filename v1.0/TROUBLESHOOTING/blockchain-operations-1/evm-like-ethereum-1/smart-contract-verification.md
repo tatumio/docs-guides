@@ -2,6 +2,7 @@
 title: "Smart Contract Verification"
 slug: "smart-contract-verification"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 25 2024 07:34:26 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 07:34:26 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Building a UTXO Transaction"
 slug: "building-a-utxo-transaction"
 excerpt: ""
+category: 65c0c794d329e30077a0638d
 hidden: true
 createdAt: "Sun Feb 25 2024 07:40:48 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:20:30 GMT+0000 (Coordinated Universal Time)"

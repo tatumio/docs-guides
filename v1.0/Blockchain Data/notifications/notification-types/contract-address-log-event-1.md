@@ -2,6 +2,7 @@
 title: "Contract address log event"
 slug: "contract-address-log-event-1"
 excerpt: "Unleashing the Power of CONTRACT_ADDRESS_LOG_EVENT Notifications"
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 14:30:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 14:30:20 GMT+0000 (Coordinated Universal Time)"

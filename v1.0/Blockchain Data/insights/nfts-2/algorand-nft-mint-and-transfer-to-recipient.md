@@ -2,6 +2,7 @@
 title: "Algorand - NFT Mint and Transfer to Recipient"
 slug: "algorand-nft-mint-and-transfer-to-recipient"
 excerpt: ""
+category: 65c0c716d716fe0040919d8b
 hidden: true
 createdAt: "Sun Feb 25 2024 10:40:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:22:32 GMT+0000 (Coordinated Universal Time)"

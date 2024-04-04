@@ -2,6 +2,7 @@
 title: "Get all NFTs in the NFT collection"
 slug: "get-all-nfts-in-the-nft-collection"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:03:54 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:52:14 GMT+0000 (Coordinated Universal Time)"

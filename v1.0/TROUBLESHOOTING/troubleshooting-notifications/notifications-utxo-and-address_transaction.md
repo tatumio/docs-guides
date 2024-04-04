@@ -2,6 +2,7 @@
 title: "Notifications - UTXO and ADDRESS_TRANSACTION"
 slug: "notifications-utxo-and-address_transaction"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 16:31:43 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 16:31:49 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Multi tokens (ERC-1155) name and symbol"
 slug: "multi-tokens-erc-1155-name-and-symbol"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 21:50:48 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 21:50:52 GMT+0000 (Coordinated Universal Time)"

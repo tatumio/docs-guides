@@ -2,6 +2,7 @@
 title: "eth_getBlockByHash"
 slug: "rpc-ethereum-eth_getblockbyhash"
 excerpt: "Ethereum RPC"
+category: 65a9112c408e3a004ae466df
 hidden: false
 metadata: 
   image: []

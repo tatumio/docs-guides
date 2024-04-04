@@ -2,6 +2,7 @@
 title: "📊 Data Insights"
 slug: "data-insights"
 excerpt: ""
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Tue Mar 19 2024 13:21:14 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:22:23 GMT+0000 (Coordinated Universal Time)"

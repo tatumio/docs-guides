@@ -2,6 +2,7 @@
 title: "Get all transactions of a wallet"
 slug: "get-all-transactions-on-the-wallet"
 excerpt: "This endpoint can help you get all the transactions of a wallet."
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:42:56 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 12:02:51 GMT+0000 (Coordinated Universal Time)"

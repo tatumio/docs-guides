@@ -2,6 +2,7 @@
 title: "Supported tokens (by default)"
 slug: "supported-tokens-by-default"
 excerpt: "Virtual Accounts support out of the box several ERC-20 (or compatible) tokens as Virtual Currencies. Here you can find the list."
+category: 65a8e44fccf94800381cd6f8
 hidden: false
 createdAt: "Tue Feb 06 2024 16:30:19 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 26 2024 07:41:54 GMT+0000 (Coordinated Universal Time)"

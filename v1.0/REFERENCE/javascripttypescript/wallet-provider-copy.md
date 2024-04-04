@@ -2,6 +2,7 @@
 title: "💻 Wallet Provider EVM"
 slug: "wallet-provider-copy"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 12:26:59 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:27:55 GMT+0000 (Coordinated Universal Time)"

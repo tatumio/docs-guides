@@ -2,6 +2,7 @@
 title: "Generate Xpub"
 slug: "generate-xpub"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:29:52 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 13:30:21 GMT+0000 (Coordinated Universal Time)"

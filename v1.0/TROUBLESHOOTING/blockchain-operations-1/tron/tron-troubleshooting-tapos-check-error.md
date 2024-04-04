@@ -2,6 +2,7 @@
 title: "TRON - Troubleshooting Tapos check error"
 slug: "tron-troubleshooting-tapos-check-error"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 22:23:29 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 22:25:34 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "EVM based nodes - Unsupported methods"
 slug: "evm-based-nodes-unsupported-methods"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Tue Feb 06 2024 16:45:38 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Feb 06 2024 16:46:21 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "TRON - Transaction could not be found"
 slug: "tron-transaction-could-not-be-found"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Wed Jan 31 2024 11:45:32 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Mon Feb 05 2024 08:36:15 GMT+0000 (Coordinated Universal Time)"

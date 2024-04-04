@@ -2,6 +2,7 @@
 title: "Create a fungible token"
 slug: "create-a-fungible-token"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:41:08 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:49:07 GMT+0000 (Coordinated Universal Time)"

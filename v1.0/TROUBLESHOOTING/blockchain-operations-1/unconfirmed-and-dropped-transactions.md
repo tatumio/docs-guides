@@ -2,6 +2,7 @@
 title: "Transaction Unconfirmed, Pending or Dropped"
 slug: "unconfirmed-and-dropped-transactions"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sat Feb 10 2024 10:48:06 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 10:20:22 GMT+0000 (Coordinated Universal Time)"

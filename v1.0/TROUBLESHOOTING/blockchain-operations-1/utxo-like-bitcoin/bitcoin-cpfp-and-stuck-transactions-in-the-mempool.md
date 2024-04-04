@@ -2,6 +2,7 @@
 title: "BTC - CPFP and stuck transactions in the mempool"
 slug: "bitcoin-cpfp-and-stuck-transactions-in-the-mempool"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Mon Jan 29 2024 10:22:15 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Feb 09 2024 08:48:24 GMT+0000 (Coordinated Universal Time)"

@@ -2,6 +2,7 @@
 title: "Generate Mnemonic"
 slug: "generate-mnemonic-2"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 14:19:38 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 14:19:38 GMT+0000 (Coordinated Universal Time)"

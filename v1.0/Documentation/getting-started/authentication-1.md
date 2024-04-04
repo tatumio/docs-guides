@@ -2,6 +2,7 @@
 title: "Authentication"
 slug: "authentication-1"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f6
 hidden: false
 createdAt: "Fri Feb 09 2024 08:39:35 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 13:34:46 GMT+0000 (Coordinated Universal Time)"

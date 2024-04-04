@@ -2,6 +2,7 @@
 title: "Invoke method in a Smart Contract"
 slug: "invoke-method-in-a-smart-contract"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Sun Feb 11 2024 20:44:37 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 11 2024 20:44:37 GMT+0000 (Coordinated Universal Time)"

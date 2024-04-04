@@ -2,6 +2,7 @@
 title: "Testnet Faucets"
 slug: "testnet-faucets"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f6
 hidden: false
 createdAt: "Mon Jan 29 2024 12:00:14 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 01 2024 07:27:11 GMT+0000 (Coordinated Universal Time)"

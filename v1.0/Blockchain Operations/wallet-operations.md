@@ -2,6 +2,7 @@
 title: "💻  Wallet Operations"
 slug: "wallet-operations"
 excerpt: ""
+category: 65c0c794d329e30077a0638d
 hidden: false
 createdAt: "Thu Mar 07 2024 13:29:31 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Mar 19 2024 13:09:43 GMT+0000 (Coordinated Universal Time)"

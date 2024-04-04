@@ -2,6 +2,7 @@
 title: "Start monitoring of the address"
 slug: "start-monitoring-of-the-address"
 excerpt: ""
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Thu Mar 07 2024 12:52:58 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Thu Mar 07 2024 13:39:15 GMT+0000 (Coordinated Universal Time)"

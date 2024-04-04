@@ -2,6 +2,7 @@
 title: "🪙 Fungible tokens"
 slug: "fungible-tokens"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Thu Feb 22 2024 13:09:40 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 11:31:26 GMT+0000 (Coordinated Universal Time)"

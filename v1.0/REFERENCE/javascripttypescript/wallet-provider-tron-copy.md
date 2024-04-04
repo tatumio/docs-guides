@@ -2,6 +2,7 @@
 title: "💻  Wallet Provider Tezos"
 slug: "wallet-provider-tron-copy"
 excerpt: ""
+category: 65a9112c408e3a004ae366df
 hidden: false
 createdAt: "Fri Mar 15 2024 13:19:42 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 15 2024 14:18:39 GMT+0000 (Coordinated Universal Time)"

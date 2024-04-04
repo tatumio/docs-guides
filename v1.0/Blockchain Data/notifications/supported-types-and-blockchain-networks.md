@@ -2,6 +2,7 @@
 title: "Supported types and blockchain networks"
 slug: "supported-types-and-blockchain-networks"
 excerpt: ""
+category: 65c0c716d716fe0040919d8b
 hidden: false
 createdAt: "Fri Mar 01 2024 07:37:38 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 01 2024 08:09:35 GMT+0000 (Coordinated Universal Time)"

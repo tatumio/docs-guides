@@ -2,6 +2,7 @@
 title: "Getting Started with Tatum 🚀"
 slug: "getting-started"
 excerpt: ""
+category: 65a8e44fccf94800381cd6f6
 hidden: false
 createdAt: "Thu Jan 18 2024 08:41:51 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Fri Mar 01 2024 07:24:33 GMT+0000 (Coordinated Universal Time)"

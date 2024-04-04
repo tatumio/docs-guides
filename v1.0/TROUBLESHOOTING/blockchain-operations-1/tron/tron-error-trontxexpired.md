@@ -2,6 +2,7 @@
 title: "TRON - \"tron.tx.expired\" Error"
 slug: "tron-error-trontxexpired"
 excerpt: ""
+category: 65ae6349f216f9001c42cc4d
 hidden: false
 createdAt: "Thu Feb 08 2024 12:53:05 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sun Feb 25 2024 12:25:04 GMT+0000 (Coordinated Universal Time)"
