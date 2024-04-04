@@ -19,4 +19,4 @@ jobs:
         # Docs: https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions#example-using-versioned-actions
         uses: readmeio/rdme@v8
         with:
-          rdme: docs "./v1.0/RPC NODES" --key=${{ secrets.README_API_KEY }} --version=1.0
+          rdme: docs "./v1.0/RPC Nodes" --key=${{ secrets.README_API_KEY }} --version=1.0
