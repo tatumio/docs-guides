@@ -1,6 +1,6 @@
 ---
 title: "🏛️ Auction"
-slug: "auction-1"
+slug: "auction"
 excerpt: ""
 category: 65e9ba02205d9900590782fe
 hidden: false

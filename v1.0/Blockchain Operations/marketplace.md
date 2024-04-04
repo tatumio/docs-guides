@@ -1,6 +1,6 @@
 ---
 title: "📦 Marketplace"
-slug: "marketplace-1"
+slug: "marketplace"
 excerpt: ""
 category: 65e9ba02205d9900590782fe
 hidden: false
