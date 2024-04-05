@@ -2,7 +2,6 @@
 title: "getAccount"
 slug: "rpc-algorand-getAccount"
 excerpt: "Algorand RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   description: "Algorand RPC"
