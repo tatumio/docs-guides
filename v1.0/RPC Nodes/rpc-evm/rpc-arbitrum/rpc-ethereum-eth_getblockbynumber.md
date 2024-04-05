@@ -1,6 +1,6 @@
 ---
 title: "eth_getBlockByNumber"
-slug: "rpc-ethereum-eth_getblockbynumber"
+slug: "rpc-arbitrum-eth_getblockbynumber"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

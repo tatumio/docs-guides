@@ -1,6 +1,6 @@
 ---
 title: "eth_getTransactionCount"
-slug: "rpc-ethereum-eth_gettransactioncount"
+slug: "rpc-arbitrum-eth_gettransactioncount"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

@@ -1,6 +1,6 @@
 ---
 title: "getStateRoot"
-slug: "rpc-ethereum-getstateroot"
+slug: "rpc-arbitrum-getstateroot"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

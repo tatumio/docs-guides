@@ -1,6 +1,6 @@
 ---
 title: "txpool_status"
-slug: "rpc-ethereum-txpool_status"
+slug: "rpc-arbitrum-txpool_status"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

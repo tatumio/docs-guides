@@ -1,6 +1,6 @@
 ---
 title: "eth_blockNumber"
-slug: "rpc-ethereum-eth_blocknumber"
+slug: "rpc-arbitrum-eth_blocknumber"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

@@ -1,6 +1,6 @@
 ---
 title: "eth_gasPrice"
-slug: "rpc-ethereum-eth_gasprice"
+slug: "rpc-arbitrum-eth_gasprice"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

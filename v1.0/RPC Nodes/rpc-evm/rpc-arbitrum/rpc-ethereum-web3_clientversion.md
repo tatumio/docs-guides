@@ -1,6 +1,6 @@
 ---
 title: "web3_clientVersion"
-slug: "rpc-ethereum-web3_clientversion"
+slug: "rpc-arbitrum-web3_clientversion"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

@@ -1,6 +1,6 @@
 ---
 title: "eth_getLogs"
-slug: "rpc-ethereum-eth_getlogs"
+slug: "rpc-arbitrum-eth_getlogs"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

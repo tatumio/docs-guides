@@ -1,6 +1,6 @@
 ---
 title: "eth_getCode"
-slug: "rpc-ethereum-eth_getcode"
+slug: "rpc-arbitrum-eth_getcode"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

@@ -1,6 +1,6 @@
 ---
 title: "eth_getStorageAt"
-slug: "rpc-ethereum-eth_getstorageat"
+slug: "rpc-arbitrum-eth_getstorageat"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

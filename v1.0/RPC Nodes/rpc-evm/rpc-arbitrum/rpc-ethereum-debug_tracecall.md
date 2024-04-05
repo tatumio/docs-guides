@@ -1,6 +1,6 @@
 ---
 title: "debug_traceCall"
-slug: "rpc-ethereum-debug_tracecall"
+slug: "rpc-arbitrum-debug_tracecall"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

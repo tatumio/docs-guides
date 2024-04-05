@@ -1,6 +1,6 @@
 ---
 title: "eth_getBlockTransactionCountByHash"
-slug: "rpc-ethereum-eth_getblocktransactioncountbyhash"
+slug: "rpc-arbitrum-eth_getblocktransactioncountbyhash"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

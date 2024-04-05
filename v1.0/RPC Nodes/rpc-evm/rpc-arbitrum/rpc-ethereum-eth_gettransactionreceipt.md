@@ -1,6 +1,6 @@
 ---
 title: "eth_getTransactionReceipt"
-slug: "rpc-ethereum-eth_gettransactionreceipt"
+slug: "rpc-arbitrum-eth_gettransactionreceipt"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

@@ -1,6 +1,6 @@
 ---
 title: "getBlockHeaders"
-slug: "rpc-ethereum-getblockheaders"
+slug: "rpc-arbitrum-getblockheaders"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

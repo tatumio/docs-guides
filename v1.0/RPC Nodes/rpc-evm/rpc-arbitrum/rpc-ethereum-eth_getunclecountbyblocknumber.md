@@ -1,6 +1,6 @@
 ---
 title: "eth_getUncleCountByBlockNumber"
-slug: "rpc-ethereum-eth_getunclecountbyblocknumber"
+slug: "rpc-arbitrum-eth_getunclecountbyblocknumber"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

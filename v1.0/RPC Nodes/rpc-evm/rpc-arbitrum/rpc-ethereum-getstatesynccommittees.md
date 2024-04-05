@@ -1,6 +1,6 @@
 ---
 title: "getStateSyncCommittees"
-slug: "rpc-ethereum-getstatesynccommittees"
+slug: "rpc-arbitrum-getstatesynccommittees"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

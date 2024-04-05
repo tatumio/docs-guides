@@ -1,6 +1,6 @@
 ---
 title: "debug_storageRangeAt"
-slug: "rpc-ethereum-debug_storagerangeat"
+slug: "rpc-arbitrum-debug_storagerangeat"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

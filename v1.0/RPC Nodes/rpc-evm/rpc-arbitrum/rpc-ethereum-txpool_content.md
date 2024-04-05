@@ -1,6 +1,6 @@
 ---
 title: "txpool_content"
-slug: "rpc-ethereum-txpool_content"
+slug: "rpc-arbitrum-txpool_content"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

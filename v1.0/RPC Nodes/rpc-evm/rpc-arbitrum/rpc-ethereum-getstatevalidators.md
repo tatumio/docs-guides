@@ -1,6 +1,6 @@
 ---
 title: "getStateValidators"
-slug: "rpc-ethereum-getstatevalidators"
+slug: "rpc-arbitrum-getstatevalidators"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

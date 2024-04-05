@@ -1,6 +1,6 @@
 ---
 title: "debug_traceBlockByHash"
-slug: "rpc-ethereum-debug_traceblockbyhash"
+slug: "rpc-arbitrum-debug_traceblockbyhash"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

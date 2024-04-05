@@ -1,6 +1,6 @@
 ---
 title: "txpool_inspect"
-slug: "rpc-ethereum-txpool_inspect"
+slug: "rpc-arbitrum-txpool_inspect"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

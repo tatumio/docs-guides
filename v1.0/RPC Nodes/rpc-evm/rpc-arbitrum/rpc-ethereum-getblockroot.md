@@ -1,6 +1,6 @@
 ---
 title: "getBlockRoot"
-slug: "rpc-ethereum-getblockroot"
+slug: "rpc-arbitrum-getblockroot"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

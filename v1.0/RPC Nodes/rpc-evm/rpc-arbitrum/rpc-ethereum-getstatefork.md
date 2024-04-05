@@ -1,6 +1,6 @@
 ---
 title: "getStateFork"
-slug: "rpc-ethereum-getstatefork"
+slug: "rpc-arbitrum-getstatefork"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

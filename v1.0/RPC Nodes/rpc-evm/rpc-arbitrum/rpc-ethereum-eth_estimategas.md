@@ -1,6 +1,6 @@
 ---
 title: "eth_estimateGas"
-slug: "rpc-ethereum-eth_estimategas"
+slug: "rpc-arbitrum-eth_estimategas"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false

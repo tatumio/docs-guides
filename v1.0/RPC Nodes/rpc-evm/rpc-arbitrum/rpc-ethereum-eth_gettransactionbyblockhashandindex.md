@@ -1,6 +1,6 @@
 ---
 title: "eth_getTransactionByBlockHashAndIndex"
-slug: "rpc-ethereum-eth_gettransactionbyblockhashandindex"
+slug: "rpc-arbitrum-eth_gettransactionbyblockhashandindex"
 excerpt: "Ethereum RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
