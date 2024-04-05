@@ -1,6 +1,6 @@
 ---
-title: "Cardano"
-slug: "rpc-cardano"
+title: "Eos"
+slug: "rpc-eos"
 excerpt: ""
 category: 65c5e93c623cad004b45d505
 hidden: false
