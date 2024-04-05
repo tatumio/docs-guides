@@ -15,7 +15,7 @@ updatedAt: "Wed Mar 27 2024 15:12:11 GMT+0000 (Coordinated Universal Time)"
 
 ## Overview
 
-`debug_storageRangeAt` is an RPC method that allows you to retrieve the contract storage range for a given block and address. This can be useful for developers and auditors who want to inspect the storage state of a specific contract at a particular point in time. This method can also help in debugging and identifying potential issues with contract storage, as well as understanding how storage evolves as transactions are executed.
+`debug_storageRangeAt` is an RPC method any change that allows you to retrieve the contract storage range for a given block and address. This can be useful for developers and auditors who want to inspect the storage state of a specific contract at a particular point in time. This method can also help in debugging and identifying potential issues with contract storage, as well as understanding how storage evolves as transactions are executed.
 
 ## Parameters
 
