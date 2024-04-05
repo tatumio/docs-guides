@@ -1,6 +1,6 @@
 ---
 title: "simulateTransaction"
-slug: "rpc-algorand-simulateTransaction"
+slug: "rpc-algorand-simulatetransaction"
 excerpt: "Algorand RPC"
 hidden: false
 metadata: 

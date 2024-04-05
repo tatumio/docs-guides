@@ -1,6 +1,6 @@
 ---
 title: "getAccount"
-slug: "rpc-algorand-getAccount"
+slug: "rpc-algorand-getaccount"
 excerpt: "Algorand RPC"
 hidden: false
 metadata: 
