@@ -1,9 +1,0 @@
----
-title: "Register a new ERC-20 or ERC-20-equivalent token in the virtual account"
-slug: "registererc20token"
-excerpt: "<h4>2 credits per API call.</h4><br/>\n<p>This is the first step to create a new ERC-20 or ERC-20 equivalent token with some supply in a virtual account.<br/>\n<br/>\n<br/>\nThis method only creates Tatum Private ledger virtual currency with predefined parameters. It will not generate any blockchain smart contract.<br/>\nThe whole supply of token is stored in the customer's newly created account. Then it is possible to create new Tatum accounts with token name as account's currency.<br/>\nNewly created account is frozen until the specific smart contract address is linked with the Tatum virtual currency, representing the token.<br/>\nOrder of the steps to create smart contract with Tatum private ledger support:\n<ol>\n<li>Register token (this API) - creates a virtual currency within Tatum</li>\n<li><a href=\"https://apidoc.tatum.io/tag/Fungible-Tokens-(ERC-20-or-compatible)#operation/Erc20Deploy\">Deploy smart contract</a> - create new smart contract on the blockchain</li>\n<li><a href=\"#operation/storeTokenAddress\">Store smart contract address</a> - link newly created smart contract address with Tatum virtual currency - this operation enables frozen account and enables ledger synchronization for Tatum accounts</li>\n</ol>\nBlockchain address will be assigned to the virtual account as a deposit address. It can be defined via the address explicitly or by using xpub and derivationIndex.\n</p>"
-category: 65c0c89f01bfc0001709afa1
-hidden: false
-createdAt: "Mon Feb 05 2024 11:38:10 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Mon Feb 05 2024 11:38:10 GMT+0000 (Coordinated Universal Time)"
----

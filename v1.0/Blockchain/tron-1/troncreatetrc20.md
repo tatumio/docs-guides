@@ -1,9 +1,0 @@
----
-title: "Create a TRC-20 token"
-slug: "troncreatetrc20"
-excerpt: "<p><b>10 credits per API call</b></p>\n<p>Create a TRON TRC-20 capped token. A capped TRC20 token is a type of token on the TRON blockchain that has a preset limit on the total number of tokens that can be created. This limit is specified during the token creation process and cannot be exceeded. Once the limit is reached, no more tokens can be minted. This feature helps to ensure the scarcity and value of the token and can provide investors with a sense of security. It is a popular choice for fundraising, as it allows for a predetermined amount of funds to be raised through the sale of tokens, and any excess tokens that are not sold are simply not minted.</p>\n<p><b>Signing a transaction</b><br/>\nWhen creating a TRC-20 token, you are charged a fee for the transaction, and you must sign the transaction with the private key of the blockchain address from which the fee will be deducted.</p>\n<p>Providing the private key in the API is not a secure way of signing transactions, because the private key can be stolen or exposed. Your private keys should never leave your security perimeter. You should use the private keys only for testing a solution you are building on the <b>testnet</b> of a blockchain.</p>\n<p>For signing transactions on the <b>mainnet</b>, we strongly recommend that you use the Tatum <a href=\"https://github.com/tatumio/tatum-kms\" target=\"_blank\">Key Management System (KMS)</a> and provide the signature ID instead of the private key in the API. Alternatively, you can use the <a href=\"https://github.com/tatumio/tatum-js/tree/v2\" target=\"_blank\">Tatum JavaScript client</a>.</p>"
-category: 65c0c8c6ba99f1006df40d7a
-hidden: false
-createdAt: "Mon Feb 05 2024 11:38:51 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Mon Feb 05 2024 11:38:51 GMT+0000 (Coordinated Universal Time)"
----

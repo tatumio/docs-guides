@@ -1,9 +1,0 @@
----
-title: "Send XLM from a virtual account to the blockchain"
-slug: "xlmtransfer"
-excerpt: "<p><b>10 credits per API call</b></p>\n<p>Send XLM (Stellar) or XLM-based assets from a virtual account to the blockchain. This will create Tatum internal withdrawal request with ID. When every system works as expected,\nwithdrawal request is marked as complete and transaction id is assigned to it.</p>\n<ul>\n<li>If XLM server connection is unavailable, withdrawal request is cancelled.</li>\n<li>If blockchain transfer is successful, but is it not possible to reach Tatum, transaction id of blockchain transaction is returned and withdrawal request must be completed manually, otherwise all other withdrawals will be pending.</li>\n</ul>\n<p>It is possible to perform ledger to blockchain transaction for ledger accounts without blockchain address assigned to them.</p>\n<p>This operation needs the private key of the blockchain address. Every time the funds are transferred, the transaction must be signed with the corresponding private key.\nNo one should ever send it's own private keys to the internet because there is a strong possibility of stealing keys and losing funds. In this method, it is possible to enter privateKey\nor signatureId. PrivateKey should be used only for quick development on testnet versions of blockchain when there is no risk of losing funds. In production,\n<a href=\"https://github.com/tatumio/tatum-kms\" target=\"_blank\">Tatum KMS</a> should be used for the highest security standards, and signatureId should be present in the request.\nAlternatively, using the Tatum client library for supported languages.\n</p>"
-category: 65c0c89f01bfc0001709afa1
-hidden: false
-createdAt: "Mon Feb 05 2024 11:38:10 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Mon Feb 05 2024 11:38:10 GMT+0000 (Coordinated Universal Time)"
----

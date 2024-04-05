@@ -1,8 +1,0 @@
----
-title: "Find transactions for a customer across all of the customer's accounts."
-slug: "gettransactionsbycustomerid"
-excerpt: "<h4>1 credit per API call.</h4><br/><p>Finds transactions for all accounts of the customer identified by the given internal customer ID.</p>"
-hidden: false
-createdAt: "Mon Feb 05 2024 09:09:14 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Mon Feb 05 2024 09:09:15 GMT+0000 (Coordinated Universal Time)"
----
