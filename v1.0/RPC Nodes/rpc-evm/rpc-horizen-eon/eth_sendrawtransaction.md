@@ -1,13 +1,13 @@
 ---
 title: "eth_sendrawtransaction"
-slug: "rpc-haqq-eth_sendrawtransaction"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_sendrawtransaction"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const gasPrice = await tatum.rpc.sendRawTransaction('0x0000.......')
 
@@ -36,7 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_sendRawTransaction` RPC method is used to send a signed and serialized Haqq transaction to the network. This method is particularly useful when you want to have full control over the signing process, e.g., when using hardware wallets, cold storage, or custom signing libraries. It can be utilized in various use cases, such as transferring ISLM, interacting with smart contracts, or deploying new contracts.
+The `eth_sendRawTransaction` RPC method is used to send a signed and serialized transaction to the network. This method is particularly useful when you want to have full control over the signing process, e.g., when using hardware wallets, cold storage, or custom signing libraries. It can be utilized in various use cases, such as transferring, interacting with smart contracts, or deploying new contracts.
 
 ### Parameters
 

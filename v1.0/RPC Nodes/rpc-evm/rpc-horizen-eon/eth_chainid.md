@@ -1,13 +1,13 @@
 ---
 title: "eth_chainid"
-slug: "rpc-haqq-eth_chainid"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_chainid"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const id = await tatum.rpc.chainId()
 
@@ -36,11 +36,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_chainId` method is an Haqq JSON-RPC method that allows developers to retrieve the currently configured chain ID of the Haqq network they are connected to. The chain ID is a unique identifier for different Haqq networks, such as Haqq Mainnet or various testnets.
+The `eth_chainId` method is an JSON-RPC method that allows developers to retrieve the currently configured chain ID of the network they are connected to. The chain ID is a unique identifier for different networks, such as mainnet or various testnets.
 
-This method is particularly useful when building applications that interact with multiple Haqq networks or need to verify the network to prevent replay attacks. By checking the chain ID, an application can ensure it is interacting with the intended network.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/NWEQVzo" %}
+This method is particularly useful when building applications that interact with multiple networks or need to verify the network to prevent replay attacks. By checking the chain ID, an application can ensure it is interacting with the intended network.
 
 ### Parameters
 
@@ -67,14 +65,11 @@ JSON-RPC request:
 
 JSON-RPC response:
 
-````json
 ```json
 {
     "jsonrpc": "2.0",
     "id": 1,
-    "result": "0x2be3"
+    "result": "0xe"
 }
 ```
-````
 
-In this example, the returned chain ID is `0x2be3`, which corresponds to the Haqq Mainnet.

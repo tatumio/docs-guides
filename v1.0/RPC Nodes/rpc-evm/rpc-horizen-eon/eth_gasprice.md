@@ -1,13 +1,13 @@
 ---
 title: "eth_gasprice"
-slug: "rpc-haqq-eth_gasprice"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_gasprice"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const gasPrice = await tatum.rpc.gasPrice()
 
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_gasPrice` method is an Haqq JSON-RPC method used to estimate the average gas price required for transactions in the Haqq network. This method provides a suggestion for the gas price to be used in a transaction to increase the likelihood of it being mined and included in a block in a reasonable amount of time. The `eth_gasPrice` method is particularly useful for developers and users who want to create and send transactions, as it helps them estimate the appropriate gas price to ensure timely processing.
-
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/OJadYzX" %}
+The `eth_gasPrice` method is an JSON-RPC method used to estimate the average gas price required for transactions in the network. This method provides a suggestion for the gas price to be used in a transaction to increase the likelihood of it being mined and included in a block in a reasonable amount of time. The `eth_gasPrice` method is particularly useful for developers and users who want to create and send transactions, as it helps them estimate the appropriate gas price to ensure timely processing.
 
 ### Parameters
 

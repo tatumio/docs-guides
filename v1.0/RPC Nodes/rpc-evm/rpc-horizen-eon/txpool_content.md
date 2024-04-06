@@ -1,13 +1,13 @@
 ---
 title: "txpool_content"
-slug: "rpc-haqq-txpool_content"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-txpool_content"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const content = await tatum.rpc.txPoolContent()
 
@@ -36,7 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `txpool_content` method provides information about the transactions currently pending in the transaction pool of the Haqq node. It can be helpful for developers and node operators to monitor and manage the transaction pool, especially in scenarios where it's necessary to analyze transaction congestion or prioritize specific transactions.
+The `txpool_content` method provides information about the transactions currently pending in the transaction pool of the Flare node. It can be helpful for developers and node operators to monitor and manage the transaction pool, especially in scenarios where it's necessary to analyze transaction congestion or prioritize specific transactions.
 
 Use cases for the `txpool_content` method include:
 
@@ -44,8 +44,6 @@ Use cases for the `txpool_content` method include:
 * Prioritizing transactions by gas price
 * Monitoring transactions from specific addresses
 * Debugging and troubleshooting pending transactions
-
-{% embed url="https://codepen.io/tatum-devrel/pen/vYQowQR" %}
 
 ### Parameters
 

@@ -1,13 +1,13 @@
 ---
 title: "eth_maxpriorityfeepergas"
-slug: "rpc-haqq-eth_maxpriorityfeepergas"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_maxpriorityfeepergas"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const gasPrice = await tatum.rpc.maxPriorityFeePerGas()
 
@@ -37,8 +37,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `eth_maxPriorityFeePerGas` RPC method is used to retrieve the maximum priority fee per gas set by the user for a transaction. This method can be used to determine the maximum fee that can be paid for a transaction to be included in a block quickly.
-
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/XWyOwzB" %}
 
 ### Use case
 

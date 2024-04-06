@@ -1,6 +1,6 @@
 ---
-title: "Haqq"
-slug: "rpc-haqq"
+title: "Horizen Eon"
+slug: "rpc-horizen-eon"
 excerpt: ""
 category: 65c5e93c623cad004b45d505
 hidden: false

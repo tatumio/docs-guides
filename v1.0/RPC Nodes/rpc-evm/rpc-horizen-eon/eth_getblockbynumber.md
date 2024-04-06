@@ -1,13 +1,13 @@
 ---
 title: "eth_getblockbynumber"
-slug: "rpc-haqq-eth_getblockbynumber"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getblockbynumber"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+  
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const block = await tatum.rpc.getBlockByNumber('latest', true)
 
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockByNumber` is an Haqq JSON-RPC method that allows developers to query a specific block in the Haqq blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/KKrOLvY" %}
+`eth_getBlockByNumber` is an JSON-RPC method that allows developers to query a specific block in the blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
 ### Parameters
 

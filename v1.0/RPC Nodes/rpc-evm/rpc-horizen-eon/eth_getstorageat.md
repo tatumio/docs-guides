@@ -1,13 +1,13 @@
 ---
 title: "eth_getstorageat"
-slug: "rpc-haqq-eth_getstorageat"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getstorageat"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const response = await tatum.rpc.getStorageAt('0x742d35Cc6634C0532925a3b844Bc454e4438f44e', '0x0')
+const response = await tatum.rpc.getStorageAt('0x6eA7d015342b7eb7344F7ebf0150234f41F524d6', '0x0')
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,16 +36,14 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getStorageAt` is an Haqq JSON-RPC method that allows you to query the storage value of a contract at a given position. It can be used to inspect the internal state of a smart contract. This method is particularly useful for developers, auditors, and analysts who want to examine contract storage values for various purposes, such as debugging, verifying contract behavior, or analyzing data.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/yLQmWjB" %}
+`eth_getStorageAt` is an JSON-RPC method that allows you to query the storage value of a contract at a given position. It can be used to inspect the internal state of a smart contract. This method is particularly useful for developers, auditors, and analysts who want to examine contract storage values for various purposes, such as debugging, verifying contract behavior, or analyzing data.
 
 ### Parameters
 
 `eth_getStorageAt` accepts three parameters:
 
 1. **`address`**: The address of the contract you want to query.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0x6eA7d015342b7eb7344F7ebf0150234f41F524d6"`
 2. **`position`**: The storage position (slot) you want to query.
    * Example: `"0x0"`
 3. **`blockParameter`**: The block number, block hash, or one of the string literals (`"earliest"`, `"latest"` or `"pending"`), representing the point in the blockchain to query the storage value.
@@ -65,9 +63,8 @@ The return object is a single string value, representing the storage value at th
   "jsonrpc": "2.0",
   "method": "eth_getStorageAt",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
-    "0x0",
-    "latest"
+    "0x6eA7d015342b7eb7344F7ebf0150234f41F524d6",
+    "0x0"
   ]
 }
 ```
@@ -78,7 +75,7 @@ The return object is a single string value, representing the storage value at th
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "result": "0x0000000000000000000000000000000000000000000000000000000000000123"
+  "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
 }
 ```
 

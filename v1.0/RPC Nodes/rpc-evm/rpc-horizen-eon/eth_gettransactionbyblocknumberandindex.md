@@ -1,13 +1,13 @@
 ---
-title: "eth_gettransactionbyblockhashandindex"
-slug: "rpc-haqq-eth_gettransactionbyblockhashandindex"
-excerpt: "Haqq  RPC"
+title: "eth_gettransactionbyblocknumberandindex"
+slug: "rpc-horizen-eon-eth_gettransactionbyblocknumberandindex"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+iimport { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const tx = await tatum.rpc.getTransactionByBlockHashAndIndex('0xC52DA0AB755168DCB6E38E7B001832F9373BA4EE688F56CFF75C6E928B78BCF3', 0)
+const tx = await tatum.rpc.getTransactionByBlockNumberAndIndex(371156, 0)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,7 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getTransactionByBlockHashAndIndex` is an Haqq JSON-RPC method that allows you to fetch the transaction details based on the block hash and the index of the transaction within that block. This method can be useful when you want to retrieve transaction details for a specific transaction without knowing its transaction hash.
+`eth_getTransactionByBlockHashAndIndex` is an JSON-RPC method that allows you to fetch the transaction details based on the block hash and the index of the transaction within that block. This method can be useful when you want to retrieve transaction details for a specific transaction without knowing its transaction hash.
 
 Use cases for this method may include:
 
@@ -44,16 +44,14 @@ Use cases for this method may include:
 * Gathering data for transaction analysis
 * Fetching transaction information for specific blocks in a block explorer application
 
-{% embed url="https://codepen.io/tatum-devrel/pen/vYQowjp" %}
-
 ### Parameters
 
 The `eth_getTransactionByBlockHashAndIndex` method accepts two parameters:
 
-1. `blockHash` (required): The hash of the block containing the transaction.
-   * Example: `"0xC52DA0AB755168DCB6E38E7B001832F9373BA4EE688F56CFF75C6E928B78BCF3"`
+1. `blockNumber` (required): The hash of the block containing the transaction.
+   * Example: 371156
 2. `transactionIndex` (required): The index of the transaction within the specified block. The index is a hexadecimal value.
-   * Example: `"0x0"`
+   * Example: 0
 
 ### Return Object
 
@@ -79,10 +77,10 @@ Request:
 {
     "jsonrpc": "2.0",
     "id": 1,
-    "method": "eth_getTransactionByBlockHashAndIndex",
+    "method": "eth_getTransactionByBlockNumberAndIndex",
     "params": [
-        "0xC52DA0AB755168DCB6E38E7B001832F9373BA4EE688F56CFF75C6E928B78BCF3",
-        "0x0"
+        371156,
+        0
     ]
 }
 ```

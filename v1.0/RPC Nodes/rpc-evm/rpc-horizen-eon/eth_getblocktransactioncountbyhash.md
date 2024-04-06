@@ -1,13 +1,13 @@
 ---
 title: "eth_getblocktransactioncountbyhash"
-slug: "rpc-haqq-eth_getblocktransactioncountbyhash"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getblocktransactioncountbyhash"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const response = await tatum.rpc.getBlockTransactionCountByHash('0xF07355D9A980F61915B53A74AFCDB89598E54EFCD9DF5A9935D16BC1DC4CFA8F')
+const response = await tatum.rpc.getBlockTransactionCountByHash('0xb0ddfcdcc375afce9f365458c5035ca4aaf99f9fe8699522193e16a8718615b6')
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockTransactionCountByHash` is an Haqq RPC method used to fetch the number of transactions in a block by the block's hash. It is useful when you want to know the total number of transactions included in a specific block and don't want to retrieve the entire block data. This method can be used in various scenarios, such as monitoring the network activity or estimating transaction confirmation times.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/wvQVbyY" %}
+`eth_getBlockTransactionCountByHash` is a RPC method used to fetch the number of transactions in a block by the block's hash. It is useful when you want to know the total number of transactions included in a specific block and don't want to retrieve the entire block data. This method can be used in various scenarios, such as monitoring the network activity or estimating transaction confirmation times.
 
 ### Parameters
 
@@ -48,7 +46,7 @@ This method requires a single parameter:
 
 Example of the parameter:
 
-* `blockHash`: `"0xF07355D9A980F61915B53A74AFCDB89598E54EFCD9DF5A9935D16BC1DC4CFA8F"`
+* `blockHash`: `"0xb0ddfcdcc375afce9f365458c5035ca4aaf99f9fe8699522193e16a8718615b6"`
 
 ### Return
 
@@ -66,7 +64,7 @@ The method returns a single value:
   "jsonrpc": "2.0",
   "method": "eth_getBlockTransactionCountByHash",
   "params": [
-    "0xF07355D9A980F61915B53A74AFCDB89598E54EFCD9DF5A9935D16BC1DC4CFA8F"
+    "0xb0ddfcdcc375afce9f365458c5035ca4aaf99f9fe8699522193e16a8718615b6"
   ]
 }
 ```
@@ -81,4 +79,4 @@ The method returns a single value:
 }
 ```
 
-In this example, the block with the hash `"0xF07355D9A980F61915B53A74AFCDB89598E54EFCD9DF5A9935D16BC1DC4CFA8F"` has a total of 10 transactions (indicated by the hexadecimal value `"0xa"`).
+In this example, the block with the hash `"0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"` has a total of 10 transactions (indicated by the hexadecimal value `"0xa"`).

@@ -1,13 +1,13 @@
 ---
 title: "eth_getbalance"
-slug: "rpc-haqq-eth_getbalance"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getbalance"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const balance = await tatum.rpc.getBalance('0x2c5b9a513be2240e948a631baafb53cc0beacfda')
+const balance = await tatum.rpc.getBalance('0x99D270f4a42b296fB888f168a5985e1d9839B064')
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,16 +36,14 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getBalance` method is an Haqq JSON-RPC method that allows you to retrieve the Haqq balance of a specified address. This method can be used to query the balance of any Haqq address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
-
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwZvp?editors=1111" %}
+The `eth_getBalance` method is an JSON-RPC method that allows you to retrieve the balance of a specified address. This method can be used to query the balance of any address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
 
 ### Parameters
 
 The method requires two parameters:
 
-1. **`address`** (required): The Haqq address of the account or contract whose balance you want to query.
-   * Example: `"0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfda"`
+1. **`address`** (required): The address of the account or contract whose balance you want to query.
+   * Example: `"0x99D270f4a42b296fB888f168a5985e1d9839B064"`
 2. **`blockParameter`** (optional): The block number or block identifier to specify the point in time for which you want to query the balance.
    * Example: `"latest"` or `"0x1"`
 
@@ -72,7 +70,7 @@ A full transaction object includes the following fields:
 
 The method returns a single field:
 
-* `result`: The Haqq balance of the specified address in wei, as a hexadecimal string.
+* `result`: The Flare balance of the specified address in wei, as a hexadecimal string.
   * Example: `"0x1a2e1a"`, which corresponds to `1,726,666` wei.
 
 ### JSON-RPC Request and Response Examples
@@ -85,7 +83,7 @@ The method returns a single field:
   "id": 1,
   "method": "eth_getBalance",
   "params": [
-    "0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfda",
+    "0x99D270f4a42b296fB888f168a5985e1d9839B064",
     "latest"
   ]
 }
@@ -95,8 +93,14 @@ The method returns a single field:
 
 ```json
 {
-  "jsonrpc": "2.0",
-  "id": 1,
-  "result": "0x1a2e1a"
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+        "BigNumber": {
+            "s": 1,
+            "e": 18,
+            "c": [10611, 3542686313455]
+        }
+    }
 }
 ```

@@ -1,13 +1,13 @@
 ---
 title: "eth_getproof"
-slug: "rpc-haqq-eth_getproof"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getproof"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,13 +22,13 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const result = await tatum.rpc.getProof("0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfda",
-    ["0x0000000000000000000000000000000000000000000000000000000000000000"],
-    "latest")
+const result = await tatum.rpc.getProof("0xBB52B2B91488d60eFb6848bBadd000005A511E5C",
+["0x0000000000000000000000000000000000000000000000000000000000000000"],
+"latest")
     
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -38,15 +38,13 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getProof` is an Haqq JSON-RPC method that retrieves the Merkle-Patricia proof for an account, storage key-value pairs, and account transaction count. It allows developers to verify the state of an account or storage value at a specific block without needing the entire Haqq state trie. This method is particularly useful for light clients or off-chain applications that require proof of an account's state or specific storage values.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/poQMmVM" %}
+The `eth_getProof` is a JSON-RPC method that retrieves the Merkle-Patricia proof for an account, storage key-value pairs, and account transaction count. It allows developers to verify the state of an account or storage value at a specific block without needing the entire state trie. This method is particularly useful for light clients or off-chain applications that require proof of an account's state or specific storage values.
 
 ### Parameters
 
 1. **`address`** - `Data`, 20 Bytes
    * The address of the account.
-   * Example: `"0x742d35Cc6634C0532925a3b844Bc454e4438f44e"`
+   * Example: `"0xBB52B2B91488d60eFb6848bBadd000005A511E5C"`
 2. **`keys`** - `Array` of `Data`
    * An array of storage keys for which the proof should be generated.
    * Example: `["0x0000000000000000000000000000000000000000000000000000000000000000"]`
@@ -82,7 +80,7 @@ _Request_:
   "jsonrpc": "2.0",
   "method": "eth_getProof",
   "params": [
-    "0x742d35Cc6634C0532925a3b844Bc454e4438f44e",
+    "0xBB52B2B91488d60eFb6848bBadd000005A511E5C",
     [
       "0x0000000000000000000000000000000000000000000000000000000000000000"
     ],
@@ -119,5 +117,4 @@ _Response_:
     ]
   }
 }
-
 ```

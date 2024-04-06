@@ -1,13 +1,13 @@
 ---
 title: "eth_getblocktransactioncountbynumber"
-slug: "rpc-haqq-eth_getblocktransactioncountbynumber"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getblocktransactioncountbynumber"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ}
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const response = await tatum.rpc.getBlockTransactionCountByNumber(7687453)
+const response = await tatum.rpc.getBlockTransactionCountByNumber(371156)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,20 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getBlockTransactionCountByNumber` Haqq JSON-RPC method allows you to retrieve the number of transactions in a specified block. This method is particularly useful when you need to analyze the transaction activity of a specific block. You can use it to gain insights into network usage, analyze the impact of specific events on the Haqq network, or monitor transaction congestion in certain blocks.
+The `eth_getBlockTransactionCountByNumber` JSON-RPC method allows you to retrieve the number of transactions in a specified block. This method is particularly useful when you need to analyze the transaction activity of a specific block. You can use it to gain insights into network usage, analyze the impact of specific events on the network, or monitor transaction congestion in certain blocks.
 
 ### Parameters
 
 1. **`blockNumber`**: The block number for which the transaction count should be retrieved. It should be a hex-encoded value representing the block number.
-   * Example: 7687453
-
-{% embed url="https://codepen.io/tatum-devrel/pen/YzRmbaE" %}
+   * Example: 371156
 
 ### Return Object
 
 The return object is a hex-encoded value representing the number of transactions in the specified block.
 
-* Example: `"0xa"` (10 transactions)
+* Example: `"0x1"` (1 transactions)
 
 ### JSON-RPC Request and Response Examples
 
@@ -60,7 +58,7 @@ The return object is a hex-encoded value representing the number of transactions
   "jsonrpc": "2.0",
   "id": 1,
   "method": "eth_getBlockTransactionCountByNumber",
-  "params": [7687453]
+  "params": [371156]
 }
 ```
 
@@ -70,7 +68,7 @@ The return object is a hex-encoded value representing the number of transactions
 {
   "jsonrpc": "2.0",
   "id": 1,
-  "result": "0xa"
+  "result": "0x1"
 }
 ```
 

@@ -1,13 +1,13 @@
 ---
 title: "eth_gettransactioncount"
-slug: "rpc-haqq-eth_gettransactioncount"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_gettransactioncount"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const result = await tatum.rpc.getTransactionCount('0x2eAd3B147fc20fB03fd25C71c1677E81714A9Eb5', 'latest')
+const result = await tatum.rpc.getTransactionCount('0xBB52B2B91488d60eFb6848bBadd000005A511E5C', 'latest')
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,7 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `eth_getTransactionCount` method is an Haqq JSON-RPC method that retrieves the number of transactions sent from a given address. It is a useful method for developers who need to keep track of an account's nonce value to avoid transaction collisions or incorrect order of execution. The nonce value is essential for ensuring transaction uniqueness and preventing replay attacks.
+The `eth_getTransactionCount` method is an JSON-RPC method that retrieves the number of transactions sent from a given address. It is a useful method for developers who need to keep track of an account's nonce value to avoid transaction collisions or incorrect order of execution. The nonce value is essential for ensuring transaction uniqueness and preventing replay attacks.
 
 Use cases for this method include:
 
@@ -44,14 +44,12 @@ Use cases for this method include:
 * Monitoring the number of transactions sent by an address to observe its activity
 * Troubleshooting transaction issues and verifying if a transaction was submitted successfully
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/RwqvOmO?editors=1111" %}
-
 ### Parameters
 
 The `eth_getTransactionCount` method accepts two parameters:
 
-1. **`address`** - The Haqq address whose transaction count will be retrieved.
-   * Example: `"0x2eAd3B147fc20fB03fd25C71c1677E81714A9Eb5"`
+1. **`address`** - The address whose transaction count will be retrieved.
+   * Example: `"0xBB52B2B91488d60eFb6848bBadd000005A511E5C"`
 2. **`blockParameter`** - A string indicating the block number or block state to consider when retrieving the transaction count.
    * Possible values: `"earliest"`, `"latest"`, `"pending"`, or a specific block number in hexadecimal format
    * Example: `"latest"`
@@ -73,7 +71,7 @@ _Request_:
   "id": 1,
   "method": "eth_getTransactionCount",
   "params": [
-    "0x2eAd3B147fc20fB03fd25C71c1677E81714A9Eb5",
+    "0xBB52B2B91488d60eFb6848bBadd000005A511E5C",
     "latest"
   ]
 }
@@ -85,6 +83,12 @@ _Response_:
 {
   "jsonrpc": "2.0",
   "id": 1,
-  "result": "0x1e"
+  "result": {
+    "BigNumber": {
+      "s": 1,
+      "e": 0,
+      "c": [1]
+    }
+  }
 }
 ```

@@ -1,13 +1,13 @@
 ---
 title: "eth_estimategas"
-slug: "rpc-haqq-eth_estimategas"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_estimategas"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,17 +22,18 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
-  
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
 const estimate = await tatum.rpc.estimateGas({
-      "from": "0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfda",
-      "to": "0x2C5B9a513bE2240e948a631bAaFB53cc0bEAcfde",
-      "value": "0xde0b6b3a7640000"
+      "from": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e86",
+      "to": "0xa41d19F4258a388c639B7CcD938FCE3fb7D05e87",
+      "value": "0xde0b6b3a7640000",
+      "data": "0x606060"
     })
     
- await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs   
+ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
 {% endtab %}
@@ -40,15 +41,13 @@ const estimate = await tatum.rpc.estimateGas({
 
 ### Overview
 
-`eth_estimateGas` is an Haqq JSON-RPC method that estimates the amount of gas required to execute a given transaction. This method can be used to determine the gas cost before sending a transaction, allowing developers to better predict the gas fees and avoid issues like out-of-gas errors.
+`eth_estimateGas` is an JSON-RPC method that estimates the amount of gas required to execute a given transaction. This method can be used to determine the gas cost before sending a transaction, allowing developers to better predict the gas fees and avoid issues like out-of-gas errors.
 
 Use cases for `eth_estimateGas` include:
 
 * Estimating gas costs for contract deployments
 * Estimating gas costs for contract function calls
-* Estimating gas costs for standard ether transfers
-
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/abQXrEQ" %}
+* Estimating gas costs for standard transfers
 
 ### Parameters
 
@@ -62,7 +61,7 @@ The `eth_estimateGas` method takes a single parameter, an object representing th
   * Example: `"gas": "0x76c0"`
 * **`gasPrice`** (optional, string): The price of gas in wei.
   * Example: `"gasPrice": "0x9184e72a000"`
-* **`value`** (optional, string): The amount of ISLM to send in the transaction, in wei.
+* **`value`** (optional, string): The amount of ZEN to send in the transaction, in wei.
   * Example: `"value": "0xde0b6b3a7640000"`
 * **`data`** (optional, string): The data payload of the transaction, typically used for contract function calls or contract deployment.
   * Example: `"data": "0x606060..."`

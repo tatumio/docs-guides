@@ -1,13 +1,13 @@
 ---
 title: "eth_getblockbyhash"
-slug: "rpc-haqq-eth_getblockbyhash"
-excerpt: "Haqq  RPC"
+slug: "rpc-horizen-eon-eth_getblockbyhash"
+excerpt: "Horizen Eon  RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Haqq RPC"
+  description: "Horizen Eon RPC"
   image: []
-  keywords: "haqq, rpc"
+  keywords: "horizen-eon, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Haqq, Network } from '@tatumio/tatum'
+import { TatumSDK, HorizenEon, Network } from '@tatumio/tatum'
+  
+const tatum = await TatumSDK.init<HorizenEon>({network: Network.HORIZEN_EON})
 
-const tatum = await TatumSDK.init<Haqq>({network: Network.HAQQ})
-
-const block = await tatum.rpc.getBlockByHash('0x300e4057498875ef62a7632c78077d9fa79265e484415d337d1f529ca4660ee6', true)
+const block = await tatum.rpc.getBlockByHash('0xb0ddfcdcc375afce9f365458c5035ca4aaf99f9fe8699522193e16a8718615b6', true)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`eth_getBlockByHash` is an Haqq JSON-RPC method that allows developers to query a specific block in the Haqq blockchain by its block hash. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/JjegqOb" %}
+`eth_getBlockByHash` is an JSON-RPC method that allows developers to query a specific block in the blockchain by its block hash. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
 ### Parameters
 
@@ -46,7 +44,7 @@ The `eth_getBlockByHash` method accepts two parameters:
 
 1. **`blockHash`**: The hash of the block you want to retrieve information about.
    * Type: `String`
-   * Example: `"0x078610ca461480e4b78557f20e544084cccc4accb41f5c1b7ef792246b78c94b"`
+   * Example: `"0xb0ddfcdcc375afce9f365458c5035ca4aaf99f9fe8699522193e16a8718615b6"`
 2. **`fullTransactionDetails`**: A boolean value indicating whether to return full transaction details or just transaction hashes.
    * Type: `Boolean`
    * Example: `true`
