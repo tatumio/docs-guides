@@ -1,13 +1,13 @@
 ---
 title: "estimatesmartfee"
-slug: "rpc-bch-estimatesmartfee"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-estimatesmartfee"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.estimateSmartFee(20)
 
@@ -36,9 +36,11 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `estimatesmartfee` method provides an estimated fee rate for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the network.
+The `estimatesmartfee` method provides an estimated fee rate (in DOGE/kB) for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the Dogecoin network.
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
+
+{% embed url="https://codepen.io/Martin-Zemanek/pen/MWzxpEK" %}
 
 ### Parameters
 
@@ -51,7 +53,7 @@ The `estimatesmartfee` method accepts the following parameters:
 
 The `estimatesmartfee` method returns an object containing the following fields:
 
-* `feerate`: A decimal number representing the estimated fee rate/kB.
+* `feerate`: A decimal number representing the estimated fee rate in DOGE/kB.
 * `blocks`: An integer representing the number of blocks within which the transaction is expected to be confirmed.
 
 ### JSON Examples

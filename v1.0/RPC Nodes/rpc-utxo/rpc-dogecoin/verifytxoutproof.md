@@ -1,13 +1,13 @@
 ---
 title: "verifytxoutproof"
-slug: "rpc-bch-verifytxoutproof"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-verifytxoutproof"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.verifyTxOutProof("")
 
@@ -37,6 +37,8 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `verifytxoutproof` RPC method verifies the given transaction proof (in the form of a Merkle block) and returns an array of transaction hashes contained in the verified Merkle block. This method can be used to confirm that specific transactions are included in a block without having to download the entire block.
+
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/LYXaxdN" %}
 
 ### Parameters
 

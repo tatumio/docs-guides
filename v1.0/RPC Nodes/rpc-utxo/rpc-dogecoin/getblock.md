@@ -1,13 +1,13 @@
 ---
 title: "getblock"
-slug: "rpc-bch-getblock"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-getblock"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.getBlock('000000000000000000013d0a85b72c591500abe074a7f9175c596a194f67b82d')
 
@@ -36,24 +36,22 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblock` is a method that returns information about a specified block. This method is useful for obtaining block details such as the hash, height, transactions, and other metadata. It can be used for various purposes, including validating transactions, monitoring the blockchain, and analyzing the network.
+`getblock` is a Dogecoin RPC method that returns information about a specified block. This method is useful for obtaining block details such as the hash, height, transactions, and other metadata. It can be used for various purposes, including validating transactions, monitoring the blockchain, and analyzing the network.
+
+{% embed url="https://codepen.io/Martin-Zemanek/pen/QWJopve" %}
 
 ### Parameters
 
-* `blockhash` (required): The hash of the block to be retrieved.
+* `hashOrHeight` (required): The hash or height of the block to be retrieved.
   * Example: `"0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e"`
-* `verbosity` (optional): Specifies the level of detail returned for the block.
-  * `0`: Returns a serialized block as a hex-encoded string (default).
-  * `1`: Returns a JSON object with block information.
-  * `2`: Returns a JSON object with block information and detailed transaction data.
-  * Example: `1`
+* `verbose` - (boolean, optional, default=true) true for a json object, false for the hex encoded data
 
 ### Return Object
 
 The returned object varies depending on the `verbosity` parameter:
 
-* If `verbosity` is `0`, the return object is a hex-encoded string of the serialized block.
-* If `verbosity` is `1` or `2`, the return object is a JSON object containing the following fields:
+* If `verbose` is `false`, the return object is a hex-encoded string of the serialized block.
+* If `verbose` is `true`, the return object is a JSON object containing the following fields:
   * `hash`: The block hash.
   * `confirmations`: The number of confirmations for the block.
   * `strippedsize`: The block size without witness data.

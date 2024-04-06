@@ -1,13 +1,13 @@
 ---
 title: "gettxoutproof"
-slug: "rpc-bch-gettxoutproof"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-gettxoutproof"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
-const result = await tatum.rpc.getTxOutProof(["c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2"], "00000000000000000004c6125026f00b76e7b762e645a0b0b7ecfa7a7dafdba2")
+const result = await tatum.rpc.getTxOutProof(["0cd40ddd4650c833ffbd7c9cc7c174715014ea26ce4655fdf543351f72ff83f8"], "e97879aa74d9d8e9645fab2032bc5ee19ae9874c30b1d8f9197374207db488b6")
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -37,6 +37,8 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `gettxoutproof` RPC method returns a hex-encoded proof that the specified transaction(s) were included in a block. This method can be used to provide proof of inclusion for one or more transactions in the blockchain.
+
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/xxQBgjw?editors=1111" %}
 
 ### Parameters
 

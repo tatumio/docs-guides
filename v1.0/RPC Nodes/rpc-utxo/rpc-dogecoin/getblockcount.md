@@ -1,13 +1,13 @@
 ---
 title: "getblockcount"
-slug: "rpc-bch-getblockcount"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-getblockcount"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -20,11 +20,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
-// yarn add @tatumio/tatum
+// yarn add @@tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.getBlockCount()
 
@@ -36,7 +36,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockcount` is a method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
+`getblockcount` is a Dogecoin RPC method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
+
+{% embed url="https://codepen.io/Martin-Zemanek/pen/xxQBqdd" %}
 
 ### Parameters
 

@@ -1,13 +1,13 @@
 ---
 title: "createrawtransaction"
-slug: "rpc-bch-createrawtransaction"
-excerpt: "BCH RPC"
+slug: "rpc-dogecoin-createrawtransaction"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
 const result = await tatum.rpc.createRawTransaction([
       {
@@ -35,7 +35,7 @@ const result = await tatum.rpc.createRawTransaction([
     {
       "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa": 0.01
     })
-
+    
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
@@ -44,7 +44,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcasted to the network.
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/RwqdKPR?editors=1111" %}
+
+The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcast to the Dogecoin network.
 
 ### Parameters
 
@@ -52,7 +54,7 @@ The `createrawtransaction` RPC method creates an unsigned raw transaction that s
   * `txid`: (string, required) The transaction ID of the previous transaction output to spend.
   * `vout`: (numeric, required) The index of the output to spend from the previous transaction.
   * `sequence`: (numeric, optional) default=depends on the value of the 'replaceable' and 'locktime' arguments) The sequence number
-* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent.
+* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent (in BTC).
 * `locktime`: (numeric, optional, default=0) The lock time for the transaction. It can be used to specify the earliest time or block height at which the transaction can be included in a block.
 * `replaceable`: (boolean, optional, default=false) **Marks this transaction as BIP125-replaceable.** Allows this transaction to be replaced by a transaction with higher fees. If provided, it is an error if explicit sequence numbers are incompatible.
 

@@ -1,13 +1,13 @@
 ---
-title: "getbestblockhash"
-slug: "rpc-bch-getbestblockhash"
-excerpt: "BCH RPC"
+title: "getdifficulty"
+slug: "rpc-dogecoin-getdifficulty"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
-const result = await tatum.rpc.getBestBlockHash()
+const result = await tatum.rpc.getDifficulty()
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,15 +36,17 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getbestblockhash` is a method that returns the hash of the best (tip) block in the longest blockchain. This method is useful for obtaining the latest block hash, which can be used to fetch block details or confirmations for transactions.
+`getdifficulty` is a Dogecoin RPC method that returns the current mining difficulty. The mining difficulty is a measure of how difficult it is to find a new block compared to the easiest it can ever be. This method can be used to monitor the mining difficulty, which adjusts every 2016 blocks to maintain a consistent block creation rate of approximately 10 minutes per block.
+
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/yLQwgRr" %}
 
 ### Parameters
 
-This method does not have any parameters.
+This method does not require any parameters.
 
 ### Return Object
 
-The returned object is a string containing the hash of the best block.
+A return object is a floating-point number that represents the current mining difficulty.
 
 ### JSON Examples
 
@@ -53,9 +55,9 @@ Request example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
-  "id": 1,
   "jsonrpc": "2.0",
-  "method": "getbestblockhash"
+  "method": "getdifficulty",
+  "id": 1
 }
 ```
 {% endcode %}
@@ -65,9 +67,9 @@ Response example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
-  "id": 1,
-  "result": "0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e",
-  "error": null
+    "result": 48712405953118.43,
+    "error": null,
+    "id": 1
 }
 ```
 {% endcode %}

@@ -1,13 +1,13 @@
 ---
-title: "getdifficulty"
-slug: "rpc-bch-getdifficulty"
-excerpt: "BCH RPC"
+title: "getblockhash"
+slug: "rpc-dogecoin-getblockhash"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
 
-const result = await tatum.rpc.getDifficulty()
+const result = await tatum.rpc.getBlockHash(587123)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,15 +36,19 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getdifficulty` is a method that returns the current mining difficulty. The mining difficulty is a measure of how difficult it is to find a new block compared to the easiest it can ever be. This method can be used to monitor the mining difficulty, which adjusts every 2016 blocks to maintain a consistent block creation rate of approximately 10 minutes per block.
+`getblockhash` is a Dogecoin RPC method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
+
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/zYMbowj" %}
 
 ### Parameters
 
-This method does not require any parameters.
+*   `height`: The height of the block for which the hash is requested. This is an integer parameter.
+
+    Example: `587123`
 
 ### Return Object
 
-A return object is a floating-point number that represents the current mining difficulty.
+The return object is a string representing the hash of the block at the specified height.
 
 ### JSON Examples
 
@@ -54,7 +58,8 @@ Request example:
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "getdifficulty",
+  "method": "getblockhash",
+  "params": [587123],
   "id": 1
 }
 ```
@@ -65,7 +70,7 @@ Response example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
-    "result": 48712405953118.43,
+    "result": "0000000000000000001b4fedbfb3672963c37f965686c2bf6350e32e77f9941f",
     "error": null,
     "id": 1
 }

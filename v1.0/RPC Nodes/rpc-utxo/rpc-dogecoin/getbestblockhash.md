@@ -1,13 +1,13 @@
 ---
-title: "getblockhash"
-slug: "rpc-bch-getblockhash"
-excerpt: "BCH RPC"
+title: "getbestblockhash"
+slug: "rpc-dogecoin-getbestblockhash"
+excerpt: "Dogecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "BCH RPC"
+  description: "Dogecoin RPC"
   image: []
-  keywords: "bch, rpc"
+  keywords: "dogecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, BitcoinCash, Network } from '@tatumio/tatum'
+import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<BitcoinCash>({network: Network.BITCOIN_CASH})
+const tatum = await TatumSDK.init<Dogecoin>({network: DOGECOIN})
 
-const result = await tatum.rpc.getBlockHash(587123)
+const result = await tatum.rpc.getBestBlockHash()
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,17 +36,17 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockhash` is a method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
+`getbestblockhash` is a Dogecoin RPC method that returns the hash of the best (tip) block in the longest blockchain. This method is useful for obtaining the latest block hash, which can be used to fetch block details or confirmations for transactions.
+
+{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/zYMbowj" %}
 
 ### Parameters
 
-*   `height`: The height of the block for which the hash is requested. This is an integer parameter.
-
-    Example: `587123`
+This method does not have any parameters.
 
 ### Return Object
 
-The return object is a string representing the hash of the block at the specified height.
+The returned object is a string containing the hash of the best block.
 
 ### JSON Examples
 
@@ -55,10 +55,9 @@ Request example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
+  "id": 1,
   "jsonrpc": "2.0",
-  "method": "getblockhash",
-  "params": [587123],
-  "id": 1
+  "method": "getbestblockhash"
 }
 ```
 {% endcode %}
@@ -68,9 +67,9 @@ Response example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
-    "result": "0000000000000000001b4fedbfb3672963c37f965686c2bf6350e32e77f9941f",
-    "error": null,
-    "id": 1
+  "id": 1,
+  "result": "0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e",
+  "error": null
 }
 ```
 {% endcode %}
