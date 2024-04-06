@@ -2,14 +2,13 @@
 title: "getBlockHeaders"
 slug: "rpc-ethereum-getblockheaders"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Mon Mar 18 2024 17:00:22 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:57:50 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:50 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

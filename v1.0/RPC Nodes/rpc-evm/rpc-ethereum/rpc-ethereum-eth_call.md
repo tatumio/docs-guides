@@ -2,14 +2,13 @@
 title: "eth_call"
 slug: "rpc-ethereum-eth_call"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Wed Mar 20 2024 06:56:46 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:01:00 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:47 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

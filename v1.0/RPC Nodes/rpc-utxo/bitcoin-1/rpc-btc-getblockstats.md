@@ -2,14 +2,13 @@
 title: "getblockstats"
 slug: "rpc-btc-getblockstats"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Tue Mar 26 2024 12:59:59 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:55:19 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:55 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

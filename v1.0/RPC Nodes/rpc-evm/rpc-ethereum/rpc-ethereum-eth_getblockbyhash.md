@@ -2,14 +2,13 @@
 title: "eth_getBlockByHash"
 slug: "rpc-ethereum-eth_getblockbyhash"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Wed Mar 20 2024 07:05:48 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:01:20 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:48 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

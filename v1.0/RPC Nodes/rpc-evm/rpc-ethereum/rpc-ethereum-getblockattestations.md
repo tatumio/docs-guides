@@ -2,14 +2,13 @@
 title: "getBlockAttestations"
 slug: "rpc-ethereum-getblockattestations"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Mon Mar 18 2024 15:39:50 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Apr 02 2024 08:41:39 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:47 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

@@ -2,14 +2,13 @@
 title: "getStateValidators"
 slug: "rpc-ethereum-getstatevalidators"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Wed Mar 20 2024 18:09:48 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:59:38 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:58 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

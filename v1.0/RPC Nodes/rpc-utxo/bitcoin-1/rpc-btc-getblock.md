@@ -2,14 +2,13 @@
 title: "getblock"
 slug: "rpc-btc-getblock"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Tue Mar 26 2024 11:48:41 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:06:56 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:53 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

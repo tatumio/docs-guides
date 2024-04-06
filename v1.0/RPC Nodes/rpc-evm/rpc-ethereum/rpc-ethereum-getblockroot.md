@@ -2,14 +2,13 @@
 title: "getBlockRoot"
 slug: "rpc-ethereum-getblockroot"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Mon Mar 18 2024 17:01:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:58:03 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:51 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

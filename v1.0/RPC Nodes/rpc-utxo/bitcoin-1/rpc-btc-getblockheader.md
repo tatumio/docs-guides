@@ -2,14 +2,13 @@
 title: "getblockheader"
 slug: "rpc-btc-getblockheader"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Tue Mar 26 2024 12:49:15 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:55:10 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:57:30 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

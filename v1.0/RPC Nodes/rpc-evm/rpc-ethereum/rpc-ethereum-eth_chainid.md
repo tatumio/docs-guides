@@ -2,14 +2,13 @@
 title: "eth_chainId"
 slug: "rpc-ethereum-eth_chainid"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Tue Mar 19 2024 22:23:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:00:16 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:57:31 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

@@ -2,14 +2,13 @@
 title: "getblockchaininfo"
 slug: "rpc-btc-getblockchaininfo"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Tue Mar 26 2024 12:36:17 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:07:23 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:57:32 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

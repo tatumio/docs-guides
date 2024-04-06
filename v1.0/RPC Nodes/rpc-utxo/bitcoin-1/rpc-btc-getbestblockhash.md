@@ -2,14 +2,13 @@
 title: "getbestblockhash"
 slug: "rpc-btc-getbestblockhash"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:41:06 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:06:23 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:49 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

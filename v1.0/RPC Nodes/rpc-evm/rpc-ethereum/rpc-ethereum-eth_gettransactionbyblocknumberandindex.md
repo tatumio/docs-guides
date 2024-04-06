@@ -2,14 +2,13 @@
 title: "eth_getTransactionByBlockNumberAndIndex"
 slug: "rpc-ethereum-eth_gettransactionbyblocknumberandindex"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Wed Mar 20 2024 08:43:21 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:03:12 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:49 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

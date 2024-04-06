@@ -2,14 +2,13 @@
 title: "getdifficulty"
 slug: "rpc-btc-getdifficulty"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 27 2024 06:03:46 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:55:29 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:57:18 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

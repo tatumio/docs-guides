@@ -2,14 +2,13 @@
 title: "eth_maxPriorityFeePerGas"
 slug: "rpc-ethereum-eth_maxpriorityfeepergas"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "ethereum, rpc"
   robots: "index"
 createdAt: "Tue Mar 19 2024 07:57:40 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:04:30 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:56 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

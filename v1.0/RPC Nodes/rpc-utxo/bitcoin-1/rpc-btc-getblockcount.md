@@ -2,7 +2,6 @@
 title: "getblockcount"
 slug: "rpc-btc-getblockcount"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   description: "Bitcoin RPC"
@@ -10,7 +9,7 @@ metadata:
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Tue Mar 26 2024 12:10:23 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 09:07:09 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:47 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

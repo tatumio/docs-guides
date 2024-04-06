@@ -2,14 +2,13 @@
 title: "getmempoolinfo"
 slug: "rpc-btc-getmempoolinfo"
 excerpt: "Bitcoin RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "bitcoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 27 2024 06:56:15 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 03 2024 08:56:10 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 07:56:55 GMT+0000 (Coordinated Universal Time)"
 ---
 ## Overview
 

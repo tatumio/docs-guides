@@ -2,16 +2,20 @@
 title: "debug_traceTransaction"
 slug: "rpc-ethereum-debug_tracetransaction"
 excerpt: "Ethereum RPC"
-category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
   image: []
   keywords: "Ethereum, rpc"
   robots: "index"
 createdAt: "Mon Mar 18 2024 10:40:52 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Tue Apr 02 2024 08:41:10 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Thu Apr 04 2024 08:01:07 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]{"html":"<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"}[/block]
+[block:html]
+{
+  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+}
+[/block]
+
 
 ## Overview
 
