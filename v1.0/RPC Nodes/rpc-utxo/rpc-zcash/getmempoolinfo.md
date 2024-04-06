@@ -1,13 +1,13 @@
 ---
 title: "getmempoolinfo"
-slug: "rpc-litecoin-getmempoolinfo"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getmempoolinfo"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getMempoolInfo()
 
@@ -37,8 +37,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `getmempoolinfo` RPC method allows you to retrieve general information about the current memory pool. This method is useful for monitoring the state of the memory pool, such as its size, the total transaction fees, and the minimum fee rate required for transactions to be included in the next block.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/BaGbjGX" %}
 
 ### Parameters
 
@@ -54,8 +52,8 @@ The return object will be an object containing general information about the cur
 * `bytes`: (numeric) The total size of all transactions in the memory pool, in bytes.
 * `usage`: (numeric) The total memory usage of the memory pool, in bytes.
 * `maxmempool`: (numeric) The maximum memory usage of the memory pool, in bytes.
-* `mempoolminfee`: (numeric) The minimum fee rate (in BTC/kB) required for transactions to be included in the memory pool.
-* `minrelaytxfee`: (numeric) The minimum fee rate (in BTC/kB) required for transactions to be relayed across the network.
+* `mempoolminfee`: (numeric) The minimum fee rate required for transactions to be included in the memory pool.
+* `minrelaytxfee`: (numeric) The minimum fee rate required for transactions to be relayed across the network.
 
 ### JSON Examples
 

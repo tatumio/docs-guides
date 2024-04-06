@@ -1,13 +1,13 @@
 ---
 title: "createrawtransaction"
-slug: "rpc-litecoin-createrawtransaction"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-createrawtransaction"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.createRawTransaction([
       {
@@ -44,9 +44,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcast to the Litecoin network.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/jOQJWpb" %}
+The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcasted to the network.
 
 ### Parameters
 
@@ -54,7 +52,7 @@ The `createrawtransaction` RPC method creates an unsigned raw transaction that s
   * `txid`: (string, required) The transaction ID of the previous transaction output to spend.
   * `vout`: (numeric, required) The index of the output to spend from the previous transaction.
   * `sequence`: (numeric, optional) default=depends on the value of the 'replaceable' and 'locktime' arguments) The sequence number
-* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent (in BTC).
+* `outputs`: (object, required) An object with the key-value pairs representing the receiving address and the amount to be sent.
 * `locktime`: (numeric, optional, default=0) The lock time for the transaction. It can be used to specify the earliest time or block height at which the transaction can be included in a block.
 * `replaceable`: (boolean, optional, default=false) **Marks this transaction as BIP125-replaceable.** Allows this transaction to be replaced by a transaction with higher fees. If provided, it is an error if explicit sequence numbers are incompatible.
 

@@ -1,13 +1,13 @@
 ---
 title: "verifymessage"
-slug: "rpc-litecoin-verifymessage"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-verifymessage"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.verifyMessage( "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa", "HxK7Mw0K6Uox7iGcOe9v9Ll+OZzG7TjTkeTJCD7VHw4yKP4O4a4gFtgm9XNmxfH1tK7JRgYrP/+20xP/ek8iQ2E=", "Hello, this is a signed message.")
 
@@ -36,13 +36,13 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview <a href="#overview" id="overview"></a>
 
-`verifymessage` is an Litecoin RPC method that allows users to verify a signed message using a Litecoin address. This method can be used to confirm the authenticity of a message by verifying that the signature was created by the owner of the address, without revealing the private key. Use cases include proving ownership of an address, verifying the content of a message, or validating communications within a trustless system.
+`verifymessage` is a method that allows users to verify a signed message using a address. This method can be used to confirm the authenticity of a message by verifying that the signature was created by the owner of the address, without revealing the private key. Use cases include proving ownership of an address, verifying the content of a message, or validating communications within a trustless system.
 
 ### Parameters <a href="#parameters" id="parameters"></a>
 
 The `verifymessage` method accepts three required parameters:
 
-* `address` (string, required): The Litecoin address that supposedly signed the message.
+* `address` (string, required): The address that supposedly signed the message.
 * `signature` (string, required): The base64-encoded signature of the message.
 * `message` (string, required): The message that was signed.
 

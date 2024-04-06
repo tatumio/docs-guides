@@ -1,13 +1,13 @@
 ---
 title: "decoderawtransaction"
-slug: "rpc-litecoin-decoderawtransaction"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-decoderawtransaction"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.decodeRawTransaction("02000000013412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab0000000000fdffffff0140420f00000000001976a91462e907b15cbf27d5425399ebf6f0fb50ebb88f1888ac00000000")
 
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the Litecoin network or for debugging purposes.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/ExOMPev" %}
+The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the network or for debugging purposes.
 
 ### Parameters
 
@@ -70,7 +68,7 @@ An object containing the decoded raw transaction information:
     * `hex`: (string) The hex-encoded script.
     * `reqSigs`: (numeric) The required number of signatures.
     * `type`: (string) The type of the script (e.g., 'pubkeyhash').
-    * `addresses`: (array) An array of Litecoin addresses associated with the output.
+    * `addresses`: (array) An array of addresses associated with the output.
 
 ### JSON Examples
 

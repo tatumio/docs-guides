@@ -1,13 +1,13 @@
 ---
 title: "gettxoutproof"
-slug: "rpc-litecoin-gettxoutproof"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-gettxoutproof"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getTxOutProof(["c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2"], "00000000000000000004c6125026f00b76e7b762e645a0b0b7ecfa7a7dafdba2")
 
@@ -37,8 +37,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `gettxoutproof` RPC method returns a hex-encoded proof that the specified transaction(s) were included in a block. This method can be used to provide proof of inclusion for one or more transactions in the blockchain.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/mdQoVxQ" %}
 
 ### Parameters
 

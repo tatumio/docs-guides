@@ -1,13 +1,13 @@
 ---
 title: "getchaintips"
-slug: "rpc-litecoin-getchaintips"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getchaintips"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatums'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getChainTips()
 
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getchaintips` is a Litecoin RPC method that returns information about all known tips in the block tree. This method is useful for identifying and analyzing potential forks or alternative chains in the Litecoin network. It can be used to monitor the health and status of the network or to investigate discrepancies in blockchain data.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/mdQoVpz" %}
+`getchaintips` is a method that returns information about all known tips in the block tree. This method is useful for identifying and analyzing potential forks or alternative chains in the network. It can be used to monitor the health and status of the network or to investigate discrepancies in blockchain data.
 
 ### Parameters
 

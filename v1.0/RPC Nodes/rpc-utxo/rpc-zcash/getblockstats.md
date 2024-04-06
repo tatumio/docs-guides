@@ -1,13 +1,13 @@
 ---
 title: "getblockstats"
-slug: "rpc-litecoin-getblockstats"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getblockstats"
+excerpt: "Zcash RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
-const result = await tatum.rpc.getBlockStats("614c1c4c6336a2ac9aba7b3c91f21fc89b974a38f7844a230accb2165e61a128")
+const result = await tatum.rpc.getBlockStats("0000000000000000001b4fedbfb3672963c37f965686c2bf6350e32e77f9941f")
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,9 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockstats` is a Litecoin RPC method that returns various statistics about a specified block. This method is useful for obtaining detailed information about a block, including the number of transactions, transaction volume, fees, and other related data. The results can be used for data analysis, monitoring, and understanding the state of the Litecoin network at a specific block height.
-
-{% embed url="https://codepen.io/tatum-devrel/pen/LYXaGee" %}
+`getblockstats` is a method that returns various statistics about a specified block. This method is useful for obtaining detailed information about a block, including the number of transactions, transaction volume, fees, and other related data. The results can be used for data analysis, monitoring, and understanding the state of the network at a specific block height.
 
 ### Parameters
 
