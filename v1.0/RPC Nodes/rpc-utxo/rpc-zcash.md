@@ -1,6 +1,6 @@
 ---
-title: "Litecoin"
-slug: "rpc-litecoin"
+title: "Zcash"
+slug: "rpc-zcah"
 excerpt: ""
 category: 65c5e93c623cad004b45d505
 hidden: false
