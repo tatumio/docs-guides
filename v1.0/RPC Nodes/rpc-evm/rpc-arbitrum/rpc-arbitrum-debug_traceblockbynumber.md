@@ -18,6 +18,7 @@ updatedAt: "Sat Apr 06 2024 12:59:35 GMT+0000 (Coordinated Universal Time)"
 [/block]
 
 
+
 {% hint style="warning" %}  
 There was Arbitrum hard-fork from Classic to Nitro. As the results of this, you are able to use **debug** methods from block 22 207 818 to the actual one. For older blocks (pre-nitro) please use method **arbtrace\_block** instead of **debug\_traceBlockByNumber**.  
 {% endhint %}
