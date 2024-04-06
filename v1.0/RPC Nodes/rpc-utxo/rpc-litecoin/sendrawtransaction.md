@@ -1,13 +1,13 @@
 ---
 title: "sendrawtransaction"
-slug: "rpc-dogecoin-sendrawtransaction"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-sendrawtransaction"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.sendRawTransaction("02000000013412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab0000000000fdffffff0140420f00000000001976a91462e907b15cbf27d5425399ebf6f0fb50ebb88f1888ac00000000")
 
@@ -36,7 +36,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `sendrawtransaction` method submits a serialized raw transaction to the Dogecoin network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
+The `sendrawtransaction` method submits a serialized raw transaction to the Litecoin network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
 
 This method is commonly used in conjunction with [`createrawtransaction`](../../bitcoin-rpc-documentation/transactions/createrawtransaction.md), or other methods to construct and sign raw transactions before broadcasting them.
 

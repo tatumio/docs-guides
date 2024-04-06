@@ -1,13 +1,13 @@
 ---
 title: "getblockhash"
-slug: "rpc-dogecoin-getblockhash"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-getblockhash"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.getBlockHash(587123)
 
@@ -36,9 +36,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockhash` is a Dogecoin RPC method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
+`getblockhash` is a Litecoin RPC method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/zYMbowj" %}
+{% embed url="https://codepen.io/tatum-devrel/pen/jOQJWPj" %}
 
 ### Parameters
 

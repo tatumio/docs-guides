@@ -1,13 +1,13 @@
 ---
 title: "getrawmempool"
-slug: "rpc-dogecoin-getrawmempool"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-getrawmempool"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.getRawMemPool(true)
 

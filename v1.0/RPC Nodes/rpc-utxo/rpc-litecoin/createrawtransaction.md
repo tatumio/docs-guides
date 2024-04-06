@@ -1,13 +1,13 @@
 ---
 title: "createrawtransaction"
-slug: "rpc-dogecoin-createrawtransaction"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-createrawtransaction"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.createRawTransaction([
       {
@@ -35,7 +35,7 @@ const result = await tatum.rpc.createRawTransaction([
     {
       "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa": 0.01
     })
-    
+
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 {% endcode %}
@@ -44,9 +44,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/RwqdKPR?editors=1111" %}
+The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcast to the Litecoin network.
 
-The `createrawtransaction` RPC method creates an unsigned raw transaction that spends a set of previous transaction outputs to a set of new addresses with specific amounts. The method can be used to create custom transactions, which can then be signed and broadcast to the Dogecoin network.
+{% embed url="https://codepen.io/tatum-devrel/pen/jOQJWpb" %}
 
 ### Parameters
 

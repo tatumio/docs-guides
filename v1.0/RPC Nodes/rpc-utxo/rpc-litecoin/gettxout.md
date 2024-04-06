@@ -1,13 +1,13 @@
 ---
 title: "gettxout"
-slug: "rpc-dogecoin-gettxout"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-gettxout"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,11 +22,11 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
-const result = await tatum.rpc.getTxOut("39589032c66cb5e79b7120a41181b6f81bf0b6b2c019b4e85249ede65c8b0a35", 1)
+const result = await tatum.rpc.getTxOut("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2", 1)
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -38,7 +38,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `gettxout` RPC method returns details about an unspent transaction output (UTXO). This method can be used to check if a specific transaction output is still unspent and obtain its details such as the value and scriptPubKey.
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/KKrEaBb" %}
+{% embed url="https://codepen.io/Ivan-Sramko/pen/zYmVELO" %}
 
 ### Parameters
 
@@ -48,7 +48,7 @@ The `gettxout` RPC method returns details about an unspent transaction output (U
 
 **Example**
 
-* `txid`: `"`39589032c66cb5e79b7120a41181b6f81bf0b6b2c019b4e85249ede65c8b0a35`"`
+* `txid`: `"a12345abcdef67890bcdef1234567890abcdef1234567890abcdef1234567890"`
 * `n`: `1`
 * `include_mempool`: `true`
 
@@ -63,7 +63,7 @@ The return object contains the following fields:
   * `asm`: (string) The assembly representation of the script.
   * `hex`: (string) The hex representation of the script.
   * `type`: (string) The type of the script (e.g., `pubkeyhash`, `scripthash`).
-  * `addresses`: (array) The Dogecoin addresses associated with this output.
+  * `addresses`: (array) The Litecoin addresses associated with this output.
 * `coinbase`: (boolean) Whether the transaction is a coinbase transaction.
 * `version`: (numeric) The transaction version.
 * `height`: (numeric) The height of the block containing this output.

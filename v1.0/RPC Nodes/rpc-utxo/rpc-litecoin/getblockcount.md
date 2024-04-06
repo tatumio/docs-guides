@@ -1,13 +1,13 @@
 ---
-title: "getbestblockhash"
-slug: "rpc-dogecoin-getbestblockhash"
-excerpt: "Dogecoin RPC"
+title: "getblockcount"
+slug: "rpc-litecoin-getblockcount"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -20,13 +20,13 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 {% tab title="TypeScript/JavaScript" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
-// yarn add @tatumio/tatum
+// yarn add @@tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
-const result = await tatum.rpc.getBestBlockHash()
+const result = await tatum.rpc.getBlockCount()
 
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
@@ -36,9 +36,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getbestblockhash` is a Dogecoin RPC method that returns the hash of the best (tip) block in the longest blockchain. This method is useful for obtaining the latest block hash, which can be used to fetch block details or confirmations for transactions.
+`getblockcount` is a Litecoin RPC method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/zYMbowj" %}
+{% embed url="https://codepen.io/tatum-devrel/pen/ExOMPKN" %}
 
 ### Parameters
 
@@ -46,7 +46,7 @@ This method does not have any parameters.
 
 ### Return Object
 
-The returned object is a string containing the hash of the best block.
+The returned object is an integer representing the number of blocks in the local best blockchain.
 
 ### JSON Examples
 
@@ -57,7 +57,7 @@ Request example:
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "getbestblockhash"
+  "method": "getblockcount"
 }
 ```
 {% endcode %}
@@ -67,9 +67,9 @@ Response example:
 {% code overflow="wrap" lineNumbers="true" %}
 ```json
 {
-  "id": 1,
-  "result": "0000000000000000000ef0e1f703b56f2b0d6724e4eeccf00e4f8d55b9c3c3f6e",
-  "error": null
+    "result": 787067,
+    "error": null,
+    "id": 1
 }
 ```
 {% endcode %}

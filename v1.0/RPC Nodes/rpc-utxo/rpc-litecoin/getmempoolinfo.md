@@ -1,13 +1,13 @@
 ---
 title: "getmempoolinfo"
-slug: "rpc-dogecoin-getmempoolinfo"
-excerpt: "Dogecoin RPC"
+slug: "rpc-litecoin-getmempoolinfo"
+excerpt: "Litecoin RPC"
 category: 65c5e93c623cad004b45d505
 hidden: false
 metadata: 
-  description: "Dogecoin RPC"
+  description: "Litecoin RPC"
   image: []
-  keywords: "dogecoin, rpc"
+  keywords: "litecoin, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
@@ -22,9 +22,9 @@ updatedAt: "Tue Apr 02 2024 08:40:59 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Dogecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Dogecoin>({network: Network.DOGECOIN})
+const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
 
 const result = await tatum.rpc.getMempoolInfo()
 
@@ -38,7 +38,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getmempoolinfo` RPC method allows you to retrieve general information about the current memory pool. This method is useful for monitoring the state of the memory pool, such as its size, the total transaction fees, and the minimum fee rate required for transactions to be included in the next block.
 
-{% embed url="https://codepen.io/Jan-Musil-the-lessful/pen/poQYRoV" %}
+{% embed url="https://codepen.io/tatum-devrel/pen/BaGbjGX" %}
 
 ### Parameters
 

@@ -1,6 +1,6 @@
 ---
-title: "Dogecoin"
-slug: "rpc-degecoin"
+title: "Litecoin"
+slug: "rpc-litecoin"
 excerpt: ""
 category: 65c5e93c623cad004b45d505
 hidden: false
