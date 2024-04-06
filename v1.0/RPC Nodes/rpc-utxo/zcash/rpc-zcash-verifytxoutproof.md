@@ -1,15 +1,15 @@
 ---
 title: "verifytxoutproof"
-slug: "rpc-litecoin-verifytxoutproof"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-verifytxoutproof"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 12:59:44 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 12:59:44 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.verifyTxOutProof("")
 
@@ -43,8 +43,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `verifytxoutproof` RPC method verifies the given transaction proof (in the form of a Merkle block) and returns an array of transaction hashes contained in the verified Merkle block. This method can be used to confirm that specific transactions are included in a block without having to download the entire block.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQZEvX"> %}
 
 ### Parameters
 

@@ -1,12 +1,12 @@
 ---
 title: "getblockcount"
-slug: "rpc-litecoin-getblockcount"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getblockcount"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
@@ -25,11 +25,11 @@ updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 {% code overflow="wrap" lineNumbers="true" %}
 
 ```typescript
-// yarn add @@tatumio/tatum
+// yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getBlockCount()
 
@@ -42,9 +42,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockcount` is a Litecoin RPC method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/ExOMPKN"> %}
+`getblockcount` is a method that returns the number of blocks in the local best blockchain. This method is useful for obtaining the current height of the blockchain, which can be used for various purposes, such as monitoring the blockchain, determining the number of confirmations for a transaction, or assessing the progress of the blockchain's growth.
 
 ### Parameters
 

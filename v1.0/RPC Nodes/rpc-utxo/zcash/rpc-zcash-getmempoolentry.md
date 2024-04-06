@@ -1,15 +1,15 @@
 ---
 title: "getmempoolentry"
-slug: "rpc-litecoin-getmempoolentry"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getmempoolentry"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getMempoolEntry("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2")
 

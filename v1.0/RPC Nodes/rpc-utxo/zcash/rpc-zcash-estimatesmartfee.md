@@ -1,15 +1,15 @@
 ---
 title: "estimatesmartfee"
-slug: "rpc-litecoin-estimatesmartfee"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-estimatesmartfee"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.estimateSmartFee(20)
 
@@ -42,11 +42,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `estimatesmartfee` method provides an estimated fee rate (in BTC/kB) for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the Litecoin network.
+The `estimatesmartfee` method provides an estimated fee rate for a transaction to be confirmed within a certain number of blocks. The estimation is based on recent transactions in the network.
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/NWEJxLW"> %}
 
 ### Parameters
 

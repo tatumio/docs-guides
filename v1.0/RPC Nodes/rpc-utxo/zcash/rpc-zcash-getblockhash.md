@@ -1,15 +1,15 @@
 ---
 title: "getblockhash"
-slug: "rpc-litecoin-getblockhash"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getblockhash"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:07 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getBlockHash(587123)
 
@@ -42,9 +42,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockhash` is a Litecoin RPC method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/jOQJWPj"> %}
+`getblockhash` is a method that returns the block hash for a specified block height in the local best blockchain. This method is useful for obtaining the hash of a specific block, which can then be used to query for more detailed information about that block using other RPC methods, such as `getblock`.
 
 ### Parameters
 

@@ -1,15 +1,15 @@
 ---
 title: "getrawtransaction"
-slug: "rpc-litecoin-getrawtransaction"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getrawtransaction"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getRawTransaction("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2")
 
@@ -43,8 +43,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `getrawtransaction` RPC method retrieves a raw transaction from the blockchain or mempool. It returns the serialized (hex-encoded) transaction data. This method can be used to inspect a transaction's content before it's included in a block or to decode the transaction for further analysis.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/VwVReBB"> %}
 
 ### Parameters
 
@@ -63,19 +61,19 @@ If `verbose` is `false`, the method returns a hex-encoded string representing th
 - `weight`: (numeric) The transaction's weight.
 - `locktime`: (numeric) The transaction locktime.
 - `vin`: (array) The transaction inputs. Each object within the array has the following properties:
-  1. `txid`: A string representing the transaction ID of the output being spent. This refers to the transaction where the LTC being spent in the current transaction was received.
+  1. `txid`: A string representing the transaction ID of the output being spent. This refers to the transaction where the amount being spent in the current transaction was received.
   2. `vout`: An integer representing the index of the output in the transaction specified by `txid`. This is the position of the output in that transaction's `vout` array.
-  3. `scriptSig`: An object containing two fields, `asm` and `hex`, which represents the unlocking script that satisfies the conditions of the spent output's locking script. `asm` contains the assembly representation of the script while `hex` containing the hexadecimal representation.
+  3. `scriptSig`: An object containing two fields, `asm` and `hex`, which represent the unlocking script that satisfies the conditions of the spent output's locking script. `asm` contains the assembly representation of the script, while `hex` contains the hexadecimal representation.
   4. `sequence`: A number representing the sequence number of the input. It can be used to signal relative locktime constraints on the transaction.
 - `vout`: (array) The transaction outputs. Each object within the array has the following properties:
-  1. `value`: A decimal number representing the amount of litecoin being sent to the output's address. This value is expressed in litecoins (LTC).
+  1. `value`: A decimal number representing the amount of amount being sent to the output's address.
   2. `n`: An integer representing the index of the output in the transaction's `vout` array.
   3. `scriptPubKey`: An object containing information about the locking script used to lock the output. The object has the following fields:
      - `asm`: The assembly representation of the locking script.
      - `hex`: The hexadecimal representation of the locking script.
      - `reqSigs`: The number of required signatures to unlock the output (relevant for multisig addresses).
      - `type`: The type of the locking script (e.g., 'pubkeyhash', 'scripthash', 'multisig', etc.).
-     - `addresses`: An array of Litecoin addresses associated with the output.
+     - `addresses`: An array of addresses associated with the output.
 - `hex`: (string) The serialized transaction data in hex format.
 - `blockhash`: (string, optional) The block hash containing the transaction.
 - `confirmations`: (numeric, optional) The number of confirmations the transaction has.

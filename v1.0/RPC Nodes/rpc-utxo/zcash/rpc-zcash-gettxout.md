@@ -1,15 +1,15 @@
 ---
 title: "gettxout"
-slug: "rpc-litecoin-gettxout"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-gettxout"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 12:59:41 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 12:59:41 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getTxOut("c7ad51e46a39d136adc2bb7536a236136cc206ab3c8dabcd4277d4cadcf674f2", 1)
 
@@ -43,8 +43,6 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ### Overview
 
 The `gettxout` RPC method returns details about an unspent transaction output (UTXO). This method can be used to check if a specific transaction output is still unspent and obtain its details such as the value and scriptPubKey.
-
-{% embed url="<https://codepen.io/Ivan-Sramko/pen/zYmVELO"> %}
 
 ### Parameters
 
@@ -69,7 +67,7 @@ The return object contains the following fields:
   - `asm`: (string) The assembly representation of the script.
   - `hex`: (string) The hex representation of the script.
   - `type`: (string) The type of the script (e.g., `pubkeyhash`, `scripthash`).
-  - `addresses`: (array) The Litecoin addresses associated with this output.
+  - `addresses`: (array) The addresses associated with this output.
 - `coinbase`: (boolean) Whether the transaction is a coinbase transaction.
 - `version`: (numeric) The transaction version.
 - `height`: (numeric) The height of the block containing this output.

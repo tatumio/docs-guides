@@ -1,15 +1,15 @@
 ---
 title: "getblockheader"
-slug: "rpc-litecoin-getblockheader"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-getblockheader"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:04 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:04 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.getBlockHeader("0000000000000000001b4fedbfb3672963c37f965686c2bf6350e32e77f9941f", true)
 
@@ -42,9 +42,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-`getblockheader` is a Litecoin RPC method that returns information about a specified block header. This method is useful for obtaining a high-level view of a specific block, including its hash, previous block hash, merkle root, timestamp, difficulty target, and nonce, without having to fetch the entire block's contents.
-
-{% embed url="<https://codepen.io/tatum-devrel/pen/ExOMPom"> %}
+`getblockheader` is a method that returns information about a specified block header. This method is useful for obtaining a high-level view of a specific block, including its hash, previous block hash, merkle root, timestamp, difficulty target, and nonce, without having to fetch the entire block's contents.
 
 ### Parameters
 

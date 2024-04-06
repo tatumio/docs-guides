@@ -1,15 +1,15 @@
 ---
 title: "sendrawtransaction"
-slug: "rpc-litecoin-sendrawtransaction"
-excerpt: "Litecoin RPC"
+slug: "rpc-zcash-sendrawtransaction"
+excerpt: "Zcash RPC"
 hidden: false
 metadata: 
-  description: "Litecoin RPC"
+  description: "Zcash RPC"
   image: []
-  keywords: "litecoin, rpc"
+  keywords: "zcash, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:07 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ---
 [block:html]
 {
@@ -27,9 +27,9 @@ updatedAt: "Sat Apr 06 2024 13:09:07 GMT+0000 (Coordinated Universal Time)"
 ```typescript
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Litecoin, Network } from '@tatumio/tatum'
+import { TatumSDK, ZCash, Network } from '@tatumio/tatum'
 
-const tatum = await TatumSDK.init<Litecoin>({network: Network.LITECOIN})
+const tatum = await TatumSDK.init<ZCash>({network: Network.ZCASH})
 
 const result = await tatum.rpc.sendRawTransaction("02000000013412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab0000000000fdffffff0140420f00000000001976a91462e907b15cbf27d5425399ebf6f0fb50ebb88f1888ac00000000")
 
@@ -42,9 +42,9 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 ### Overview
 
-The `sendrawtransaction` method submits a serialized raw transaction to the Litecoin network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
+The `sendrawtransaction` method submits a serialized raw transaction to the network. If the transaction is well-formed and valid, it will be propagated to the network and included in a mined block.
 
-This method is commonly used in conjunction with [`createrawtransaction`](../../bitcoin-rpc-documentation/transactions/createrawtransaction.md), or other methods to construct and sign raw transactions before broadcasting them.
+This method is commonly used in conjunction with [`createrawtransaction`](createrawtransaction.md), or other methods to construct and sign raw transactions before broadcasting them.
 
 ### Parameters
 
