@@ -20,9 +20,7 @@ updatedAt: "Sat Apr 06 2024 14:55:14 GMT+0000 (Coordinated Universal Time)"
 
 ### How to use it
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -36,9 +34,7 @@ const result = await tatum.rpc.sendRawTransaction("02000000013412cdab3412cdab341
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Overview
 
