@@ -20,7 +20,9 @@ updatedAt: "Sat Apr 06 2024 14:43:58 GMT+0000 (Coordinated Universal Time)"
 
 ### How to use it
 
-
+{% tabs %}  
+{% tab title="TypeScript/JavaScript" %}  
+{% code overflow="wrap" lineNumbers="true" %}
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -34,7 +36,9 @@ const result = await tatum.rpc.getMempoolDescendants("3b3c3bc559deddb0991e1fe9fb
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-
+{% endcode %}  
+{% endtab %}  
+{% endtabs %}
 
 ### Overview
 
