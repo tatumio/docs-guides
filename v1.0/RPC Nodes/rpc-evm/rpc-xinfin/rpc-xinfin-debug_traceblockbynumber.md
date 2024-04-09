@@ -22,9 +22,7 @@ Alternatively, you can obtain traces by transaction using the **`debug_traceTran
 
 ### How to use it
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -38,9 +36,7 @@ const result = await tatum.rpc.debugTraceBlockByNumber('0x42C1D80')
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Overview
 
