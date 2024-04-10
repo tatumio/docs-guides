@@ -18,7 +18,7 @@ updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 [/block]
 
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```javascript
 // yarn add @tatumio/tatum
@@ -41,7 +41,7 @@ const res = await tatum.rpc.getBlock(slotNumber, config)
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

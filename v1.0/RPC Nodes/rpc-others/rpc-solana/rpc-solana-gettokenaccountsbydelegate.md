@@ -20,7 +20,7 @@ updatedAt: "Sat Apr 06 2024 12:59:43 GMT+0000 (Coordinated Universal Time)"
 
 ### How to use it
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```javascript
 // yarn add @tatumio/tatum
@@ -36,7 +36,7 @@ const res = await tatum.rpc.getTokenAccountsByDelegate(delegate)
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 
