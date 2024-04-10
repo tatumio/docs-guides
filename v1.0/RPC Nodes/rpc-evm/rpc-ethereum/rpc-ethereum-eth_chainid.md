@@ -20,7 +20,7 @@ updatedAt: "Sat Apr 06 2024 12:59:34 GMT+0000 (Coordinated Universal Time)"
   "url": "https://codepen.io/tatum-devrel/embed/eYQxzzw",
   "href": "https://codepen.io/tatum-devrel/embed/eYQxzzw",
   "typeOfEmbed": "iframe",
-  "height": "300px",
+  "height": "400px",
   "width": "100%",
   "iframe": true,
   "provider": "codepen.io"
