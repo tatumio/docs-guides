@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 12:59:44 GMT+0000 (Coordinated Universal Time)"
 
 The `get_currency_balance` method is used to retrieve the balance of a specific currency/token for a given account on the EOS blockchain. This method is essential for users and developers who wish to query and manage account balances, ensuring accurate and up-to-date financial data.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const response = await tatum.rpc.getCurrencyBalance({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

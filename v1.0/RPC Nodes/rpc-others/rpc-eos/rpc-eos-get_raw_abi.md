@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 
 The `get_raw_abi` method is used to fetch the raw, serialized ABI (Application Binary Interface) for a specified account, providing essential details needed for interacting with smart contracts on the EOS network.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -38,9 +36,7 @@ const rawAbi = await tatum.rpc.getRawAbi({ accountName: 'b1' })
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

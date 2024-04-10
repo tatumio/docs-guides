@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_abi` method is utilized to retrieve the ABI (Application Binary Interface) associated with an EOS account. ABI is critical for encoding and decoding the data correctly to interact with the smart contracts deployed by the account.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -37,9 +35,7 @@ const response = await tatum.rpc.getAbi({ accountName: 'b1' })
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 12:59:39 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `send_transaction` method is designed to submit a transaction to the EOS blockchain. This method expects a transaction in JSON format and will attempt to apply it to the blockchain, enabling various blockchain interactions such as transferring tokens, invoking smart contracts, etc.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const response = await tatum.rpc.sendTransaction({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

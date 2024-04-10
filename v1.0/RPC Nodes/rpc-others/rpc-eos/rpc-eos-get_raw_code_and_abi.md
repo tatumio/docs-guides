@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 
 The `get_raw_code_and_abi` method is used to retrieve both the raw code and the ABI (Application Binary Interface) for a contract, based on the account name. This is pivotal for developers who wish to interact with, decode, and understand the underlying code and interfaces of smart contracts deployed on the EOS blockchain.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -38,9 +36,7 @@ const response = await tatum.rpc.getRawCodeAndAbi({ accountName: 'eosio' })
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

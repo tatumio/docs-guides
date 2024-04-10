@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 
 The `get_required_keys` method returns the required keys that are needed to sign a transaction. This feature is extremely valuable for users and developers aiming to ensure secure and accurate transaction signatures, thus maintaining the integrity of transactions within the EOS blockchain.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -41,9 +39,7 @@ const response = await tatum.rpc.getRequiredKeys({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_table_by_scope` method retrieves the table scope for a given contract in the EOS blockchain. It is essential for developers and users who interact with smart contracts and need to query table data associated with a specific contract. This method provides flexibility by allowing filtered and limited results, making it highly adaptable to various use cases.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -45,9 +43,7 @@ const response = await tatum.rpc.getTableByScope({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

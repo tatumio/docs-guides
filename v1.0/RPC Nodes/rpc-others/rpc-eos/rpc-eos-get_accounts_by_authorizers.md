@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_accounts_by_authorizers` method retrieves accounts associated with specific authorizers, serving as an essential tool for developers and users interested in understanding account access and control on the EOS blockchain.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -39,9 +37,7 @@ const response = await tatum.rpc.getAccountsByAuthorizers({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

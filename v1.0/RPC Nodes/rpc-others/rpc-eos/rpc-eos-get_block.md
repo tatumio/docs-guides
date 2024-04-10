@@ -26,9 +26,7 @@ Please note that you are able to get data only from block number 260742168 and n
 
 The `get_block` method returns an object containing various details about a specific block on the blockchain, providing block number or block id in request.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const block = await tatum.rpc.getBlock({ blockNumOrId: '260742168' })
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

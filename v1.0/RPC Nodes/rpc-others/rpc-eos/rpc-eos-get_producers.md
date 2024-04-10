@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 12:59:41 GMT+0000 (Coordinated Universal Time)"
 
 The `get_producers` method is designed to retrieve a list of producers from the EOS blockchain. Producers are essential entities in the EOS network responsible for producing blocks, and this method provides valuable insights into their details and statuses, including active, pending, and proposed producers. 
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const response = await tatum.rpc.getProducers({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

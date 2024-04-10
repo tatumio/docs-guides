@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:05 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_activated_protocol_features` method retrieves the activated protocol features for a producer node in the EOS blockchain. This method is crucial for developers and block producers to identify and understand the protocol features activated on a node, ensuring proper configuration and management of producer nodes.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -43,9 +41,7 @@ const response = await tatum.rpc.getActivatedProtocolFeatures({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

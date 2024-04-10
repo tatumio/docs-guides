@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:01 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_code` method returns an object containing the smart contract WASM code for a specified account on the EOS blockchain. This method is paramount for developers who are looking to analyze or understand the WASM code of deployed smart contracts, enabling an in-depth interaction and integration with the smart contracts.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -40,9 +38,7 @@ const response = await tatum.rpc.getCode({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

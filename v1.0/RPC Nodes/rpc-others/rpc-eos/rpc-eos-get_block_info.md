@@ -26,9 +26,7 @@ Please note that you are able to get data only from block number 260742168 and n
 
 The `get_block_info` method retrieves crucial information about a specific block in the EOS blockchain. It returns an object containing details such as block time, block number, previous block ID, producer, and transaction count. Similar to `get_block` but returns a fixed-size smaller subset of the block data.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const blockInfo = await tatum.rpc.getBlockInfo()
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

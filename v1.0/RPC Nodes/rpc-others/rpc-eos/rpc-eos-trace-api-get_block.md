@@ -24,9 +24,7 @@ Please note that you are able to get data only from block number 260742168 and n
 
 ### How to use it
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -40,9 +38,7 @@ const block = await tatum.rpc.traceApiGetBlock({ blockNum: '260742168' })
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 {% hint style="info" %}  
 This method is available only on the full archive node.  

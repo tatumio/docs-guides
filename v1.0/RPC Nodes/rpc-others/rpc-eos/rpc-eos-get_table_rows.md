@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:04 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `get_table_rows` method retrieves rows from a specified table in a given smart contract on the EOS blockchain. This method is essential for developers and users who need to interact with and analyze the data stored in smart contract tables. It provides multiple filtering options, ensuring extensive flexibility in querying specific data.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -42,9 +40,7 @@ const response = await tatum.rpc.getTableRows({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

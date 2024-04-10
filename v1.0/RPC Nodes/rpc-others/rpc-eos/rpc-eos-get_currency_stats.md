@@ -22,9 +22,7 @@ updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 
 The `get_currency_stats` method is utilized to retrieve the statistics for a specific currency on the EOS blockchain. By employing this method, users and developers can obtain crucial information about a currency, such as its supply, maximum supply, and issuer, thereby enabling in-depth analysis and insights into the currency's status and distribution.
 
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -41,9 +39,7 @@ const response = await tatum.rpc.getCurrencyStats({
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 

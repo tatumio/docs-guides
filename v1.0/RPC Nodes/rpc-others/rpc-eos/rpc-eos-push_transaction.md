@@ -21,9 +21,7 @@ updatedAt: "Sat Apr 06 2024 13:09:01 GMT+0000 (Coordinated Universal Time)"
 ### Overview
 
 The `push_transaction` method is utilized to transmit a transaction to the EOS blockchain. This method takes a transaction in JSON format and endeavors to apply it to the blockchain, facilitating numerous interactions such as transferring tokens and invoking smart contracts.  
-{% tabs %}  
-{% tab title="TypeScript/JavaScript" %}  
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -44,9 +42,7 @@ const response = await tatum.rpc.pushTransaction(transaction)
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}  
-{% endtab %}  
-{% endtabs %}
+
 
 ### Example use cases:
 
