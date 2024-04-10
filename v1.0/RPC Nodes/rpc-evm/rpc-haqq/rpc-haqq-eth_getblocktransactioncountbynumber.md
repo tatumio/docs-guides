@@ -41,7 +41,18 @@ The `eth_getBlockTransactionCountByNumber` Haqq JSON-RPC method allows you to re
 1. **`blockNumber`**: The block number for which the transaction count should be retrieved. It should be a hex-encoded value representing the block number.
    - Example: 7687453
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/YzRmbaE"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/YzRmbaE",
+  "href": "https://codepen.io/tatum-devrel/pen/YzRmbaE",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Return Object
 
