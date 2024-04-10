@@ -14,6 +14,20 @@ updatedAt: "Sat Apr 06 2024 12:59:34 GMT+0000 (Coordinated Universal Time)"
 
 `eth_chainId` method is part of the Ethereum JSON-RPC API, specifically designed to return the current network or chain ID. This method is crucial for ensuring the uniqueness of transactions across different Ethereum networks, as it helps in preventing replay attacks by distinguishing between transactions intended for different networks. The chain ID was introduced as part of EIP-155 to address the issue of transaction replay attacks across different Ethereum networks.
 
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/embed/eYQxzzw",
+  "href": "https://codepen.io/tatum-devrel/embed/eYQxzzw",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
+
+
 ## Parameters
 
 `eth_chainId` method does not accept any parameters. This simplicity in its request format allows for a straightforward query to retrieve the current chain ID of the Ethereum network you are interacting with.
