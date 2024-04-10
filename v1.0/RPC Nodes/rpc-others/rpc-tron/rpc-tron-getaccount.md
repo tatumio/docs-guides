@@ -20,7 +20,7 @@ updatedAt: "Sat Apr 06 2024 15:36:46 GMT+0000 (Coordinated Universal Time)"
 
 ### How to use it
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumcom/js
@@ -36,7 +36,7 @@ const account = await tatum.rpc.getAccount('TZ4UXDV5ZhNW7fb2AMSbgfAEZ7hWsnYS2g',
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

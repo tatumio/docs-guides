@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:44 GMT+0000 (Coordinated Universal Time)"
 
 Below is an example of how to use the `broadcastTransaction` method with the Tatum SDK:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // Install Tatum SDK
@@ -44,7 +44,7 @@ const res = await tatum.rpc.broadcastTransaction(rawBody);
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

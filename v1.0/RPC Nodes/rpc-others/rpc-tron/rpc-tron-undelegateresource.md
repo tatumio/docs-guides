@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:44 GMT+0000 (Coordinated Universal Time)"
 
 You can interact with the `unDelegateResource` method using the Tatum SDK. Here is an example on how you can do it:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -38,7 +38,7 @@ visible: true,
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

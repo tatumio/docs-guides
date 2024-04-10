@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:45 GMT+0000 (Coordinated Universal Time)"
 
 Example SDK code:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumcom/js
@@ -36,7 +36,7 @@ const res = await tatum.rpc.createTransaction('ra5nK24KXen9AHvsdFTKHSANinZseWnPc
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

@@ -20,7 +20,7 @@ updatedAt: "Sat Apr 06 2024 15:36:46 GMT+0000 (Coordinated Universal Time)"
 
 ### How to use it
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 import { TatumSDK, Tron, Network } from '@tatumio/tatum'
@@ -32,7 +32,7 @@ const res = await tatum.rpc.getBlockById('000000000326bcabea2fa533c7080c8baf231f
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:46 GMT+0000 (Coordinated Universal Time)"
 
 Below is an example of how to use the `validateAddress` method with the Tatum SDK:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -40,7 +40,7 @@ const res = await tatum.rpc.validateAddress('TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs'
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

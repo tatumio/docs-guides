@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:44 GMT+0000 (Coordinated Universal Time)"
 
 The `createAccount` method allows you to create a new TRON account by using an already activated account. Here's an example of how to use this method with the Tatum SDK:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ````typescript// yarn add @tatumcom/js
 </strong>

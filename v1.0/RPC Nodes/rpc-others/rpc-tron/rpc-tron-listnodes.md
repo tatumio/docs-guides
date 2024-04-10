@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:45 GMT+0000 (Coordinated Universal Time)"
 
 You can interact with the TRON blockchain by using the `listNodes` method in the Tatum SDK. Here's an example:
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // Import necessary components from the SDK
@@ -37,7 +37,7 @@ const nodeList = await tatum.rpc.listNodes()
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

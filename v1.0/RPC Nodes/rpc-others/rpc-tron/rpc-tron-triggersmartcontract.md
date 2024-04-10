@@ -22,7 +22,7 @@ updatedAt: "Sat Apr 06 2024 15:36:46 GMT+0000 (Coordinated Universal Time)"
 
 Here is an example of how you can use the `triggerSmartContract` method with the Tatum SDK.
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -47,7 +47,7 @@ const result = await tatum.rpc.triggerSmartContract(
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 

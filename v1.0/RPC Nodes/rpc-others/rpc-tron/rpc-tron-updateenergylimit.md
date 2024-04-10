@@ -13,7 +13,7 @@ updatedAt: "Sat Apr 06 2024 14:36:34 GMT+0000 (Coordinated Universal Time)"
 ---
 ### How to use it
 
-{% code overflow="wrap" lineNumbers="true" %}
+
 
 ```typescript
 // yarn add @tatumio/tatum
@@ -29,7 +29,7 @@ visible: true,
 await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 ```
 
-{% endcode %}
+
 
 ### Overview
 
