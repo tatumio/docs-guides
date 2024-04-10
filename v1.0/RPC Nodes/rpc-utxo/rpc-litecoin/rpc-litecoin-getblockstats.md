@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockstats` is a Litecoin RPC method that returns various statistics about a specified block. This method is useful for obtaining detailed information about a block, including the number of transactions, transaction volume, fees, and other related data. The results can be used for data analysis, monitoring, and understanding the state of the Litecoin network at a specific block height.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/LYXaGee"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/LYXaGee",
+  "href": "https://codepen.io/tatum-devrel/pen/LYXaGee",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

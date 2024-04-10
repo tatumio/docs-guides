@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getEnergyPrices` method is used to query historical energy unit price on the TRON network. The energy unit price is the cost of performing operations on the TRON network, measured in "sun" units. The historical data can be useful in various situations like estimating future energy costs based on historical data or analysing network activity over time.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/KKrYJLm"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/KKrYJLm",
+  "href": "https://codepen.io/tatum-devrel/pen/KKrYJLm",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

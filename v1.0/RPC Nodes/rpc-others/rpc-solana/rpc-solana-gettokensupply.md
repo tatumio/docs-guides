@@ -46,7 +46,18 @@ This method is especially useful for token issuers or traders who want to keep t
 
 Another use case for this method is for financial services applications or DeFi protocols, where it is important to know the total supply of a token to calculate various financial metrics such as market capitalisation or liquidity.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/rNQRMxx"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/rNQRMxx",
+  "href": "https://codepen.io/tatum-devrel/pen/rNQRMxx",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `eth_getTransactionReceipt` is an Haqq JSON-RPC method that retrieves the transaction receipt of a given transaction hash. This method is particularly useful when you need to obtain detailed information about a transaction's execution, such as its status (success or failure), gas usage, and logs (events). Common use cases include checking the status of a transaction after it has been mined or inspecting the events emitted by a smart contract during a specific transaction.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/XWyOQMN"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/XWyOQMN",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/XWyOQMN",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

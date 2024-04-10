@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getCanWithdrawUnfreezeAmount` method allows you to retrieve the withdrawable balance for a specified owner address at a specific timestamp. This method is primarily used in the Stake 2.0 protocol on the TRON blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/BaGEMON"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/BaGEMON",
+  "href": "https://codepen.io/tatum-devrel/pen/BaGEMON",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 Use Cases:
 

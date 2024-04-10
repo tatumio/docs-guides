@@ -38,7 +38,18 @@ The `estimatesmartfee` method provides an estimated fee rate (in DOGE/kB) for a 
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/MWzxpEK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/MWzxpEK",
+  "href": "https://codepen.io/Martin-Zemanek/pen/MWzxpEK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

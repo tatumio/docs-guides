@@ -38,7 +38,18 @@ The `manifest` method is a specialized RPC method provided by the Ripple (XRP) b
 
 This method is particularly useful in scenarios where one needs to verify the authenticity of a validator. It could also be used to gather information about a validator's association with a domain, its ephemeral and master keys, and the sequence number of its manifest.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/PoxgXRB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/PoxgXRB",
+  "href": "https://codepen.io/tatum-devrel/pen/PoxgXRB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

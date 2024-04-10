@@ -43,7 +43,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getSignatureStatuses` method fetches the processing statuses of a list of transactions, identified by their signatures. This is especially useful for tracking the status of transactions, whether they are being processed, confirmed or finalised.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQErNL"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQErNL",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQErNL",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

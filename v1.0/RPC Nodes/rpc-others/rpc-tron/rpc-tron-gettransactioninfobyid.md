@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getTransactionInfoById` method allows you to query the transaction fee, block height, and other related information by a transaction id. This can be particularly useful when you need to track the status of specific transactions or analyse the transactions for auditing purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/XWyQOGE"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/XWyQOGE",
+  "href": "https://codepen.io/tatum-devrel/pen/XWyQOGE",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

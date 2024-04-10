@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getContract` method allows you to query a contract's information from the TRON blockchain. This includes the bytecode of the contract, ABI, configuration parameters, and more. This can be useful in a variety of use-cases such as contract verification, auditing, and debugging.
 
-{% embed url="<https://codepen.io/Night-Shift-Dev/pen/wvQaBNR"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Night-Shift-Dev/pen/wvQaBNR",
+  "href": "https://codepen.io/Night-Shift-Dev/pen/wvQaBNR",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -42,7 +42,18 @@ Use cases for `eth_blockNumber` include:
 - Checking the status of a transaction by comparing its block number to the current block number
 - Determining the current network state for smart contract interactions\\
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwwYX"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwwYX",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwwYX",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

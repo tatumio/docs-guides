@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `ledger_data` method retrieves the contents of the specified ledger. You can iterate through several calls to retrieve the entire contents of a single ledger version.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/eYQoPWW"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/eYQoPWW",
+  "href": "https://codepen.io/tatum-devrel/pen/eYQoPWW",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

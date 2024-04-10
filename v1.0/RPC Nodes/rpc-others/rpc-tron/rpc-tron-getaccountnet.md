@@ -44,7 +44,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getAccountNet` method is used to query bandwidth information of a specific account on the TRON network. This method can be useful for assessing an account's remaining network capacity.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/RwqOvyO"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/RwqOvyO",
+  "href": "https://codepen.io/tatum-devrel/pen/RwqOvyO",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

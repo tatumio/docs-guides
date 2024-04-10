@@ -39,7 +39,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `accountNfts` method returns a list of Non-Fungible Tokens (NFTs) objects for a specific account. This method is useful when you want to retrieve all the NFTs owned by a particular account. The method is available due to the NonFungibleTokensV1\_1 amendment.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/NWEmLae"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/NWEmLae",
+  "href": "https://codepen.io/tatum-devrel/pen/NWEmLae",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

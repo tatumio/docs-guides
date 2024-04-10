@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `txpool_inspect` method is a JSON-RPC method used to inspect the current transaction pool of a running Polygon node. The method allows you to view all pending transactions and their details, including transaction hashes, gas prices, and transaction data. This method is useful for developers who want to monitor the status of pending transactions or debug transaction-related issues.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/XWyOoQz"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/XWyOoQz",
+  "href": "https://codepen.io/tatum-devrel/pen/XWyOoQz",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

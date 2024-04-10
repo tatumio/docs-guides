@@ -49,7 +49,18 @@ The `getBlock` method returns identity and transaction information about a confi
 
 This method is essential for blockchain explorers or any application that needs to track and represent blockchain transaction data. For instance, it could be used by a wallet application to show transaction details or by a network analytics tool for data gathering and analysis.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/wvQOzGR"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/wvQOzGR",
+  "href": "https://codepen.io/tatum-devrel/pen/wvQOzGR",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

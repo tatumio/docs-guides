@@ -38,7 +38,18 @@ The `eth_getLogs` a method is a Polygon JSON-RPC method that allows developers t
 
 This method is particularly useful when building decentralised applications (dApps) that rely on events emitted by smart contracts, as it enables developers to retrieve logs based on specific filter criteria. By using `eth_getLogs`, developers can efficiently track and react to events happening on the Polygon blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/OJadrgq"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/OJadrgq",
+  "href": "https://codepen.io/tatum-devrel/pen/OJadrgq",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

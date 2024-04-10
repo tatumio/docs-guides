@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_maxPriorityFeePerGas` RPC method is used to retrieve the maximum priority fee per gas set by the user for a transaction. This method can be used to determine the maximum fee that can be paid for a transaction to be included in a block quickly.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/XWyOwzB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/XWyOwzB",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/XWyOwzB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Use case
 

@@ -39,7 +39,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `noripple_check` method provides a quick way to check the status of the Default Ripple field for an account and the No Ripple flag of its trust lines, compared with the recommended settings. This can be useful for developers and administrators who want to ensure that their accounts are configured correctly, especially when managing the accounts of large or complex financial organisations.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/poQBOLM"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/poQBOLM",
+  "href": "https://codepen.io/tatum-devrel/pen/poQBOLM",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

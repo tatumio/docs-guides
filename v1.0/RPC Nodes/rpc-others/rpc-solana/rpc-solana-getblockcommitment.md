@@ -42,7 +42,18 @@ The `getBlockCommitment` method returns the commitment for a particular block. C
 
 This method is crucial for understanding the level of consensus or agreement about a block in the network, as it indicates how much of the network's total stake has confirmed the block. It can be used by blockchain explorers to show the confirmation status of transactions and by network monitors to track the progress of the blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJoKEX"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJoKEX",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJoKEX",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

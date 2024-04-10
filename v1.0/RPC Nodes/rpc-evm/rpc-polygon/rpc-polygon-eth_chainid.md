@@ -38,7 +38,18 @@ The `eth_chainId` method is a Polygon JSON-RPC method that allows developers to 
 
 This method is particularly useful when building applications that interact with multiple Polygon networks or need to verify the network to prevent replay attacks. By checking the chain ID, an application can ensure it is interacting with the intended network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/LYXqMMB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/LYXqMMB",
+  "href": "https://codepen.io/tatum-devrel/pen/LYXqMMB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

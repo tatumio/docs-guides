@@ -44,7 +44,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getAccountResources` method is used to query resource information (such as bandwidth, energy) of a specific account on the TRON network. This method can be useful for assessing an account's remaining computational and storage capacity.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/rNQbPvG"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/rNQbPvG",
+  "href": "https://codepen.io/tatum-devrel/pen/rNQbPvG",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

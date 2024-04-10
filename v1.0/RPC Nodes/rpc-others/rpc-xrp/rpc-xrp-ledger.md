@@ -47,7 +47,18 @@ The `ledger` RPC method is used to retrieve information about the public ledger 
 
 Use cases for this method include retrieving information about a specific ledger, examining the transactions that have occurred in a specific ledger version, examining the state data of a ledger, and more.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/GRwLXGG?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/GRwLXGG?editors=1111",
+  "href": "https://codepen.io/tatum-devrel/pen/GRwLXGG?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

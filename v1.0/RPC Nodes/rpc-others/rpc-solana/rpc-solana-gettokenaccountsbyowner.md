@@ -46,7 +46,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getTokenAccountsByOwner` method retrieves all SPL token accounts owned by a specified address on the Solana blockchain. It allows you to fetch a list of token accounts associated with a particular owner. This method is useful for querying the token holdings of a specific address and performing operations related to token management.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQZpaB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/bGQZpaB",
+  "href": "https://codepen.io/tatum-devrel/pen/bGQZpaB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

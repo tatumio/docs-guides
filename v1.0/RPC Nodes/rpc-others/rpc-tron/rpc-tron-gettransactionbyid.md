@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getTransactionById` method is used to query transaction information using a transaction ID on the TRON network. This can be beneficial in several use cases, such as retrieving details about a specific transaction, verifying the transaction status, and checking the transaction content.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/wvQZNOG"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/wvQZNOG",
+  "href": "https://codepen.io/tatum-devrel/pen/wvQZNOG",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

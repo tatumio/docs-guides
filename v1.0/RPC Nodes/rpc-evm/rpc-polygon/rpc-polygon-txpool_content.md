@@ -43,7 +43,18 @@ Use cases for the `txpool_content` method include:
 - Monitoring transactions from specific addresses
 - Debugging and troubleshooting pending transactions
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/xxQMmMW?editors=1010"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/xxQMmMW?editors=1010",
+  "href": "https://codepen.io/tatum-devrel/pen/xxQMmMW?editors=1010",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

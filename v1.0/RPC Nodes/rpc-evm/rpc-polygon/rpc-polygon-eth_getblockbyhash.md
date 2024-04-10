@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `eth_getBlockByHash` is an Polygon JSON-RPC method that allows developers to query a specific block in the Polygon blockchain by its block hash. This method can be used in various scenarios, such as analysing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/RwqvGLE?editors=1010"> %}  
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/RwqvGLE?editors=1010",
+  "href": "https://codepen.io/tatum-devrel/pen/RwqvGLE?editors=1010",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]  
 Try this function  
 {% endembed %}
 

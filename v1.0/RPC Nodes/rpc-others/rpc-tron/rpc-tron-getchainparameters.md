@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getChainParameters` method retrieves all parameters that the blockchain committee can set. This method is useful for getting detailed information about the blockchain's configurable parameters.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/BaGEMej"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/BaGEMej",
+  "href": "https://codepen.io/tatum-devrel/pen/BaGEMej",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

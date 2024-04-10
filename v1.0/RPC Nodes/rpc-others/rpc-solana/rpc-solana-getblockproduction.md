@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getBlockProduction` method provides information about the recent block production from the current or previous epoch. This can be used to monitor the performance and activity of validators on the Solana network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJoKde?editors=1011"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJoKde?editors=1011",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJoKde?editors=1011",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_getBalance` method is an Polygon JSON-RPC method that allows you to retrieve the MATIC balance of a specified address. This method can be used to query the balance of any Polygon address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralised application (DApp).
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQzOWP"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/bGQzOWP",
+  "href": "https://codepen.io/tatum-devrel/pen/bGQzOWP",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

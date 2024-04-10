@@ -40,7 +40,18 @@ The `eth_maxPriorityFeePerGas` RPC method is used to retrieve the maximum priori
 
 This method is particularly useful when the user wants to ensure that a transaction is processed quickly, even in a congested network where transaction fees may fluctuate rapidly. By setting a high maximum priority fee per gas, the user can ensure that the transaction is processed as quickly as possible.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/jOQddOV"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/jOQddOV",
+  "href": "https://codepen.io/tatum-devrel/pen/jOQddOV",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

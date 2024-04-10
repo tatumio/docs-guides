@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockchaininfo` is a Dogecoin RPC method that provides general information about the current state of the blockchain. This method is useful for obtaining an overview of the blockchain, including the best block hash, chain height, difficulty, and network protocol version. It can be used for various purposes, such as monitoring the blockchain, tracking network upgrades, and assessing the current mining difficulty.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/rNQRyje"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/rNQRyje",
+  "href": "https://codepen.io/Martin-Zemanek/pen/rNQRyje",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

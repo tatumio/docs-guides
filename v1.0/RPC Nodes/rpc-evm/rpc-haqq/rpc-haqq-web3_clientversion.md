@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 This method is read-only and does not require authentication. The `web3_clientVersion` method can be used by developers to confirm the version of the Haqq client software they are using and ensure that it is compatible with their application.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/eYQqajp"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/eYQqajp",
+  "href": "https://codepen.io/tatum-devrel/pen/eYQqajp",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

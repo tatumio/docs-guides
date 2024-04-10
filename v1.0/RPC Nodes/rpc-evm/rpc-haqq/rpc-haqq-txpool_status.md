@@ -38,7 +38,18 @@ The `txpool_status` method returns statistics about the current state of the tra
 
 This method can be useful for monitoring the health of the Haqq network and analyzing the behavior of the miners. It can also be used to estimate the time it will take for a transaction to be processed, as well as to determine the gas price necessary to ensure prompt inclusion of a transaction in the next block.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/XWyvwOK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/XWyvwOK",
+  "href": "https://codepen.io/tatum-devrel/pen/XWyvwOK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -43,7 +43,18 @@ The `ledgerEntry` method of Tatum SDK facilitates interaction with the XRP Ledge
 
 This method is comprehensive and can retrieve several different types of data. The specific type of item you wish to retrieve can be selected by passing the appropriate parameters.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJPZmE"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJPZmE",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJPZmE",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

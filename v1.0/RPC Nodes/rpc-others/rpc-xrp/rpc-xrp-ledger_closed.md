@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `ledger_closed` method is used to fetch the unique identifiers of the most recently closed ledger. Note that the ledger might not be validated and immutable yet, so use this method when you need information about the latest ledger and not necessarily the final state.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/MWzRPbb"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/MWzRPbb",
+  "href": "https://codepen.io/tatum-devrel/pen/MWzRPbb",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

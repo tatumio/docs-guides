@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getSupply` method returns information about the current supply of lamports in the Solana network. It provides insights into the distribution of lamports, such as the total supply, the amount in circulation, and the amount that is not circulating. This can be useful for anyone interested in the macroeconomics of the Solana network or in tracking the circulation of lamports over time.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJoKoj?editors=1011"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJoKoj?editors=1011",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJoKoj?editors=1011",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

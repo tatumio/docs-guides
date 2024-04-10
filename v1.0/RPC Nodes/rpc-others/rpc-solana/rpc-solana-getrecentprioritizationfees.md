@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getRecentPrioritizationFees` method returns a list of prioritization fees from recent blocks. This method can be used to determine the fees required to prioritize transactions for faster processing.
 
-{% embed url="<https://codepen.io/Night-Shift-Dev/pen/oNQLZJr"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Night-Shift-Dev/pen/oNQLZJr",
+  "href": "https://codepen.io/Night-Shift-Dev/pen/oNQLZJr",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

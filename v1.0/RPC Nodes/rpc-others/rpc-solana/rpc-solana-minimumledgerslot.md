@@ -42,7 +42,18 @@ The `minimumLedgerSlot` method returns the lowest slot number that the node has 
 
 Note: This value may change over time if the node is configured to purge older ledger data, meaning that older data may no longer be accessible.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJoKBw"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJoKBw",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJoKBw",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

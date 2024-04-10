@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `random` method is an RPC method provided by the Ripple (XRP) blockchain. This command returns a random number that can be used as a source of entropy for random number generation by clients. It's particularly useful in scenarios where a high-entropy random number is required, such as cryptographic operations or unique identifier generation.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/MWzRZXW"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/MWzRZXW",
+  "href": "https://codepen.io/tatum-devrel/pen/MWzRZXW",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getAvailableUnfreezeCount` method is used to retrieve the remaining times of executing the unstake operation in Stake 2.0 on the TRON blockchain. Stake 2.0 supports unstaking in batches, but it imposes a limit of 32 unstake operations that can be executed simultaneously. This means that when a user initiates the first unstake operation, they can only initiate another 31 unstake operations until the TRX of the first unstaking arrives and is ready to be withdrawn to their account. This limitation is in place to prevent malicious attacks.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/JjeVxBB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/JjeVxBB",
+  "href": "https://codepen.io/tatum-devrel/pen/JjeVxBB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

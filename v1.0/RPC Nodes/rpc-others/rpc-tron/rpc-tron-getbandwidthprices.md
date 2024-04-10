@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getBandwidthPrices()` method is used to retrieve historical bandwidth unit prices on the TRON blockchain. Bandwidth is an essential resource in the TRON network used for performing transactions. This method will return all historical prices, where each unit price change is separated by a comma.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/xxQeMNy"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/xxQeMNy",
+  "href": "https://codepen.io/tatum-devrel/pen/xxQeMNy",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

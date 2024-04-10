@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getInflationGovernor` method is used to retrieve the current inflation governor in the Solana blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/rNQRMVO?editors=1011"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/rNQRMVO?editors=1011",
+  "href": "https://codepen.io/tatum-devrel/pen/rNQRMVO?editors=1011",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

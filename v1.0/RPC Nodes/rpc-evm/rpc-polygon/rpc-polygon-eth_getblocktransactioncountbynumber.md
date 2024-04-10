@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_getBlockTransactionCountByNumber` Polygon JSON-RPC method allows you to retrieve the number of transactions in a specified block. This method is particularly useful when you need to analyse the transaction activity of a specific block. You can use it to gain insights into network usage, analyse the impact of specific events on the Polygon network, or monitor transaction congestion in certain blocks.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQqZKy"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQqZKy",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQqZKy",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

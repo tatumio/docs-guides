@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `eth_getBlockByNumber` is an Haqq JSON-RPC method that allows developers to query a specific block in the Haqq blockchain by its block number. This method can be used in various scenarios, such as analyzing historical transactions, validating the state of the blockchain, or monitoring the progress of mining activities.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/KKrOLvY"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/KKrOLvY",
+  "href": "https://codepen.io/tatum-devrel/pen/KKrOLvY",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

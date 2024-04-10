@@ -42,7 +42,18 @@ The `getStakeMinimumDelegation` method is an essential component of Solana's sta
 
 This method is commonly used by wallets and staking services to inform their users about the minimum amount required for staking. By delegating a certain amount of Solana tokens, participants can earn staking rewards and contribute to the network's security. The minimum delegation amount is set by the network to prevent spam and maintain a high level of network performance.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/YzRgGyY?editors=1010"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/YzRgGyY?editors=1010",
+  "href": "https://codepen.io/tatum-devrel/pen/YzRgGyY?editors=1010",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

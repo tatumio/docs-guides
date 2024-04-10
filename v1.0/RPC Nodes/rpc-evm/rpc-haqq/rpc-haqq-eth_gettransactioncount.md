@@ -42,7 +42,18 @@ Use cases for this method include:
 - Monitoring the number of transactions sent by an address to observe its activity
 - Troubleshooting transaction issues and verifying if a transaction was submitted successfully
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/RwqvOmO?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/RwqvOmO?editors=1111",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/RwqvOmO?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

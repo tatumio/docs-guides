@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `account_tx` method is a part of the XRP Ledger's RPC API, allowing you to retrieve a list of transactions that involve a specified account. This method is useful when you need to track and analyze transactions related to a particular account, which can be necessary for various operations such as auditing, debugging or just for general monitoring purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/abQxaqm"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/abQxaqm",
+  "href": "https://codepen.io/tatum-devrel/pen/abQxaqm",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

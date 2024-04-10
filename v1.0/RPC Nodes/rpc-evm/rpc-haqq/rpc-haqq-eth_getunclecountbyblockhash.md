@@ -38,7 +38,18 @@ The `eth_getUncleCountByBlockHash` method is an Haqq JSON-RPC method that return
 
 Uncles are blocks that are not included in the main blockchain but are still valid, and they contribute to the overall security and decentralization of the Haqq network. The inclusion of uncles helps prevent centralization and ensures the mining process remains competitive.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/xxQMNxz?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/xxQMNxz?editors=1111",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/xxQMNxz?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

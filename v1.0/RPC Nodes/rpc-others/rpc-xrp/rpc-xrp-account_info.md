@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `accountInfo` method retrieves information about an account, its activity, and its XRP balance. All information retrieved is relative to a particular version of the ledger.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/RwqOYKL"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/RwqOYKL",
+  "href": "https://codepen.io/tatum-devrel/pen/RwqOYKL",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

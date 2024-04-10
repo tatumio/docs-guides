@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `validateaddress` is an Dogecoin RPC method that enables users to verify if a given Dogecoin address is valid. This method provides important information about the address, such as its type and whether it's a spendable or watch-only address. It can be particularly useful in applications where address validation is necessary before performing transactions or when dealing with user-generated addresses to ensure their validity.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/OJaqWLp?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/OJaqWLp?editors=1111",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/OJaqWLp?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters <a href="#parameters" id="parameters"></a>
 

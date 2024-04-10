@@ -46,7 +46,18 @@ Use cases for `serverInfo` include:
 - Checking the server's connection status to the XRP Ledger network.
 - Investigating the server's ledger history and validation status.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/JjeXYxB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/JjeXYxB",
+  "href": "https://codepen.io/Martin-Zemanek/pen/JjeXYxB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

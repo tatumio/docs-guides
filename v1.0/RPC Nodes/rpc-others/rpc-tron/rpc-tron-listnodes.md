@@ -43,7 +43,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `listNodes` method is an RPC method provided by the TRON blockchain. It returns a list of nodes connected to the TRON network, including their host addresses and ports. This information can be used for various purposes, such as network analysis, node performance assessment, or setting up a new node connection.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/WNYWPWo"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/WNYWPWo",
+  "href": "https://codepen.io/tatum-devrel/pen/WNYWPWo",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

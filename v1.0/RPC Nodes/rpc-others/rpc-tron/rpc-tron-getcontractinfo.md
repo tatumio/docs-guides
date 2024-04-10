@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getContractInfo` method allows you to query a contract's information from the blockchain. This interface returns not only the bytecode but also the runtime bytecode of the contract. Unlike bytecode, runtime bytecode does not contain constructor and constructor parameter information.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/eYQoXOM"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/eYQoXOM",
+  "href": "https://codepen.io/tatum-devrel/pen/eYQoXOM",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

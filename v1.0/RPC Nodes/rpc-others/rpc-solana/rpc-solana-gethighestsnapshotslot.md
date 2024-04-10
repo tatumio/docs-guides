@@ -42,7 +42,18 @@ The `getHighestSnapshotSlot` method provides the highest slot information for wh
 
 This method can be used in a variety of scenarios, including managing data storage and synchronisation of blockchain data. By knowing the highest snapshot slot, developers can estimate the amount of data that needs to be downloaded to sync a new node, or to ensure the node is up to date with the current state of the blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/MWzxjEK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/MWzxjEK",
+  "href": "https://codepen.io/tatum-devrel/pen/MWzxjEK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getMinimumBalanceForRentExemption` method returns the minimum balance required to make an account rent exempt. This is useful when setting up a new account or assessing the cost of maintaining an account in a rent-free state.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/xxQBEMp"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/xxQBEMp",
+  "href": "https://codepen.io/tatum-devrel/pen/xxQBEMp",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getchaintips` is a Litecoin RPC method that returns information about all known tips in the block tree. This method is useful for identifying and analyzing potential forks or alternative chains in the Litecoin network. It can be used to monitor the health and status of the network or to investigate discrepancies in blockchain data.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/mdQoVpz"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/mdQoVpz",
+  "href": "https://codepen.io/tatum-devrel/pen/mdQoVpz",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

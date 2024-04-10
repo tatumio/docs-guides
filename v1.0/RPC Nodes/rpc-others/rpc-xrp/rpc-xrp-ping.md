@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `ping` method is a simple RPC method provided by the Ripple (XRP) blockchain, used primarily to check the connection status and latency to the XRP blockchain node. It's a useful tool in debugging and network troubleshooting scenarios, as it provides an easy way to verify the connection and round-trip time between the client and the server.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/oNQOJdw"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/oNQOJdw",
+  "href": "https://codepen.io/tatum-devrel/pen/oNQOJdw",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

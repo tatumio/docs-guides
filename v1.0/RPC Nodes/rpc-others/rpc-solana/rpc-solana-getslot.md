@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getSlot` method returns the slot that has reached the given or default commitment level. Slots are a fundamental concept in the Solana blockchain, representing the passing of time in the ledger. This method is helpful for tracking the progress of the blockchain and can be used in numerous cases, such as determining the current state of the ledger, or for timekeeping purposes in a DApp.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQEwvZ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQEwvZ",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQEwvZ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

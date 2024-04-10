@@ -46,7 +46,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `isBlockhashValid` method evaluates the validity of a specified blockhash. This can be used to confirm if a blockhash is still valid on the network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQPKoW"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQPKoW",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQPKoW",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

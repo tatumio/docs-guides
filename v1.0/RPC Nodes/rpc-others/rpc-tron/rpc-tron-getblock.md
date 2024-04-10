@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getBlock` method allows you to query block header information or entire block information according to block height or block hash. This can be particularly useful in situations where you need to inspect the contents of a particular block in the TRON blockchain for transaction verification or data analysis.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/RwqOvez"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/RwqOvez",
+  "href": "https://codepen.io/tatum-devrel/pen/RwqOvez",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -42,7 +42,18 @@ The `getBlockTime` method returns the estimated production time of a block. Each
 
 This method is useful in understanding when a particular block was produced, which is essential for various analysis and audit purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQZwRy?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/bGQZwRy?editors=1111",
+  "href": "https://codepen.io/tatum-devrel/pen/bGQZwRy?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

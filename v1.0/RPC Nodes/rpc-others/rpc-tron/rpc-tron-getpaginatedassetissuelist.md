@@ -59,7 +59,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
   - `public_free_asset_net_usage`: (integer) The total number of token free bandwidth used by all token owner
   - `public_latest_free_net_time`: (integer) The timestamp of the last consumption of this token's free bandwidth
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/abQxXea"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/abQxXea",
+  "href": "https://codepen.io/tatum-devrel/pen/abQxXea",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

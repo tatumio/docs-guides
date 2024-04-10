@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getNowBlock()` method is used to query the latest block information on the TRON network. It interacts with the TRON RPC to fetch the data, making it a crucial function for applications needing real-time information about the TRON blockchain. Examples of such applications include blockchain explorers, cryptocurrency wallets, or decentralised applications.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/GRwLzzK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/GRwLzzK",
+  "href": "https://codepen.io/tatum-devrel/pen/GRwLzzK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

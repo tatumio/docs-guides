@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getDelegatedResource` method retrieves all resources delegations during the stake1.0 phase from one account to another. It is useful when you need to assess the resources that an address delegates to a target address. The `fromAddress` parameter can be retrieved from the GetDelegatedResourceAccountIndex API.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/ZEmZwRJ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/ZEmZwRJ",
+  "href": "https://codepen.io/tatum-devrel/pen/ZEmZwRJ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

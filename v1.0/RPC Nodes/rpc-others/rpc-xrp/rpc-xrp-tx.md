@@ -41,7 +41,18 @@ The `tx` method in XRP ledger's RPC API retrieves information on a single transa
 
 This method can be very useful when tracking payment statuses, auditing transactions, or developing blockchain analysis tools. However, it should be noted that the command may successfully find the transaction even if it is included in a ledger outside the range of min\_ledger to max\_ledger.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/ExOJOQJ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/ExOJOQJ",
+  "href": "https://codepen.io/tatum-devrel/pen/ExOJOQJ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

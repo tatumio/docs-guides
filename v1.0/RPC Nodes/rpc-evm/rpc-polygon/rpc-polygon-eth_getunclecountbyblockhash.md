@@ -38,7 +38,18 @@ The `eth_getUncleCountByBlockHash` method is a Polygon JSON-RPC method that retu
 
 Uncles are blocks that are not included in the main blockchain but are still valid, and they contribute to the overall security and decentralisation of the Polygon network. The inclusion of uncles helps prevent centralisation and ensures the mining process remains competitive.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/jOQdXQq"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/jOQdXQq",
+  "href": "https://codepen.io/tatum-devrel/pen/jOQdXQq",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

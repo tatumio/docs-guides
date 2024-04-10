@@ -49,7 +49,18 @@ Some potential use cases include:
 1. Checking the status of resource delegations for a specific account.
 2. Understanding the delegation relationships of an account.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/poQBGxe"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/poQBGxe",
+  "href": "https://codepen.io/tatum-devrel/pen/poQBGxe",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

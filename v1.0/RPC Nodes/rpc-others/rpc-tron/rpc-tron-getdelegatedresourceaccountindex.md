@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getDelegatedResourceAccountIndex` is a method provided by TRON RPC allowing you to query the resource delegation by an account during stake1.0 phase. Essentially, this allows you to list all addresses that have delegated resources to a specific account.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQMbrM"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQMbrM",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQMbrM",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

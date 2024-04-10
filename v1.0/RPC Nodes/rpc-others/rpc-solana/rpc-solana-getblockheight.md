@@ -42,7 +42,18 @@ The `getBlockHeight` method returns the current block height of the node. Block 
 
 This method is beneficial for understanding the current status of the blockchain, as it provides the most recent block number processed by the node. It can be used for monitoring the progress of the blockchain, troubleshooting node synchronisation issues, and determining the confirmation status of a transaction by comparing its block number with the current block height.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/ZEmPppb?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/ZEmPppb?editors=1111",
+  "href": "https://codepen.io/tatum-devrel/pen/ZEmPppb?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

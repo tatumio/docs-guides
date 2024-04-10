@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getRecentPerformanceSamples` method returns a list of recent performance samples, in reverse slot order. Performance samples are taken every 60 seconds and include the number of transactions and slots that occur in a given time window. This data can be used to monitor network performance and understand the activity within the Solana network.
 
-{% embed url="<https://codepen.io/Night-Shift-Dev/pen/poQbeqp"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Night-Shift-Dev/pen/poQbeqp",
+  "href": "https://codepen.io/Night-Shift-Dev/pen/poQbeqp",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

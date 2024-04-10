@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `decoderawtransaction` RPC method decodes a serialized (hex-encoded) raw transaction and displays its information in a human-readable format. This method is useful for inspecting raw transactions before broadcasting them to the Dogecoin network or for debugging purposes.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/YzRgZYv"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/YzRgZYv",
+  "href": "https://codepen.io/Martin-Zemanek/pen/YzRgZYv",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

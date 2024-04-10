@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `verifytxoutproof` RPC method verifies the given transaction proof (in the form of a Merkle block) and returns an array of transaction hashes contained in the verified Merkle block. This method can be used to confirm that specific transactions are included in a block without having to download the entire block.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQZEvX"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/bGQZEvX",
+  "href": "https://codepen.io/tatum-devrel/pen/bGQZEvX",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

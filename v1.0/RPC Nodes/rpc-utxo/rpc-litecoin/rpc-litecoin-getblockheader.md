@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockheader` is a Litecoin RPC method that returns information about a specified block header. This method is useful for obtaining a high-level view of a specific block, including its hash, previous block hash, merkle root, timestamp, difficulty target, and nonce, without having to fetch the entire block's contents.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/ExOMPom"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/ExOMPom",
+  "href": "https://codepen.io/tatum-devrel/pen/ExOMPom",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

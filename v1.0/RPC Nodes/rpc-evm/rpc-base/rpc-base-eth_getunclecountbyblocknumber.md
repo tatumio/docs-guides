@@ -38,7 +38,18 @@ The `eth_getUncleCountByBlockHash` method returns the number of uncles in a spec
 
 Uncles are blocks that are not included in the main blockchain but are still valid, and they contribute to the overall security and decentralisation of the network. The inclusion of uncles helps prevent centralisation and ensures the mining process remains competitive.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/vYQPXer"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/vYQPXer",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/vYQPXer",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

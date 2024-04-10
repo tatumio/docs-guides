@@ -42,7 +42,18 @@ The `getIdentity` method is used to retrieve the identity pubkey for the current
 
 Use cases for this method might include retrieving the identity of a node for tracking or monitoring purposes, or validating the identity of a node in scenarios where only certain nodes are trusted for certain operations.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/PoxLGdg"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/PoxLGdg",
+  "href": "https://codepen.io/tatum-devrel/pen/PoxLGdg",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

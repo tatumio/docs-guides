@@ -45,7 +45,18 @@ Use cases for `account_channels` include:
 - Auditing total outbound XRP from an account via Payment Channels
 - Monitoring Payment Channel balances to determine if they need to be topped up
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/dyQLjEX"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/dyQLjEX",
+  "href": "https://codepen.io/tatum-devrel/pen/dyQLjEX",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

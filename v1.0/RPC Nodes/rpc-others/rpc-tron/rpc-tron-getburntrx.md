@@ -44,7 +44,18 @@ Before the No. 54 Committee Proposal takes effect, the destruction of transactio
 
 Use cases of this method include monitoring the total amount of TRX burned due to transaction fees, which can be useful for data analysis and transparency purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/VwVNgOO"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/VwVNgOO",
+  "href": "https://codepen.io/tatum-devrel/pen/VwVNgOO",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -42,7 +42,18 @@ Use cases for this method may include:
 - Gathering data for transaction analysis
 - Fetching transaction information for specific blocks in a block explorer application
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQowjp"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQowjp",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQowjp",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

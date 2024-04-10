@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getNodeInfo` method is used to query information about the current state of the TRON node. This includes details about the latest block information, the number of active and passive connections, the total TCP flow, and other vital node details. This information is critical for monitoring the health and status of the TRON network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/qBQwgwQ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/qBQwgwQ",
+  "href": "https://codepen.io/tatum-devrel/pen/qBQwgwQ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

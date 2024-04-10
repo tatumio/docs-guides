@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getrawtransaction` RPC method retrieves a raw transaction from the blockchain or mempool. It returns the serialized (hex-encoded) transaction data. This method can be used to inspect a transaction's content before it's included in a block or to decode the transaction for further analysis.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/VwVReBB"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/VwVReBB",
+  "href": "https://codepen.io/tatum-devrel/pen/VwVReBB",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

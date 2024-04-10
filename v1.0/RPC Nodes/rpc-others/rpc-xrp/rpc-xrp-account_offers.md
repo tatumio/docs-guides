@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `account_offers` method retrieves a list of offers made by a given account that are outstanding as of a particular ledger version. It is typically used for monitoring the open offers that a particular account has made on the XRP Ledger's decentralised exchange.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/mdQgGpx"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/mdQgGpx",
+  "href": "https://codepen.io/tatum-devrel/pen/mdQgGpx",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

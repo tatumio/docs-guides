@@ -41,7 +41,18 @@ The `submitMultisigned` method in the XRP RPC API allows you to apply a multi-si
 
 This method is used when multiple parties are required to authorise a transaction, which can be a useful feature for securing high-value accounts, implementing distributed decision-making processes, or creating more complex authorisation structures for transactions.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/XWyQyao"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/XWyQyao",
+  "href": "https://codepen.io/tatum-devrel/pen/XWyQyao",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

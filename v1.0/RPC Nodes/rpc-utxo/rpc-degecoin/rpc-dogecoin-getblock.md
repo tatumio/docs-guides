@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblock` is a Dogecoin RPC method that returns information about a specified block. This method is useful for obtaining block details such as the hash, height, transactions, and other metadata. It can be used for various purposes, including validating transactions, monitoring the blockchain, and analyzing the network.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/QWJopve"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/QWJopve",
+  "href": "https://codepen.io/Martin-Zemanek/pen/QWJopve",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

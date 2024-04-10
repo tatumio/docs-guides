@@ -42,7 +42,18 @@ The `estimatesmartfee` method provides an estimated fee rate (in BTC/kB) for a t
 
 This method can be useful for users or applications trying to decide on an appropriate fee for their transactions, based on the desired confirmation speed.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/NWEJxLW"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/NWEJxLW",
+  "href": "https://codepen.io/tatum-devrel/pen/NWEJxLW",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

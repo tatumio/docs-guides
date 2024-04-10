@@ -46,7 +46,18 @@ Use cases for `eth_estimateGas` include:
 - Estimating gas costs for contract function calls
 - Estimating gas costs for standard ether transfers
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/abQXrEQ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/abQXrEQ",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/abQXrEQ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

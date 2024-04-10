@@ -48,7 +48,18 @@ The `validateAddress` method is used to validate the format of a given TRON bloc
 
 ### Try the call
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/zYMXepP"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/zYMXepP",
+  "href": "https://codepen.io/tatum-devrel/pen/zYMXepP",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

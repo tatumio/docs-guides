@@ -42,7 +42,18 @@ Use cases for this method could include:
 - Verifying the integrity of a deployed contract
 - Analysing contract bytecode for security vulnerabilities
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/NWEoeYW"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/NWEoeYW",
+  "href": "https://codepen.io/tatum-devrel/pen/NWEoeYW",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

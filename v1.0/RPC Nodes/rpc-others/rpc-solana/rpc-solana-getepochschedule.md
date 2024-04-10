@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getEpochSchedule` method returns the epoch schedule information from this cluster's genesis config. This includes the maximum number of slots in each epoch, the number of slots before the beginning of an epoch to calculate a leader schedule for that epoch, whether epochs start short and grow, the first normal-length epoch, and the first normal slot. This data can be useful for planning and understanding the progression of epochs in the Solana network.
 
-{% embed url="<https://codepen.io/Night-Shift-Dev/pen/XWyKMyP"> %}  
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Night-Shift-Dev/pen/XWyKMyP",
+  "href": "https://codepen.io/Night-Shift-Dev/pen/XWyKMyP",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]  
 Try this Feature  
 {% endembed %}
 

@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `book_offers` method is used to fetch a list of offers between two different currencies on the XRP Ledger. This method is crucial for trading and asset management applications as it provides an in-depth view of the market depth for a specific trading pair.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/NWEmELX"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/NWEmELX",
+  "href": "https://codepen.io/tatum-devrel/pen/NWEmELX",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

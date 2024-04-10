@@ -47,7 +47,18 @@ Some potential use cases might include:
 1. Checking the status of resource sharing between addresses.
 2. Assessing the delegation history between two addresses.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQMbzM"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQMbzM",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQMbzM",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

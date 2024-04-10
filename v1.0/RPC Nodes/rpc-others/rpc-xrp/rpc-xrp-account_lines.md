@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `account_lines` method returns information about an account's trust lines, which contain balances in all non-XRP currencies and assets. All information retrieved is relative to a particular version of the ledger.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/abQxawN"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/abQxawN",
+  "href": "https://codepen.io/tatum-devrel/pen/abQxawN",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

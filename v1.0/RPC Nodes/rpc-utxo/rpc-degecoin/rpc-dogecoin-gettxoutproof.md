@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `gettxoutproof` RPC method returns a hex-encoded proof that the specified transaction(s) were included in a block. This method can be used to provide proof of inclusion for one or more transactions in the blockchain.
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/xxQBgjw?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/xxQBgjw?editors=1111",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/xxQBgjw?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

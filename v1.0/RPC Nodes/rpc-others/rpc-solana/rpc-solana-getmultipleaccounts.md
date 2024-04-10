@@ -45,7 +45,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getMultipleAccounts` RPC method fetches information about multiple accounts. This is handy when you need to retrieve data about multiple accounts simultaneously, such as for a portfolio management application or a multi-account wallet.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/xxQBVOJ?editors=1011"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/xxQBVOJ?editors=1011",
+  "href": "https://codepen.io/tatum-devrel/pen/xxQBVOJ?editors=1011",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

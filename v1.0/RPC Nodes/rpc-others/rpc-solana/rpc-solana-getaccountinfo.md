@@ -42,7 +42,18 @@ The `getAccountInfo` RPC method is used to fetch and retrieve specific and detai
 
 This method could be used in scenarios where detailed account data is required, for example, to verify transactions, check account balances, or to review the account's history.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQErrY"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQErrY",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQErrY",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

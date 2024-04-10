@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getAssetIssueList` RPC method allows you to query the list of all the TRC10 tokens on the TRON network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/XWyQOLq"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/XWyQOLq",
+  "href": "https://codepen.io/tatum-devrel/pen/XWyQOLq",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

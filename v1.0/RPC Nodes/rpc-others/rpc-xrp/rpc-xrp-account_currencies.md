@@ -39,7 +39,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `accountCurrencies` method retrieves a list of currencies that an account can send or receive, based on its trust lines. This isn't a thoroughly confirmed list but can be used to populate user interfaces.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQyjNx"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQyjNx",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQyjNx",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

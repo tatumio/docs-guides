@@ -42,7 +42,18 @@ The `getHealth` method is used to monitor the current health of the node. This m
 
 Please note that if one or more `--known-validator` arguments are provided to `solana-validator`, "ok" is returned when the node is within `HEALTH_CHECK_SLOT_DISTANCE` slots of the highest known validator; otherwise, an error is returned. If no known validators are provided, "ok" is always returned.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/QWJoKVb"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/QWJoKVb",
+  "href": "https://codepen.io/tatum-devrel/pen/QWJoKVb",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

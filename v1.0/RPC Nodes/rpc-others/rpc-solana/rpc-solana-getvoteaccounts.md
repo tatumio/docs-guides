@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/rNQReoZ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/rNQReoZ",
+  "href": "https://codepen.io/tatum-devrel/pen/rNQReoZ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Overview
 

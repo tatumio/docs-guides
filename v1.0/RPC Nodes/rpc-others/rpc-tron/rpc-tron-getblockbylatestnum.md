@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getBlockByLatestNum` method retrieves a specified number of the most recent blocks from the TRON blockchain. This can be helpful when you need to analyse or display recent blockchain data.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/ExOJrGL"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/ExOJrGL",
+  "href": "https://codepen.io/tatum-devrel/pen/ExOJrGL",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

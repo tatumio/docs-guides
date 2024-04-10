@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getFirstAvailableBlock` method returns the slot of the lowest confirmed block that has not been purged from the ledger. This method is useful when you want to start parsing the ledger from the oldest available data, or when you want to check how far back the data in your node goes. This can be critical in scenarios where historical block data is required for backtracking transactions or auditing purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/MWzxjvK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/MWzxjvK",
+  "href": "https://codepen.io/tatum-devrel/pen/MWzxjvK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `decodescript` RPC method decodes a serialized (hex-encoded) script and provides information about the script in a human-readable format. This method is useful for inspecting scripts for debugging purposes or for understanding their structure.
 
-{% embed url="<https://codepen.io/Martin-Zemanek/pen/dyQrvdm"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Martin-Zemanek/pen/dyQrvdm",
+  "href": "https://codepen.io/Martin-Zemanek/pen/dyQrvdm",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

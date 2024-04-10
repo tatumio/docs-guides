@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getTransactionCount` method retrieves the current transaction count from the ledger. This can be used to track the number of transactions processed by the network.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/jOQJroJ?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/jOQJroJ?editors=1111",
+  "href": "https://codepen.io/tatum-devrel/pen/jOQJroJ?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

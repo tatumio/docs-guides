@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 `getblockchaininfo` is a Litecoin RPC method that provides general information about the current state of the blockchain. This method is useful for obtaining an overview of the blockchain, including the best block hash, chain height, difficulty, and network protocol version. It can be used for various purposes, such as monitoring the blockchain, tracking network upgrades, and assessing the current mining difficulty.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQEPrd"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQEPrd",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQEPrd",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

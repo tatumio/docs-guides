@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getVersion` method is used to retrieve the current Solana version running on the node. This information can be useful for troubleshooting, compatibility checks, or for understanding the node's capabilities based on its version.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQPXVV"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQPXVV",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQPXVV",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

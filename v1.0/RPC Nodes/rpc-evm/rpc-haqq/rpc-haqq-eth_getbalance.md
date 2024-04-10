@@ -36,7 +36,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_getBalance` method is an Haqq JSON-RPC method that allows you to retrieve the Haqq balance of a specified address. This method can be used to query the balance of any Haqq address, whether it is a contract or an externally owned account (EOA). A common use case for this method is to display the current balance of a user's account in a wallet application or a decentralized application (DApp).
 
-{% embed url="<https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwZvp?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwZvp?editors=1111",
+  "href": "https://codepen.io/Jan-Musil-the-lessful/pen/ZEmwZvp?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

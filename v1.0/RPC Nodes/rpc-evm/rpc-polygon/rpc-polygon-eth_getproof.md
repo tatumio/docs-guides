@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_getProof` is a Polygon JSON-RPC method that retrieves the Merkle-Patricia proof for an account, storage key-value pairs, and account transaction count. It allows developers to verify the state of an account or storage value at a specific block without needing the entire Polygon state trie. This method is particularly useful for light clients or off-chain applications that require proof of an account's state or specific storage values.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQbvzv"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQbvzv",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQbvzv",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

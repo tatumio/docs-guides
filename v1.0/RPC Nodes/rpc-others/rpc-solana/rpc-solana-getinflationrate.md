@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getInflationRate` method is used to retrieve the specific inflation values for the current epoch in the Solana blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/vYQPXOp"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/vYQPXOp",
+  "href": "https://codepen.io/tatum-devrel/pen/vYQPXOp",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

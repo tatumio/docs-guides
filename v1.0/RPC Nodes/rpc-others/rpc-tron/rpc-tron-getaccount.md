@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getAccount` method is used to query information about an account on the TRON network. It provides details including TRX balance, TRC-10 balances, stake information, vote information, permissions, and more.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/oNQOmqa"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/oNQOmqa",
+  "href": "https://codepen.io/tatum-devrel/pen/oNQOmqa",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

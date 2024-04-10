@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getTokenAccountBalance` method provides the ability to fetch the current balance of a given SPL Token account. It is used when you want to know the amount of tokens held in a specific token account. The token account is specified by its public key.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/KKrEzqq"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/KKrEzqq",
+  "href": "https://codepen.io/tatum-devrel/pen/KKrEzqq",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

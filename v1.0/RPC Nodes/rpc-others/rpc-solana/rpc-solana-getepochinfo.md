@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getEpochInfo` method returns information about the current epoch on the Solana network. This includes the current slot, block height, epoch number, slot index, the number of slots in this epoch, and the total number of transactions processed without error since genesis. This data can be essential for developers and operators of Solana nodes to understand the current state of the network and to track its progress over time.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/JjezRzL"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/JjezRzL",
+  "href": "https://codepen.io/tatum-devrel/pen/JjezRzL",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

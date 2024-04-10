@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getClusterNodes` method returns information about all the nodes participating in the cluster. This method can be used for network analysis, monitoring, and audit purposes. For example, you can use it to track the versions of software running on various nodes, identify the public keys of nodes, or determine the network addresses for various services.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/YzRgGjO"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/YzRgGjO",
+  "href": "https://codepen.io/tatum-devrel/pen/YzRgGjO",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

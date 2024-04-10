@@ -46,7 +46,18 @@ This method can fail to find the transaction due to the following reasons:
 - The transaction exists, but not in the specified ledger version.
 - The server does not have the specified ledger version available. Another server that has the correct version on hand may have a different response.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/xxQeQXN"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/xxQeQXN",
+  "href": "https://codepen.io/tatum-devrel/pen/xxQeQXN",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

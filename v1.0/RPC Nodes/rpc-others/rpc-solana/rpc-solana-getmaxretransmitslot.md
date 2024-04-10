@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getMaxRetransmitSlot` method returns the highest slot number seen from the retransmit stage. This can be useful for monitoring the progress of the network or for determining the highest slot number that has been processed by a specific node.
 
-{% embed url="<https://codepen.io/Night-Shift-Dev/pen/abQZJGR"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/Night-Shift-Dev/pen/abQZJGR",
+  "href": "https://codepen.io/Night-Shift-Dev/pen/abQZJGR",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

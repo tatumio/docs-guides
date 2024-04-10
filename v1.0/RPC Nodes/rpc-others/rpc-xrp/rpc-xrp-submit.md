@@ -47,7 +47,18 @@ The `submit` method is an RPC method in the XRP Ledger which is used to apply a 
 
 Use cases for this method include submitting transactions to the XRP ledger, such as sending payments, managing trust lines, or deploying smart contracts.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/LYXvXLw"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/LYXvXLw",
+  "href": "https://codepen.io/tatum-devrel/pen/LYXvXLw",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

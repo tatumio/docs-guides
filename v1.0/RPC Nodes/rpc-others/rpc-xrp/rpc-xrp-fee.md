@@ -38,7 +38,18 @@ The `fee` method reports the current state of the open-ledger requirements for t
 
 The `fee` method is useful for gaining insight into the current transaction costs and the state of the ledger and transaction queue. It can be used by unprivileged users to understand the fees associated with transactions at a particular point in time.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/RwqOqdK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/RwqOqdK",
+  "href": "https://codepen.io/tatum-devrel/pen/RwqOqdK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

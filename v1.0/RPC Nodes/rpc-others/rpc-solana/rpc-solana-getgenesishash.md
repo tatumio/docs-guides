@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getGenesisHash` method returns the genesis hash of the Solana network. The genesis hash is an important piece of information in the blockchain world. It is the initial block or the very first block in a blockchain. The genesis hash can be used for various use cases such as to verify the integrity of data, as a reference point in the blockchain, and for debugging purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/qBQvaVV"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/qBQvaVV",
+  "href": "https://codepen.io/tatum-devrel/pen/qBQvaVV",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

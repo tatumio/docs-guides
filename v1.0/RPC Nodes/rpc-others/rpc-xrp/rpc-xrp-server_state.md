@@ -38,7 +38,18 @@ The `server_state` RPC method is used to retrieve various machine-readable infor
 
 This method can be useful when you need to gather specific information about the server's state, such as the build version, complete ledgers, load base, load factor, server state, and more. This information can be useful for monitoring the health and performance of a rippled server.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/mdQgaXx"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/mdQgaXx",
+  "href": "https://codepen.io/tatum-devrel/pen/mdQgaXx",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

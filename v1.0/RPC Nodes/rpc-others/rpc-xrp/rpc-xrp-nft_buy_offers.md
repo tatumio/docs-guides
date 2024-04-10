@@ -38,7 +38,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `nft_buy_offers` method is used to get a list of active buy offers for a specific NFToken. This allows users to track and analyze offers for a particular token and make informed decisions based on the market demand.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/Poxgxyj"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/Poxgxyj",
+  "href": "https://codepen.io/tatum-devrel/pen/Poxgxyj",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

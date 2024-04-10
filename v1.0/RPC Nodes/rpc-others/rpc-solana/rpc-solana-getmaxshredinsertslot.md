@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getMaxShredInsertSlot` method returns the highest slot number observed after a shred insert. This can be useful for monitoring the highest slot number that a specific node has processed after the shred insert stage, providing insights into the node's synchronisation status.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/gOQEwQy"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/gOQEwQy",
+  "href": "https://codepen.io/tatum-devrel/pen/gOQEwQy",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

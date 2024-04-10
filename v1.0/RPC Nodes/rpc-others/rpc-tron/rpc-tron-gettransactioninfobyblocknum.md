@@ -39,7 +39,18 @@ Replace `1000000` with the actual block height that you want to get information 
 
 The `getTransactionInfoByBlockNum` method allows you to query the TransactionInfo data of all transactions contained in the block of a specified height. This can be particularly useful when you need to track the status of all transactions within a particular block or analyse the transactions for auditing purposes.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/dyQLarr"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/dyQLarr",
+  "href": "https://codepen.io/tatum-devrel/pen/dyQLarr",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

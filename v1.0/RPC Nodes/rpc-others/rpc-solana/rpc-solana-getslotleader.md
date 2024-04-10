@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getSlotLeader` method returns the identity of the node that is currently the leader of the slot. In the Solana network, a slot leader is responsible for producing blocks for the network during their assigned slot time. This method could be used to monitor the network's operation or for analysis of network activity.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/WNYmGze"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/WNYmGze",
+  "href": "https://codepen.io/tatum-devrel/pen/WNYmGze",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

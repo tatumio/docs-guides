@@ -41,7 +41,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `accountObjects` method returns the raw ledger format for all objects owned by an account. This includes Offer objects for orders that are currently live, unfunded, or expired but not yet removed, RippleState objects for trust lines where this account's side is not in the default state, the account's SignerList, if the account has multi-signing enabled, Escrow objects for held payments that have not yet been executed or canceled, PayChannel objects for open payment channels, Check objects for pending Checks, DepositPreauth objects for deposit preauthorizations, Ticket objects for Tickets, and NFTokenPage objects for collections of NFTs.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/bGQJxYQ"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/bGQJxYQ",
+  "href": "https://codepen.io/tatum-devrel/pen/bGQJxYQ",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

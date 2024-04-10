@@ -40,7 +40,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getLatestBlockhash` method returns the latest blockhash of the ledger. The blockhash is essential for transaction processing to ensure transaction uniqueness and to provide cryptographic security for the ledger. This method is critical in scenarios where the latest blockhash is needed for transaction signing or to confirm the most recent state of the blockchain.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/eYQXdVd?editors=1111"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/eYQXdVd?editors=1111",
+  "href": "https://codepen.io/tatum-devrel/pen/eYQXdVd?editors=1111",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 

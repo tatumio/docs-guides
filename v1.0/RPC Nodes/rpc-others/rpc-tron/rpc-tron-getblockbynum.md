@@ -42,7 +42,18 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `getBlockByNum` method returns the block object corresponding to the block height specified (the number of blocks preceding it). This could be useful for retrieving specific block data or for validating transactions within a certain block.
 
-{% embed url="<https://codepen.io/tatum-devrel/pen/GRwLzPK"> %}
+[block:embed]
+{
+  "html": false,
+  "url": "https://codepen.io/tatum-devrel/pen/GRwLzPK",
+  "href": "https://codepen.io/tatum-devrel/pen/GRwLzPK",
+  "typeOfEmbed": "iframe",
+  "height": "300px",
+  "width": "100%",
+  "iframe": true,
+  "provider": "codepen.io"
+}
+[/block]
 
 ### Parameters
 
