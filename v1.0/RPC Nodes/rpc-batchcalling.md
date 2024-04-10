@@ -1,22 +1,13 @@
 ---
 title: "Batch Calling"
 slug: "rpc-batch-calling"
-excerpt: ""
+excerpt: "This page provides info on making batch calls to our RPC nodes, enabling efficient and simultaneous requests. Batch calling is useful for scenarios requiring data from multiple blocks or transaction."
 hidden: false
 createdAt: "Tue Mar 19 2024 13:25:36 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:34 GMT+0000 (Coordinated Universal Time)"
 ---
 
----
-description: >-
-  This page provides info on making batch calls to our RPC nodes, enabling
-  efficient and simultaneous requests. Batch calling is useful for scenarios
-  requiring data from multiple blocks or transaction.
----
-
-# Batch Calling
-
-## **Overview**
+# **Overview**
 
 Batch calling allows you to send multiple JSON-RPC requests in a single API call. This method is efficient for retrieving or sending data to multiple endpoints in one network request, streamlining your interactions with the blockchain.
 
@@ -26,7 +17,7 @@ Batch calling allows you to send multiple JSON-RPC requests in a single API call
 > 2. This feature requires the use of the SDK with an API key.&#x20;
 > 3. All batch requests are processed as raw node requests.
 
-## Init Example via SDK
+# Init Example via SDK
 
 For batch calling, you can use our SDK to simplify the process. Here's an example of initialising the SDK for batch requests:
 
@@ -40,11 +31,11 @@ const tatum = await TatumSDK.init({
 )
 ```
 
-## Batch Call Format
+# Batch Call Format
 
 A batch call is a JSON array containing multiple JSON-RPC request objects. Each object in the array is a separate request, following the standard JSON-RPC request format.
 
-## Preparing the request
+# Preparing the request
 
 The rawBatchRpcCall function expects request as an array of request objects, where each request is a standard rpc request.
 
@@ -59,7 +50,7 @@ The rawBatchRpcCall function expects request as an array of request objects, whe
 }]'
 ```
 
-## Making the Batch Request :&#x20;
+# Making the Batch Request :&#x20;
 
 ```javascript
 const { TatumSDK, Network } = require('@tatumio/tatum');
@@ -92,7 +83,7 @@ console.log(batchRequest)
 })();
 ```
 
-## Best Practices
+# Best Practices
 
 * Ensure that each request in the batch has a unique ID.
 * Verify the format and parameters of each request to avoid errors.
