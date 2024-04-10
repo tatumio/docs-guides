@@ -1,5 +1,5 @@
 ---
-title: "RPC Nodes Overview"
+title: "RPC Nodes"
 slug: "rpc-overview"
 excerpt: "The RPC (Remote Procedure Call) submodule is an essential component in blockchain development that enables communication and interaction with the blockchain network."
 hidden: false
