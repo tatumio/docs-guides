@@ -6,7 +6,7 @@ hidden: false
 createdAt: "Wed Mar 06 2024 10:39:28 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:04 GMT+0000 (Coordinated Universal Time)"
 ---
-Bitcoin RPC (Remote Procedure Call) is an essential tool for developers seeking to interact with the Bitcoin blockchain network. It provides a standardised interface for communication, enabling developers to retrieve data, send transactions, deploy smart contracts, and more. Bitcoin RPC plays a vital role in building decentralised applications, integrating blockchain functionality, and exploring the vast ecosystem of Bitcoin. \
+Bitcoin RPC (Remote Procedure Call) is an essential tool for developers seeking to interact with the Bitcoin blockchain network. It provides a standardised interface for communication, enabling developers to retrieve data, send transactions, deploy smart contracts, and more. Bitcoin RPC plays a vital role in building decentralised applications, integrating blockchain functionality, and exploring the vast ecosystem of Bitcoin.
 
 
 ## Getting Started with Bitcoin RPC using Tatum SDK (Video Tutorial):
