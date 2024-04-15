@@ -50,7 +50,7 @@ A successful call to this endpoint returns an array of the requested block paylo
 ## Request Example
 
 ```curl
-curl --location --request POST 'https://api.chainweb.com/{apiVersion}/{nodeVersion}/chain/{chain}/payload/outputs/batch' \
+curl --location --request POST '[https://api.chainweb.com](https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key})/chainweb/{apiVersion}/{nodeVersion}/chain/{chain}/payload/outputs/batch' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "payloadHashes": ["hash1", "hash2"]
