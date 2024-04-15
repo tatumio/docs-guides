@@ -5,6 +5,7 @@ excerpt: "The RPC (Remote Procedure Call) submodule is an essential component in
 hidden: false
 createdAt: "Tue Mar 19 2024 13:25:36 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:34 GMT+0000 (Coordinated Universal Time)"
+categoryId: "65c5e93c623cad004b45d505"
 ---
 
 RPC in blockchain development refers to the protocol and mechanism used to connect to a blockchain network and perform operations remotely. It allows developers to interact with the blockchain without running a full node locally. RPC provides a standardised interface to communicate with the blockchain network, making it easier to build decentralised applications (DApps) and interact with smart contracts.
