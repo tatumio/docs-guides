@@ -53,7 +53,11 @@ import { TatumSDK, Kadena, Network } from "@tatumio/tatum";
 const tatum = await TatumSDK.init<Kadena>({ network: Network.KADENA_MAINNET });
 
 const payloadOutputs = await tatum.kadena.getPayloadWithOutputs({
-  chain: "0", // Example chain ID
+  network: {
+    apiVersion: "0.0",
+    nodeVersion: "mainnet01",
+    chain: "0", // Example chain ID
+  },
   payloadHash: "your_payload_hash_here",
 });
 
