@@ -7,5 +7,7 @@ createdAt: "Wed Mar 06 2024 10:34:11 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:35 GMT+0000 (Coordinated Universal Time)"
 ---
 Overview of the EVM chains we support
-1. Arbitrum
-2. Avalanche
+1. Ethereum
+2. Arbitrum
+3. Avalanche
+4. Base 
