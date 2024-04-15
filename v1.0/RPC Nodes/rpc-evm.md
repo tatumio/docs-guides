@@ -8,7 +8,7 @@ updatedAt: "Sat Apr 06 2024 12:59:35 GMT+0000 (Coordinated Universal Time)"
 ---
 Overview of the EVM chains we support
 - Ethereum
-- Arbitrum
+- [Arbitrum](/reference/rpc-arbitrum)
 - Avalanche
 - Base
 - Binance Smart Chain
