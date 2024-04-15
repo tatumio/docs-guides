@@ -53,7 +53,11 @@ import { TatumSDK, Kadena, Network } from "@tatumio/tatum";
 const tatum = await TatumSDK.init<Kadena>({ network: Network.KADENA_MAINNET });
 
 const blockHashes = await tatum.kadena.getBlockHashes({
-  chain: "0", // Example chain ID
+  network: {
+    apiVersion: "0.0",
+    nodeVersion: "mainnet01",
+    chain: "0", // Example chain ID
+  },
   limit: 2,
   next: "inclusive:o1S4NNFhKWg8T1HEkmDvsTH9Ut9l3_qHRpp00yRKZIk",
   minheight: 1000000,
