@@ -11,10 +11,6 @@ Polygon RPC (Remote Procedure Call) is a crucial tool for developers looking to 
 
 Getting Started with Polygon RPC using Tatum SDK (Video Tutorial):
 
-{% embed url="https://youtu.be/z5DN8s2qv0g" %}
-Polygon RPC
-{% endembed %}
-
 [block:embed]
 {
   "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fz5DN8s2qv0g%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dz5DN8s2qv0g&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fz5DN8s2qv0g%2Fhqdefault.jpg&key=7788cb384c9f4d5dbbdbeffd9fe4b92f&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
