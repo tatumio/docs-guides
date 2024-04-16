@@ -3,20 +3,19 @@ title: "debug_traceBlockByHash"
 slug: "rpc-ethereum-debug_traceblockbyhash"
 excerpt: "Ethereum RPC"
 hidden: false
-metadata: 
+metadata:
   image: []
   keywords: "Ethereum, rpc"
   robots: "index"
 createdAt: "Mon Mar 18 2024 13:51:30 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ---
+
 [block:html]
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+"html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n <h5>Archive Method</h5>\n <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
 }
 [/block]
-
-
 
 ## Overview
 
@@ -91,23 +90,24 @@ curl --location 'https://api.tatum.io/v3/blockchain/node/ethereum-mainnet/' \
     "jsonrpc": "2.0"
 }'
 ```
+
 ```javascript JS SDK
 // yarn add @tatumio/tatum
 
-import { TatumSDK, Ethereum, Network } from '@tatumio/tatum'
+import { TatumSDK, Ethereum, Network } from "@tatumio/tatum";
 
-const tatum = await TatumSDK.init<Ethereum>({network: Network.ETHEREUM})
+const tatum = (await TatumSDK.init) < Ethereum > { network: Network.ETHEREUM };
 
 const result = await tatum.rpc.debugTraceBlockByHash(
-'0x3c4523b7e8c21e3d68f1c3af3d18e8a87c0d43e35b2c1b7f8f4e87e4d4db9c82',
-{
-  tracer: 'callTracer',
-  tracerConfig: {
+  "0x3c4523b7e8c21e3d68f1c3af3d18e8a87c0d43e35b2c1b7f8f4e87e4d4db9c82",
+  {
+    tracer: "callTracer",
+    tracerConfig: {
       onlyTopCall: true,
-      timeout: '5s',
+      timeout: "5s",
+    },
   }
-}
-)
+);
 
-await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
+await tatum.destroy(); // Destroy Tatum SDK - needed for stopping background jobs
 ```
