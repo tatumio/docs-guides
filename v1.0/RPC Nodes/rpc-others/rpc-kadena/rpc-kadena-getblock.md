@@ -1,6 +1,7 @@
 ---
-title: "kda_getBlock"
-slug: "rpc-kadena-getblock"
+title: "getBlock"
+slug: "rpc-kadena"
+category: "661e7fea434d5f0011909543"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:
