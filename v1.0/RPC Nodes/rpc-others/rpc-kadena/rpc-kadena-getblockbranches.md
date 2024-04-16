@@ -1,7 +1,7 @@
 ---
 title: "getBlockBranches"
 slug: "rpc-kadena-getblockbranches"
-excerpt: "Kadena Get Block Branches"
+excerpt: "Kadena RPC"
 hidden: false
 metadata:
   description: "Retrieve blocks from branches in the Kadena blockchain."
