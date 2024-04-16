@@ -1,6 +1,7 @@
 ---
 title: "getPayloadByHash"
-slug: "rpc-kadena-getpayloadbyhash"
+slug: "rpc-kadena"
+category: "661e7fea434d5f0011909543"
 excerpt: "getCurrentCut"
 hidden: false
 metadata:
