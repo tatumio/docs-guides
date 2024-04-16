@@ -1,7 +1,7 @@
 ---
 title: "getPayloadByHash"
 slug: "rpc-kadena-getpayloadbyhash"
-excerpt: "Kadena Get Payload by Hash"
+excerpt: "getCurrentCut"
 hidden: false
 metadata:
   description: "Retrieve payload data for a specific block in the Kadena blockchain by payload hash."
