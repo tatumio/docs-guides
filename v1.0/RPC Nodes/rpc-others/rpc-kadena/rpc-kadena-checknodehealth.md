@@ -1,5 +1,5 @@
 ---
-title: "kda_checkNodeHealth"
+title: "checkNodeHealth"
 slug: "rpc-kadena-checknodehealth"
 excerpt: "Kadena RPC"
 hidden: false
