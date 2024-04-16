@@ -1,6 +1,6 @@
 ---
 title: "getCurrentCut"
-excerpt: "Kadena RPC"
+slug: "rpc-kadena-getcurrentcut"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:
