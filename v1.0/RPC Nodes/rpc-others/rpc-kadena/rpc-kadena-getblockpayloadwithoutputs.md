@@ -1,7 +1,6 @@
 ---
 title: "getPayloadWithOutputs"
-slug: "rpc-kadena"
-category: "661e7fea434d5f0011909543"
+category: "661d0b799020b9000fbd3948"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:
