@@ -2,6 +2,7 @@
 title: "getBlockHeaderByHash"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockheaderbyhash"
+category: "65c5e93c623cad004b45d505"
 hidden: false
 metadata:
   description: "Retrieve a block header by hash in Kadena blockchain."

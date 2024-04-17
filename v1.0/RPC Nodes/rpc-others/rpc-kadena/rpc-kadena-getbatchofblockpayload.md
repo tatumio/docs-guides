@@ -2,6 +2,7 @@
 title: "getBatchOfBlockPayload"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getbatchofblockpayload"
+category: "65c5e93c623cad004b45d505"
 hidden: false
 metadata:
   description: "Retrieve a batch of block payloads by hash in the Kadena blockchain."
