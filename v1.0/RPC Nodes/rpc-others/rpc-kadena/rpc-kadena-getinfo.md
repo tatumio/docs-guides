@@ -1,6 +1,5 @@
 ---
 title: "getinfo"
-slug: "rpc-kadena"
 category: "661d0b799020b9000fbd3948"
 excerpt: "Kadena RPC"
 hidden: false
