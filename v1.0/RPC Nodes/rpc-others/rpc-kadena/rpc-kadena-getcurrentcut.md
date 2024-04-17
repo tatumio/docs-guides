@@ -1,6 +1,5 @@
 ---
 title: "getCurrentCut"
-category: "65c5e93c623cad004b45d505"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:

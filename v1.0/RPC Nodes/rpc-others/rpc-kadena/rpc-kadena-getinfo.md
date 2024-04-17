@@ -1,7 +1,6 @@
 ---
 title: "getinfo"
 excerpt: "Kadena RPC"
-category: "65c5e93c623cad004b45d505"
 hidden: false
 metadata:
   description: "Kadena RPC"
