@@ -1,6 +1,7 @@
 ---
 title: "getBatchBlockPayloadWithOutputs"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-getbatchblockpayloadwithoutputs"
 hidden: false
 metadata:
   description: "Retrieve a batch of block payloads with outputs for specified payload hashes in the Kadena blockchain."

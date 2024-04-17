@@ -1,6 +1,7 @@
 ---
 title: "checkNodeHealth"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-checknodehealth"
 hidden: false
 metadata:
   image: []

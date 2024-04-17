@@ -1,6 +1,7 @@
 ---
 title: "getinfo"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-getinfo"
 hidden: false
 metadata:
   description: "Kadena RPC"

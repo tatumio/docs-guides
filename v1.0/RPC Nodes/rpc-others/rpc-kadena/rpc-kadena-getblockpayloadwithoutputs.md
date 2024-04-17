@@ -1,6 +1,7 @@
 ---
 title: "getPayloadWithOutputs"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-getblockpayloadwithoutputs"
 hidden: false
 metadata:
   description: "Retrieve the block payload with outputs for a given payload hash in the Kadena blockchain."

@@ -1,6 +1,7 @@
 ---
 title: "getBlockHashes"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-getblockhashes"
 hidden: false
 metadata:
   description: "Kadena RPC"

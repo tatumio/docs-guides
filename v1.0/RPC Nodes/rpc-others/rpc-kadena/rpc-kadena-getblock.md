@@ -1,6 +1,7 @@
 ---
 title: "getBlock"
 excerpt: "Kadena RPC"
+slug: "rpc-kadena-getblock"
 hidden: false
 metadata:
   image: []
