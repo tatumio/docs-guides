@@ -12,7 +12,7 @@ createdAt: "Wed Apr 11 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Wed Apr 11 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
 ---
 
-## Overview Test
+## Overview
 
 The `/health-check` endpoint is utilized to confirm the operational status of a Kadena chainweb-node, ensuring it is active, running, and able to respond to API requests. To evaluate the consensus state or the blockchain's current cut, it is advisable to use the `/cut` endpoint. This health check plays a vital role in the maintenance and reliability of blockchain applications by verifying the node's readiness.
 
