@@ -1,7 +1,6 @@
 ---
 title: "checkNodeHealth"
-slug: "rpc-kadena"
-category: "661e7fea434d5f0011909543"
+category: "65c0c794d329e30077a0638a"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:
