@@ -1,6 +1,6 @@
 ---
 title: "getinfo"
-category: "661d0b799020b9000fbd3948"
+category: "65c5e93c623cad004b45d505"
 excerpt: "Kadena RPC"
 hidden: false
 metadata:
