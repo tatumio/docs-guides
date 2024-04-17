@@ -11,7 +11,7 @@ createdAt: "Wed Apr 10 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Wed Apr 10 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
 ---
 
-## Overview
+## Overview test
 
 The `/info` endpoint provides general information about a Kadena node and the chainweb version it is running. This endpoint is crucial for understanding the configuration and status of the node, including:
 
