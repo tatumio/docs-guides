@@ -32,7 +32,6 @@ A successful call to the `/health-check` endpoint yields a plain text response t
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/health-check' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

@@ -44,7 +44,6 @@ A successful call to this endpoint returns the payload data of the specified blo
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/chain/{chain}/payload/{payloadHash}' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

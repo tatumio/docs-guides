@@ -57,7 +57,6 @@ curl --location --request POST 'https://api.tatum.io/v3/blockchain/node/kadena-m
 "payloadHashes": ["hash1", "hash2"]
 }'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

@@ -42,7 +42,6 @@ The `/chain/{chain}/block` endpoint allows for retrieving a collection of blocks
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/chain/{chain}/block?limit={limit}&next={next}&minheight={minheight}&maxheight={maxheight}' \
 --header 'Content-Type: application/json'
 ```
-
 ```javascript
 // yarn add @tatumio/tatum
 

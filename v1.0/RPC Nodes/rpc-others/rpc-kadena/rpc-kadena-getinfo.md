@@ -47,7 +47,6 @@ A successful call to the `/info` endpoint returns a JSON object containing the f
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/info' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

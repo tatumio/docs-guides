@@ -45,7 +45,6 @@ A successful call to this endpoint returns a JSON object containing the followin
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chain/{chain}/header?limit={limit}&next={next}&minheight={minheight}&maxheight={maxheight}' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

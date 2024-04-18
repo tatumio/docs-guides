@@ -48,8 +48,7 @@ A successful request to the `/cut` endpoint returns the current cut of the Kaden
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/cut' \
 --header 'Content-Type: application/json' \
 ```
-
-```typescript JS SDK
+```typescript
 // yarn add @tatumio/tatum
 
 import { TatumSDK, Kadena, Network } from "@tatumio/tatum";

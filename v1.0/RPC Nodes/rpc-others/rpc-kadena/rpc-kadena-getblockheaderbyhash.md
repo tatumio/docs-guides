@@ -36,7 +36,6 @@ A successful call to this endpoint returns the requested block header. The heade
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/chain/{chain}/header/{blockHash}' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

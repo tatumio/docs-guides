@@ -45,7 +45,6 @@ A successful call to the `/chain/{chain}/hash` endpoint returns a JSON object co
 curl --location 'https://api.tatum.io/v3/blockchain/node/kadena-mainnet/{api_key}/chainweb/{apiVersion}/{nodeVersion}/chain/{chain}/hash?limit={limit}&next={next}&minheight={minheight}&maxheight={maxheight}' \
 --header 'Content-Type: application/json'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 

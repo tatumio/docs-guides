@@ -56,7 +56,6 @@ curl --location --request POST 'https://api.tatum.io/v3/blockchain/node/kadena-m
     "payloadHashes": ["RClyuyZAacwvPpmLXKbTwrIRXWeUSjiNhJVP2esH8KM", "QxGCAz5AY1Y41nh1yWtgqhKhZ9pPiPRagFdIKNqBH74"]
 }'
 ```
-
 ```typescript
 // yarn add @tatumio/tatum
 
