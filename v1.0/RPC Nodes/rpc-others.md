@@ -1,7 +1,6 @@
 ---
 title: "Others"
 slug: "rpc-others"
-category: "65c5e93c623cad004b45d505"
 excerpt: ""
 hidden: false
 createdAt: "Wed Mar 06 2024 10:35:03 GMT+0000 (Coordinated Universal Time)"

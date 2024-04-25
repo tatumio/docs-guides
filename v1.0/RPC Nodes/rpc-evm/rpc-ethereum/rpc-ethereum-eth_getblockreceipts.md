@@ -10,9 +10,6 @@ metadata:
 createdAt: "Tue Mar 19 2024 10:46:43 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:37 GMT+0000 (Coordinated Universal Time)"
 ---
-
-
-
 ## Overview
 
 `eth_getBlockReceipts` RPC method is a powerful tool for retrieving the receipts of all transactions included in a block, along with the block header. This method is particularly useful for applications that require detailed information about transactions, such as event logs, gas usage, and the status of transactions. It is supported on nodes running the Erigon client.

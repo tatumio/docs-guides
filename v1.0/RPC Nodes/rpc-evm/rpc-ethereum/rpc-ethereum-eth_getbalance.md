@@ -1,5 +1,16 @@
-# eth\_getBalance
-
+---
+title: "eth_getBalance"
+slug: "rpc-ethereum-eth_getbalance"
+excerpt: "Ethereum RPC"
+category: "6620f7e31ea673003624a8ce"
+hidden: false
+metadata: 
+  image: []
+  keywords: "ethereum, rpc"
+  robots: "index"
+createdAt: "Wed Apr 24 2024 12:57:55 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Wed Apr 24 2024 12:57:55 GMT+0000 (Coordinated Universal Time)"
+---
 ## How to use it
 
 {% tabs %}
