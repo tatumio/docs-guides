@@ -1,7 +1,7 @@
 ---
 title: "constructionPreprocess"
 slug: "rpc-cosmos-constructionpreprocess"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: "Cosmos RPC"
 hidden: false
 metadata:

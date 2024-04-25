@@ -2,7 +2,7 @@
 title: "Kadena"
 slug: "rpc-kadena"
 excerpt: "Kadena RPC"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 createdAt: "Wed Mar 10 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Wed Mar 10 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"

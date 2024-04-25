@@ -2,7 +2,7 @@
 title: "getCurrentCut"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getcurrentcut"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata:
   description: "Kadena RPC"

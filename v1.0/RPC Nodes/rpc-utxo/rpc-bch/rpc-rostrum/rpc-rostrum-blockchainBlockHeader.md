@@ -1,7 +1,7 @@
 ---
 title: "blockchainBlockHeader"
 slug: "rpc-rostrum-blockchainBlockHeader"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: "Rostrum Electrum for Bitcoin Cash"
 hidden: false
 metadata:

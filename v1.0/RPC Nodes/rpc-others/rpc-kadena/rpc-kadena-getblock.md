@@ -2,7 +2,7 @@
 title: "getBlock"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblock"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata:
   image: []

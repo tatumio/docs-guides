@@ -2,7 +2,7 @@
 title: "getBlockHashes"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockhashes"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata:
   description: "Kadena RPC"

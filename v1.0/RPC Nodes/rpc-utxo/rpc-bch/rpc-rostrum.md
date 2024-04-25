@@ -1,7 +1,7 @@
 ---
 title: "Rostrum"
 slug: "rpc-rostrum"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: ""
 hidden: false
 createdAt: "Wed Mar 06 2024 10:39:28 GMT+0000 (Coordinated Universal Time)"

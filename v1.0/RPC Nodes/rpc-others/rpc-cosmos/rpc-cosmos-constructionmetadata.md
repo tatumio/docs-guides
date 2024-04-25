@@ -1,7 +1,7 @@
 ---
 title: "constructionMetadata"
 slug: "rpc-cosmos-constructionmetadata"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: "Rosetta API for Cosmos"
 hidden: false
 metadata:

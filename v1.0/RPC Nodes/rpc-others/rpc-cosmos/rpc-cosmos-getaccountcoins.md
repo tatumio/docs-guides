@@ -1,7 +1,7 @@
 ---
 title: "accountCoins"
 slug: "accountCoins"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: "Rosetta API for {{blockchain}}"
 hidden: false
 metadata:

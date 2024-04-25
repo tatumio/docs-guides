@@ -2,7 +2,7 @@
 title: "getBlockHeaders"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockheaders"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata:
   description: "Retrieve a collection of block headers from the Kadena blockchain."

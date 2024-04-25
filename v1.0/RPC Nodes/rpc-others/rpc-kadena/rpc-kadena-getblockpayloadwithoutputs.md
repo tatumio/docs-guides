@@ -2,7 +2,7 @@
 title: "getPayloadWithOutputs"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockpayloadwithoutputs"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata:
   description: "Retrieve the block payload with outputs for a given payload hash in the Kadena blockchain."

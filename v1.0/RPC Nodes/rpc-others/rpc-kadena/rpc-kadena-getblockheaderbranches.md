@@ -1,7 +1,7 @@
 ---
 title: "getBlockHeaderBranches"
 slug: "rpc-kadena-getblockheaderbranches"
-category: "6620f7e31ea673003624a8cc"
+category: "6620f7e31ea673003624a8ce"
 excerpt: "Retrieve Block Header Branches for a Specific Blockchain Chain"
 hidden: false
 metadata:
