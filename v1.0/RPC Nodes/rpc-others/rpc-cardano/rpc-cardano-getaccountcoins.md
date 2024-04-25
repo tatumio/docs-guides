@@ -3,7 +3,7 @@ title: "getAccountCoins"
 slug: "rpc-cardano-getaccountcoins"
 excerpt: "Cardano RPC"
 hidden: false
-metadata: 
+metadata:
   description: "Cardano RPC"
   image: []
   keywords: "cardano, rpc"
@@ -11,52 +11,54 @@ metadata:
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:06 GMT+0000 (Coordinated Universal Time)"
 ---
+
 [block:html]
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+"html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n <h5>Archive Method</h5>\n <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
 }
 [/block]
-
 
 ### How to use it
 
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
+import { TatumSDK, CardanoRosetta, Network } from "@tatumio/tatum";
 
 // Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
+const tatum = await TatumSDK.init<CardanoRosetta>({
+  network: Network.CARDANO_ROSETTA,
+});
 
 // Define the input parameter in a single object
 const params = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',  // string, required
-        network: 'NETWORK_NAME',  // string, required
+  networkIdentifier: {
+    blockchain: "CARDANO", // string, required
+    network: "NETWORK_NAME", // string, required
+  },
+  accountIdentifier: {
+    address: "ACCOUNT_ADDRESS", // string, required
+    sub_account: {
+      // Specify sub-account information if applicable
     },
-    accountIdentifier: {
-        address: 'ACCOUNT_ADDRESS', // string, required
-        sub_account: {
-            // Specify sub-account information if applicable
-        },
-        metadata: {
-            chain_code: 'CHAIN_CODE', // Specify chain code if applicable
-        },
+    metadata: {
+      chain_code: "CHAIN_CODE", // Specify chain code if applicable
     },
-    includeMempool: true, // boolean, optional
-    currency: {
-        symbol: 'ADA', // string, required
-        decimals: 6,   // number, required
-        metadata: {
-            // Specify metadata only if applicable
-        },
+  },
+  includeMempool: true, // boolean, optional
+  currency: {
+    symbol: "ADA", // string, required
+    decimals: 6, // number, required
+    metadata: {
+      // Specify metadata only if applicable
     },
+  },
 };
 
 // Retrieve unspent coins for an account in Cardano blockchain
 const unspentCoins = await tatum.rpc.getAccountCoins(params);
 
 // Log the unspent coins
-console.log('Unspent Coins:', unspentCoins);
+console.log("Unspent Coins:", unspentCoins);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 await tatum.destroy();

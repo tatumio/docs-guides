@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin"
-slug: "bitcoin-1"
+slug: "rpc-btc"
 excerpt: ""
 hidden: false
 createdAt: "Wed Mar 06 2024 10:39:28 GMT+0000 (Coordinated Universal Time)"

@@ -1,6 +1,6 @@
 ---
 title: "blockchainBlockGet"
-slug: "BlockchainBlockGet"
+slug: "rpc-rostrum-blockchainBlockGet"
 category: "6620f7e31ea673003624a8cc"
 excerpt: "Rostrum Electrum for Bitcoin Cash"
 hidden: false

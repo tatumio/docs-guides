@@ -67,17 +67,17 @@ The `getAccountBalance` method is used to retrieve an account's balance at a spe
 The method returns a JSON object that contains the following properties:
 
 - `balance` (integer): The balance of the account.
-- `block_identifier.hash` (string): The block hash.
-- `block_identifier.number` (integer): The block number.
+- `blockIdentifier.hash` (string): The block hash.
+- `blockIdentifier.number` (integer): The block number.
 
 ### HTTP Request Example
 
 ```json
 {
-  "account_identifier": {
+  "accountIdentifier": {
     "address": "TLLM21wteSPs4hKjbxgmH1L6poyMjeTbHm"
   },
-  "block_identifier": {
+  "blockIdentifier": {
     "hash": "0000000000010c4a732d1e215e87466271e425c86945783c3d3f122bfa5affd9",
     "number": 68682
   },
@@ -90,7 +90,7 @@ The method returns a JSON object that contains the following properties:
 ```json
 {
   "balance": 100000,
-  "block_identifier": {
+  "blockIdentifier": {
     "hash": "0000000000010c4a732d1e215e87466271e425c86945783c3d3f122bfa5affd9",
     "number": 68682
   }

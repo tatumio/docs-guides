@@ -1,6 +1,6 @@
 ---
 title: "blockchainEstimateFee"
-slug: "blockchainEstimateFee"
+slug: "rpc-rostrum-blockchainEstimateFee"
 category: "6620f7e31ea673003624a8cc"
 excerpt: "Rostrum Electrum for Bitcoin Cash"
 hidden: false

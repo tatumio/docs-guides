@@ -52,8 +52,8 @@ The `getBlockBalance` RPC method retrieves all balance change operations in a sp
 The method returns an object with the following properties:
 
 - `timestamp` (integer): The timestamp of the block.
-- `block_identifier.hash` (string): The hash of the block.
-- `block_identifier.number` (integer): The number of the block.
+- `blockIdentifier.hash` (string): The hash of the block.
+- `blockIdentifier.number` (integer): The number of the block.
 - `transaction_balance_trace` (TransactionBalanceTrace\[]): An array of transaction information with balance changes. Each TransactionBalanceTrace object contains:
   - `transaction_identifier` (string): The hash of the transaction.
   - `operation` (Operation\[]): An array of operations involved in the transaction. Each operation contains:
@@ -78,7 +78,7 @@ The method returns an object with the following properties:
 ```json
 {
   "timestamp": 1630847456000,
-  "block_identifier": {
+  "blockIdentifier": {
     "hash": "0000000001f5b9ca67c722d9263879696c92e8e383d4f0b31c15a91b8a249029",
     "number": 32881098
   },

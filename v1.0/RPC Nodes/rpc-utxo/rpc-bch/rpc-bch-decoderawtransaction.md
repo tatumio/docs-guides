@@ -1,6 +1,7 @@
 ---
 title: "decoderawtransaction"
 slug: "rpc-bch-decoderawtransaction"
+category: "6620f7e31ea673003624a8cc"
 excerpt: "BCH RPC"
 hidden: false
 metadata: 
