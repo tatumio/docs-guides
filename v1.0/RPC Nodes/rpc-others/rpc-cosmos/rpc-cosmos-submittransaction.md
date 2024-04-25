@@ -1,80 +1,81 @@
 ---
 title: "submitTransaction"
-slug: "rpc-cardano-submittransaction"
+slug: "rpc-cosmos-submittransaction"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
 metadata: 
-  description: "Cardano RPC"
+  description: "Submit transactions to the Cosmos network."
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc, submit transaction"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `submitTransaction` method allows you to submit a signed transaction to the Cosmos network for processing. This is essential for pushing transactions to the blockchain, enabling transfers, smart contract interactions, and other blockchain activities.
+
+## Parameters
+
+| Name                  | Type   | Required | Description                                                      |
+| --------------------- | ------ | -------- | ---------------------------------------------------------------- |
+| `networkIdentifier`     | object                              | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`            | string (from networkIdentifier)     | Yes      | The blockchain identifier, typically "Cosmos".                  |
+| `network`               | string (from networkIdentifier)     | Yes      | The network name on which the transaction is taking place.      |
+| `subNetworkIdentifier`  | object (from networkIdentifier)     | No       | Optional sub-network identifier object.                         |
+| `network`               | string (from subNetworkIdentifier)  | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`              | object (from subNetworkIdentifier)  | No       | Metadata associated with the sub-network.                       |
+| `signedTransaction`     | string | Yes      | The signed transaction data in hexadecimal format.               |
+
+## Returns
+
+The method returns a response from the Cosmos network that typically includes the transaction hash, indicating successful submission.
+
+| Field                | Description                                         |
+| -------------------- | --------------------------------------------------- |
+| `transactionHash`      | The hash of the transaction as accepted by the network. |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+  "transactionHash": "CBA1234ABCD5678EFGH91011IJ"
 }
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const submitRequest = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',   // Specify the blockchain identifier ('CARDANO' for Cardano).
-        network: 'NETWORK_NAME', // Specify the network name.
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME', // Specify the sub-network name (optional).
-            metadata: {
-                // Optional metadata.
-            },
-        },
-    },
-    signedTransaction: 'SIGNED_TRANSACTION', // Specify the signed transaction to submit.
-};
-
-// Submit the signed transaction to the network
-const transactionResponse = await tatum.rpc.submitTransaction(submitRequest);
-
-// Log the transaction response
-console.log('Transaction Response:', transactionResponse);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
 ```
 
-### Overview
+## Request Example
 
-The `submitTransaction` method allows you to submit a signed transaction to the Cardano network for processing. After successfully constructing and signing a transaction, you can use this method to broadcast it to the network.
+```curl
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construction/submit' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data-raw '{
+    "networkIdentifier": {
+        "blockchain": "cosmos",
+        "network": "mainnet"
+    },
+    "signedTransaction": "7f2b...f123"
+}'
+```
 
-### Example Use Cases
+```typescript
+// yarn add @tatumio/tatum
 
-1. **Transaction Submission**: Developers can use this method to submit a signed Cardano transaction to the network for execution. This is the final step in the transaction lifecycle.
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-### Request Parameters
+const cosmos = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAINNET });
 
-The `submitTransaction` method requires the following parameters in the request body:
+const submitResponse = await tatum.rpc.submitTransaction({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet",
+  },
+  signedTransaction: "7f2b...f123"
+});
 
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to 'CARDANO' for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `signedTransaction` (string, required): The signed transaction blob that you want to submit to the Cardano network.
+console.log('Transaction Response:', submitResponse);
 
-### Return Object
-
-The method returns an object representing the response from the Cardano network after submitting the signed transaction. This response may include details about the transaction's acceptance by the network.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+await tatum.destroy(); // Destroy Tatum SDK - needed for stopping background jobs
+```

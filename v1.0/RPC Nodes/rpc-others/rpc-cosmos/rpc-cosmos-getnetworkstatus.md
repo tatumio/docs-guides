@@ -1,82 +1,117 @@
 ---
 title: "getNetworkStatus"
-slug: "rpc-cardano-getnetworkstatus"
+slug: "rpc-cosmos-getnetworkstatus"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Retrieve current operational status and other relevant details about the Cosmos network."
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc, network status"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `getNetworkStatus` method provides real-time information about the operational status of the Cosmos network. This includes the current network conditions, recent blocks, and any network events.
+
+## Request Parameters
+
+| Name                   | Type                               | Required | Description                                                     |
+| ---------------------- | ---------------------------------- | -------- | --------------------------------------------------------------- |
+| `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`           | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                  |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name, e.g., "cosmos-mainnet".                       |
+| `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                         |
+| `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                       |
+| `metadata`             | object                             | No       | Optional metadata providing additional context for the request. |
+
+## Returns
+
+The response provides comprehensive details about the network's current state, essential for developers monitoring network health or preparing for network-wide events.
+
+| Field                      | Description                                            |
+| -------------------------- | ------------------------------------------------------ |
+| `current_block_identifier` | The identifier of the most recently confirmed block.   |
+| `current_block_timestamp`  | Timestamp of the latest block in Unix milliseconds.    |
+| `genesis_block_identifier` | The identifier of the network's genesis block.         |
+| `peers`                    | List of active peers with which the node is connected. |
+
+## Example Result
+
+The response returns detailed information about the current state of the network including the most recent block, the genesis block, the oldest block available due to pruning, synchronization status, and the active peers connected to the node.
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
-}
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const params = {
-    network_identifier: {
-        blockchain: 'CARDANO',  // string, required
-        network: 'NETWORK_NAME',  // string, required
-        sub_network_identifier: {
-            network: 'SUB_NETWORK_NAME',  // string (optional)
-            metadata: {
-                [key: string]: any,  // object (optional)
-            },
-        },
+  "current_block_identifier": {
+    "index": 5200568,
+    "hash": "9035A963AA5A28729F0BA316801E901A4E8B1500B2E28301FA296C2D61816F53"
+  },
+  "current_block_timestamp": 1618355642000,
+  "genesis_block_identifier": {
+    "index": 1,
+    "hash": "34EC9C1A9AB4092CF4B14B4C8107410E70FDDC09AB7B10877B167872E6F24ECC"
+  },
+  "oldest_block_identifier": {
+    "index": 500,
+    "hash": "4F2A8B7B5E6233851C8756AE12F4759881F2B5DE9F9B44F6A6F5EA5ABD3FCD82"
+  },
+  "sync_status": {
+    "synced": true,
+    "synced_through": {
+      "index": 5200000,
+      "hash": "C2D61816F538B1500B2E28301FA296C2D61816F53A963AA5A28729F0BA316801"
+    }
+  },
+  "peers": [
+    {
+      "peer_id": "cosmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34mf0eh",
+      "metadata": {
+        "client_version": "v0.34.7"
+      }
     },
-    metadata: {
-                [key: string]: any,  // object (optional)
-            }, 
-};
-
-// Retrieve the status of the Cardano network
-const getNetworkStatus = await tatum.rpc.getNetworkStatus(params);
-
-// Log the network status
-console.log('Cardano Network Status:', getNetworkStatus);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
+    {
+      "peer_id": "cosmos1ql48hskj328lsv8zp6u6lqwdr8083gg9xlvnrz",
+      "metadata": {
+        "client_version": "v0.34.9"
+      }
+    }
+  ]
+}
 ```
 
-### Overview
+This structured response ensures that clients can accurately assess the node’s view of the blockchain, whether the node is up-to-date with the blockchain, the oldest data available for querying due to state pruning, and the current peers connected to the network for data propagation and consensus.
 
-The `getNetworkStatus` method allows you to retrieve the current status of a Cardano network.
+## Request Example
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/network/status' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+  "network_identifier": {
+    "blockchain": "cosmos",
+    "network": "mainnet"
+  }
+}'
+```
+```typescript
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-### Example Use Cases
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_MAINNET,
+});
 
-1. **Network Information**: Developers can use this method to retrieve the current status and information of a Cardano network, including details about the network itself and its status.
+const networkStatus = await tatum.rpc.getNetworkStatus({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "cosmos-mainnet",
+  },
+});
 
-### Request Parameters
+console.log("Cosmos Network Status:", networkStatus);
 
-The `getNetworkStatus` method requires the following parameters:
-
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `metadata` (object, optional): Metadata associated with the network status.
-
-### Return Object
-
-The method returns an object representing the current status of the Cardano network.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+await tatum.destroy();
+```

@@ -1,168 +1,138 @@
 ---
 title: "constructionPayloads"
-slug: "rpc-cardano-constructionpayloads"
+slug: "rpc-cosmos-constructionpayloads"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Rosetta API for Cosmos"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Cosmos RPC"
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
-{
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
-}
-[/block]
 
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const params = {
-    networkIdentifier: {
-      blockchain: 'CARDANO', // Required: Specifies the blockchain .
-      network: 'MAINNET', // Required: Specifies the network name .
-      subNetworkIdentifier: {
-        network: 'SUB_NETWORK_NAME', // Optional: Specifies the sub-network name .
-        metadata: {
-          KEY: 'VALUE', // Optional: Specify metadata .
-        },
-      },
-    },
-    operations: [
-      {
-        operation_identifier: {
-          index: 1, // Required: Specifies the operation index (number).
-          network_index: 0, // Optional: Specifies the network index (number).
-        },
-        related_operations: [
-          {
-            index: 2, // Optional: Specifies the related operation index (number).
-            network_index: 1, // Optional: Specifies the related network index (number).
-          },
-        ],
-        type: 'OPERATION_TYPE', // Required: Specifies the operation type.
-        status: 'OPERATION_STATUS', // Optional: Specifies the operation status .
-        account: {
-          address: 'ACCOUNT_ADDRESS', // Required: Specifies the account address .
-          sub_account: {
-            address: 'SUB_ACCOUNT_ADDRESS', // Optional: Specifies the sub-account address .
-            metadata: {
-              // Optional metadata object for the sub-account
-            },
-          },
-          metadata: {
-            // Optional metadata object for the account
-          },
-        },
-        amount: {
-          value: 'AMOUNT_VALUE', // Required: Specifies the amount value (string).
-          currency: {
-            symbol: 'CURRENCY_SYMBOL', // Required: Specifies the currency symbol .
-            decimals: 6, // Required: Specifies the currency decimals (number).
-            metadata: {
-              // Optional metadata for amount object
-            },
-          },
-          metadata: {
-            // Optional: Specify metadata here only if applicable.
-          },
-        },
-        coin_change: {
-          coin_identifier: {
-            identifier: 'COIN_IDENTIFIER', // Required: uniquely identifies a Coin.
-          },
-          coin_action: 'coin_created', // Required
-        },
-        metadata: {
-          // Optional: Specify operations metadata only if applicable.
-        }
-      },
-    ],
-    metadata: {
-        // Optional metadata for constructionPayloads
-    },
-    publicKeys: [
-        {
-        hexBytes: 'PUBLIC_KEY_HEX_BYTES', // Required: Specifies the hexadecimal representation of the staking credential .
-        curveType: 'SECP256K1', // Required: Specifies the curve type for the staking credential .]
-        },
-    ]
-};
-
-// Generate an unsigned transaction and signing payloads
-const constructionPayloads = await tatum.constructionPayloads(params);
-
-// Log the construction payloads
-console.log('Construction Payloads:', constructionPayloads);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
-```
-
-### Overview
+## Overview
 
 The `constructionPayloads` contains the network, a slice of operations, and arbitrary metadata that was returned by the call to `constructionMetadata`. Optionally, the request can also include an array of publicKeys associated with the AccountIdentifiers returned in `constructionPreprocess` response.
 
-### Example Use Cases
+## Parameters
 
-1. **Transaction Construction**: Developers can use this method to construct an unsigned transaction that specifies the intent of the transaction but not all possible effects. The generated payloads can be signed by the specified account identifiers to complete the transaction.
+| Name                   | Type                               | Required | Description                                                                                             |
+| ---------------------- | ---------------------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.                                                   |
+| `blockchain`           | string (from networkIdentifier)    | Yes      | The name of the blockchain, typically "Cosmos".                                                         |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.                                              |
+| `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier.                                                                        |
+| `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                                                              |
+| `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                                                               |
+| `operations`           | array                              | Yes      | An array of operation objects, each representing a transaction component.                               |
+| `operationIdentifier`  | object (from operations)           | Yes      | Identifier for the operation. Includes `index` and optionally `network_index`.                          |
+| `index`                | number (from operationIdentifier)  | Yes      | The index of the operation within the transaction.                                                      |
+| `network_index`        | number (from operationIdentifier)  | No       | Network-specific index of the operation.                                                                |
+| `relatedOperations`    | array (from operations)            | No       | Operations related to the current operation.                                                            |
+| `index`                | number (from relatedOperations)    | Yes      | Index of related operations.                                                                            |
+| `network_index`        | number (from relatedOperations)    | No       | Network-specific index of related operations.                                                           |
+| `type`                 | string (from operations)           | Yes      | The type of operation, e.g., "TRANSFER".                                                                |
+| `status`               | string (from operations)           | No       | The status of the operation.                                                                            |
+| `account`              | object (from operations)           | No       | The account involved in the operation. Includes `address`, and optionally `subAccount` and `metadata`.  |
+| `address`              | string (from account)              | Yes      | The Cosmos account address associated with the operation.                                               |
+| `subAccount`           | object (from account)              | No       | An optional sub-account object.                                                                         |
+| `metadata`             | object (from account)              | No       | Metadata for the account.                                                                               |
+| `address`              | string (from subAccount)           | Yes       | The sub-account address.                                                                                |
+| `metadata`             | object (from subAccount)           | No       | An optional metadata object for the sub-account.                                                        |
+| `amount`               | object (from operations)           | No       | The monetary amount involved in the operation. Includes `value`, `currency`, and optionally `metadata`. |
+| `value`                | string (from amount)               | Yes      | The value of the transaction amount.                                                                    |
+| `currency`             | object (from amount)               | Yes      | An object specifying the currency details. Includes `symbol`, `decimals`, and optionally `metadata`.    |
+| `metadata`             | object (from amount)               | No       | Metadata object for the amount.                                                                         |
+| `symbol`               | string (from currency)             | Yes      | The symbol or code of the currency.                                                                     |
+| `decimals`             | number (from currency)             | Yes      | The number of decimal places for the currency.                                                          |
+| `metadata`             | object (from currency)             | No       | Any additional information related to the currency itself, such as contract addresses.                  |
+| `coin_change`          | object (from operations)           | No       | Information about changes to the coin state (e.g., created or spent).                                   |
+| `coinIdentifier`       | object (from coin_change)          | Yes      | An object containing a coin identifier.                                                                 |
+| `identifier`           | string (from coinIdentifier)       | Yes      | Identifier should be populated with a globally unique identifier of a Coin.                             |
+| `coin_action`          | string (from coin_change)          | Yes      | CoinActions are different state changes that a Coin can undergo.                                        |
+| `publicKeys`           | array                              | No       | List of public keys involved in authorizing the transaction.                                            |
+| `hexBytes`             | string (from publicKeys)           | Yes      | Hexadecimal representation of the public key.                                                           |
+| `curveType`            | string (from publicKeys)           | Yes      | The cryptographic curve type of the public key, e.g., "secp256k1".                                      |
+| `metadata`             | object (from operations)           | No       | Additional information about the operation.                                                             |
+| `metadata`             | object                             | No       | Optional metadata for transaction construction.                                                         |
 
-### Request Parameters
+## Returns
 
-The `constructionPayloads` method requires the following parameters:
+| Field                  | Type   | Description                                                         |
+| ---------------------- | ------ | ------------------------------------------------------------------- |
+| `unsigned_transaction` | string | A hexadecimal string representing the unsigned transaction data.    |
+| `payloads`             | array  | An array of objects containing the information that must be signed. |
 
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `operations` (array of objects, required): An array of operation objects, where each object represents a transaction to be included in the Cardano transaction.
-  - `operation_identifier` (object, required): An object containing an index that uniquely identifies the operation.
-    - `index` (number, required): The index of the operation.
-    - `network_index` (number, optional): The network-specific index of the operation.
-  - `related_operations` (array of objects, optional): An array of related operation identifiers if applicable.
-    - `index` (number, optional): The index of the related operation.
-    - `network_index` (number, optional): The network-specific index of the related operation.
-  - `type` (string, required): The type of the operation (e.g., "TRANSFER").
-  - `status` (string, optional): The status of the operation (e.g., "SUCCESS").
-  - `account` (object, required): An object containing information about the account.
-    - `address` (string, required): The Cardano account address associated with the operation.
-    - `sub_account` (object, optional): An optional sub-account object.
-      - `address` (string, optional): The sub-account address.
-      - `metadata` (object, optional): An optional metadata object for the sub-account. If the SubAccount address is not sufficient to uniquely specify a SubAccount, any other identifying information can be stored here. It is important to note that two SubAccounts with identical addresses but differing metadata will not be considered equal by clients.
-    - `metadata` (object, optional): An optional metadata object for the account. Blockchains that utilize a username model (where the address is not a derivative of a cryptographic public key) should specify the public key(s) owned by the address in metadata.
-  - `amount` (object, required): An object containing information about the transaction amount.
-    - `value` (string, required): The value of the transaction amount.
-    - `currency` (object, required): An object specifying the currency details.
-      - `symbol` (string, required): The symbol or code of the currency.
-      - `decimals` (number, required): The number of decimal places for the currency.
-      - `metadata` (object, optional): Any additional information related to the currency itself. For example, it would be useful to populate this object with the contract address of an ERC-20 token.
-    - `metadata` (object, optional): metadata object for the amount.
-  - `coin_change` (object, required): An object containing information about coin changes in the operation.
-    - `coin_identifier` (object, required): An object containing a coin identifier.
-      - `identifier` (string, required): Identifier should be populated with a globally unique identifier of a Coin. In Bitcoin, this identifier would be transaction_hash:index..
-    - `coin_action` (string, required): CoinActions are different state changes that a Coin can undergo. When a Coin is created, it is coin_created. When a Coin is spent, it is coin_spent. It is assumed that a single Coin cannot be created or spent more than once. (e.g., 'coin_created' | 'coin_spent').
-  - `metadata` (object, optional): An optional metadata object for the operation, including withdrawal, deposit, refund, staking credential, pool key hash, epoch, token bundle, pool registration certificate, pool registration parameters, and vote registration metadata details.
-- `metadata` (object, optional): Specify the metadata for transaction construction.
-- `publicKey` (object, required): PublicKey contains a public key byte array for a particular CurveType encoded in hex. Note that there is no PrivateKey struct as this is NEVER the concern of an implementation.
-  - `hexBytes` (string, required): The hexadecimal representation of the public key.
-  - `curveType` (string, enum, required): The type of cryptographic curve associated with the public key (Choose from: secp256k1, secp256k1_bip340, secp256r1, edwards25519, tweedle, pallas).
+## Example Result
 
-### Return Object
+```json
+{
+  "unsigned_transaction": "0x...",
+  "payloads": [
+    {
+      "address": "cosmos1...",
+      "hex_bytes": "f2ca1bb6c7...",
+      "signature_type": "ecdsa_recovery"
+    }
+  ]
+}
+```
 
-The `constructionPayloads` method returns an object representing the unsigned transaction blob and a collection of payloads that must be signed by particular AccountIdentifiers using a certain SignatureType. 
+## Request Example
 
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos/' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+    "networkIdentifier": {
+        "blockchain": "cosmos",
+        "network": "mainnet"
+    },
+    "operations": [
+      {
+        "operationIdentifier": {
+          "index": 1
+        },
+        "type": "TRANSFER",
+      }
+    ]
+}'
+```
+```typescript
+// yarn add @tatumio/tatum
+
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
+
+const cosmos = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAINNET });
+
+const params = {
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet",
+  },
+  operations: [
+    {
+      operationIdentifier: {
+        index: 1,
+      },
+      type: "TRANSFER",
+    },
+  ],
+  publicKeys: [
+    {
+      hexBytes: "abc123...",
+      curveType: "secp256k1",
+    },
+  ],
+};
+
+const constructionPayloads = await tatum.rpc.constructionPayloads(params);
+
+console.log("Construction Payloads:", constructionPayloads);
+
+await tatum.destroy(); // Destroy Tatum SDK - needed for stopping background jobs
+```

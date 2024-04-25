@@ -1,6 +1,6 @@
 ---
 title: "Zcash"
-slug: "zcash"
+slug: "rpc-zcash"
 excerpt: ""
 hidden: false
 createdAt: "Sat Apr 06 2024 07:33:40 GMT+0000 (Coordinated Universal Time)"

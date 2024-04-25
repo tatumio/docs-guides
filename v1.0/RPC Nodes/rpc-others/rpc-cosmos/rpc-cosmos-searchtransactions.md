@@ -1,127 +1,124 @@
 ---
 title: "searchTransactions"
-slug: "rpc-cardano-searchtransactions"
+slug: "rpc-cosmos-searchtransactions"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Search for transactions in the Cosmos blockchain based on various criteria."
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc, search, transactions"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:40 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `searchTransactions` method allows you to search for transactions matching a set of provided conditions in canonical blocks. This can be useful for querying transaction data based on various criteria.
+
+## Parameters
+
+| Name                    | Type                                | Required | Description                                                     |
+| ----------------------- | ----------------------------------- | -------- | --------------------------------------------------------------- |
+| `networkIdentifier`     | object                              | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`            | string (from networkIdentifier)     | Yes      | The blockchain identifier, typically "Cosmos".                  |
+| `network`               | string (from networkIdentifier)     | Yes      | The network name on which the transaction is taking place.      |
+| `subNetworkIdentifier`  | object (from networkIdentifier)     | No       | Optional sub-network identifier object.                         |
+| `network`               | string (from subNetworkIdentifier)  | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`              | object (from subNetworkIdentifier)  | No       | Metadata associated with the sub-network.                       |
+| `operator`              | enum                                | No       | Conditions `or` and `and` for complex queries.                  |
+| `max_block`             | number                              | No       | The largest block index to consider.                            |
+| `offset`                | number                              | No       | The offset into the result set to start returning transactions. |
+| `limit`                 | number                              | No       | The maximum number of transactions to return.                   |
+| `transactionIdentifier` | object                              | No       | Identifies the transaction by hash.                             |
+| `hash`                  | string (from transactionIdentifier) | Yes      | The hash of the transaction.                                    |
+| `accountIdentifier`     | object                              | No       | Information about the account involved.                         |
+| `address`               | string (from accountIdentifier)     | Yes      | The Cosmos account address associated with the operation.       |
+| `sub_account`           | object (from accountIdentifier)     | No       | Optional sub-account object.                                    |
+| `metadata`              | object (from accountIdentifier)     | No       | Metadata for the account.                                       |
+| `coinIdentifier`        | object                              | No       | Conditions for coin identifier.                                 |
+| `identifier`            | string (from coinIdentifier)        | Yes      | A globally unique identifier of a Coin.                         |
+| `currency`              | object                              | No       | Specifies the currency details.                                 |
+| `symbol`                | string (from currency)              | Yes      | The symbol or code of the currency.                             |
+| `decimals`              | number (from currency)              | Yes      | The number of decimal places for the currency.                  |
+| `status`                | string                              | No       | The network-specific operation status type.                     |
+| `type`                  | string                              | No       | The network-specific operation type.                            |
+| `address`               | string                              | No       | Account address for transaction search.                         |
+| `success`               | boolean                             | No       | A synthetic condition indicating success.                       |
+
+## Returns
+
+| Field          | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `transactions` | A list of transactions that match the search criteria. |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+  "transactions": [
+    {
+      "transaction_identifier": {
+        "hash": "TRANSACTION_HASH"
+      },
+      "operations": [
+        {
+          "operation_identifier": {
+            "index": 0
+          },
+          "type": "TRANSFER",
+          "status": "SUCCESS",
+          "account": {
+            "address": "cosmos1..."
+          },
+          "amount": {
+            "value": "-1000",
+            "currency": {
+              "symbol": "ATOM",
+              "decimals": 6
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "total_count": 5,
+  "next_offset": 5
 }
-[/block]
+```
 
+## Request Example
 
-### How to use it
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/search/transactions' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+  "network_identifier": {
+    "blockchain": "cosmos",
+    "network": "mainnet"
+  }
+}'
+```
 
 ```typescript
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_MAINNET,
+});
 
-// Define the input parameters in a single object
-const params = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',
-        network: 'NETWORK_NAME',
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME',
-            metadata: {
-                // Optional metadata key-value pairs.
-            },
-        },
-    },
-    operator: {
-        // Specify search conditions (optional).
-    },
-    max_block: 5,   // The largest block index to consider (optional).
-    offset: 5,      // The offset into the query result to start returning transactions (optional).
-    limit: 5,       // The maximum number of transactions to return in one call (optional).
-    transactionIdentifier: {
-        hash: 'TRANSACTION_HASH',  // string, required
-    },
-    accountIdentifier: {
-        address: 'ACCOUNT_ADDRESS', // string, required
-        sub_account: {
-            // Specify sub-account information if applicable
-        },
-        metadata: {
-            chain_code: 'CHAIN_CODE', // Specify chain code if applicable
-        },
-    },
-    coin_identifier: {
-        identifier: 'CO' // Specify search conditions (optional).
-    },
-    currency: {
-            symbol: 'CURRENCY_SYMBOL', // Required: Specifies the currency symbol .
-            decimals: 6, // Required: Specifies the currency decimals (number).
-            metadata: {
-              // Optional metadata for amount object
-            },
-    },
-    status: 'reverted', // The network-specific operation status type (optional).
-    type: 'transfer',   // The network-specific operation type (optional).
-    address: '0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347', // Account address (optional).
-    success: true,  // A synthetic condition (optional).
-};
-
-// Search for transactions
-const transactions = await tatum.rpc.searchTransactions(params);
+const transactions = await cosmos.rpc.searchTransactions({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet",
+  },
+});
 
 // Log the retrieved transactions
-console.log('Transactions:', transactions);
+console.log("Transactions:", transactions);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 await tatum.destroy();
 ```
-
-### Overview
-
-The `searchTransactions` method allows you to search for transactions matching a set of provided conditions in canonical blocks. This can be useful for querying transaction data based on various criteria.
-
-### Example Use Cases
-
-1. **Transaction Query**: Developers can use this method to search for transactions that meet specific criteria, such as a particular status or operation type.
-2. **Block Analysis**: Users can analyze transactions within a specific range of blocks to identify patterns or trends.
-
-## Request Parameters
-
-The `searchTransactions` method requires the following parameters in the request body:
-
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, optional): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `operator` (enum, optional): Additional search conditions `or` and `and`.
-- `max_block` (number, optional): The largest block index to consider when searching for transactions. If not populated, the current block is considered the `max_block`. If you do not specify a `max_block`, it is possible that a newly synced block will interfere with paginated transaction queries (as the offset could become invalid with newly added rows).
-- `offset` (number, optional): The offset into the query result to start returning transactions. If any search conditions are changed, the query offset will change, and you must restart your search iteration.
-- `limit` (number, optional): The maximum number of transactions to return in one call. The implementation may return \<= `limit` transactions.
-- `transactionIdentifier` (object, required): An object containing information about the transaction.
-  - `hash` (string, required): The hash of the transaction.
-- `accountIdentifier` (object, optional): An object containing information about the account.
-  - `address` (string, required): The Cardano account address associated with the operation.
-  - `sub_account` (object, optional): An optional sub-account object.
-    - `address` (string, optional): The sub-account address.
-    - `metadata` (object, optional): An optional metadata object for the sub-account. If the SubAccount address is not sufficient to uniquely specify a SubAccount, any other identifying information can be stored here. It is important to note that two SubAccounts with identical addresses but differing metadata will not be considered equal by clients.
-  - `metadata` (object, optional): An optional metadata object for the account.
-- `coinIdentifier` (object, optional): Specify search conditions for coin identifier. Identifier should be populated with a globally unique identifier of a Coin. In Bitcoin, this identifier would be transaction\_hash: index.
-  - `identifier` (string, required): Example: '0x2f23fd8cca835af21f3ac375bac601f97ead75f2e79143bdf71fe2c4be043e8f: 1'
-- `currency` (object, required): An object specifying the currency details. - `symbol` (string, required): The symbol or code of the currency. - `decimals` (number, required): The number of decimal places for the currency. - `metadata` (object, optional): Any additional information related to the currency itself. For example, it would be useful to populate this object with the contract address of an ERC-20 token.
-- `status` (string, optional): The network-specific operation status type (optional).
-- `type` (string, optional): The network-specific operation type (optional).
-- `address` (string, optional): AccountIdentifier.Address. This is used to get all transactions related to an AccountIdentifier.Address, regardless of SubAccountIdentifier.
-- `success` (boolean, optional): A synthetic condition populated by parsing network-specific operation statuses.
-
-### Return Object
-
-The method returns a list of transactions that match the specified search criteria.

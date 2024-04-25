@@ -2,7 +2,7 @@
 title: "getBlockBranches"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockbranches"
-category: "65c5e93c623cad004b45d505"
+category: "6620f7e31ea673003624a8cc"
 hidden: false
 metadata:
   description: "Retrieve blocks from branches in the Kadena blockchain."
@@ -24,10 +24,10 @@ The `/chain/{chain}/block/branch` endpoint retrieves a page of blocks from branc
 | apiVersion  | string  | Yes      | Version of Kadena API "0.0"                                 |
 | nodeVersion | enum    | Yes      | "test-singleton" "development" "mainnet01" "testnet04"      |
 | chain       | string  | Yes      | The specific chain ID for which to retrieve block branches. |
-| limit       | integer | No       | The maximum number of blocks to return.                     |
+| limit       | number | No       | The maximum number of blocks to return.                     |
 | next        | string  | No       | A cursor for pagination to fetch subsequent blocks.         |
-| minheight   | integer | No       | The minimum block height to include in the results.         |
-| maxheight   | integer | No       | The maximum block height to include in the results.         |
+| minheight   | number | No       | The minimum block height to include in the results.         |
+| maxheight   | number | No       | The maximum block height to include in the results.         |
 
 ## Request Body
 

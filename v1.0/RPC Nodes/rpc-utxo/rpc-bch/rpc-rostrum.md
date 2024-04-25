@@ -1,6 +1,6 @@
 ---
 title: "Rostrum"
-slug: "rostrum"
+slug: "rpc-rostrum"
 category: "6620f7e31ea673003624a8cc"
 excerpt: ""
 hidden: false

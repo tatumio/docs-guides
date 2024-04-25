@@ -2,7 +2,7 @@
 title: "getBlockHashes"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getblockhashes"
-category: "65c5e93c623cad004b45d505"
+category: "6620f7e31ea673003624a8cc"
 hidden: false
 metadata:
   description: "Kadena RPC"
@@ -24,10 +24,10 @@ The `/chain/{chain}/hash` endpoint retrieves a collection of block hashes from a
 | apiVersion  | string  | Yes      | Version of Kadena API "0.0"                                |
 | nodeVersion | enum    | Yes      | "test-singleton" "development" "mainnet01" "testnet04"     |
 | chain       | string  | Yes      | The specific chain ID from which to retrieve block hashes. |
-| limit       | integer | No       | The maximum number of block hashes to return.              |
+| limit       | number | No       | The maximum number of block hashes to return.              |
 | next        | string  | No       | A cursor for pagination to fetch subsequent block hashes.  |
-| minheight   | integer | No       | The minimum block height to include in the results.        |
-| maxheight   | integer | No       | The maximum block height to include in the results.        |
+| minheight   | number | No       | The minimum block height to include in the results.        |
+| maxheight   | number | No       | The maximum block height to include in the results.        |
 
 ## Returns
 

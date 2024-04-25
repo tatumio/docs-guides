@@ -29,10 +29,10 @@ const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROS
 
 // Define the input parameters in a single object
 const params = {
-    network_identifier: {
+    networkIdentifier: {
         blockchain: 'CARDANO',  // string, required
         network: 'NETWORK_NAME',  // string, required
-        sub_network_identifier: {
+        sub_networkIdentifier: {
             network: 'SUB_NETWORK_NAME',  // string (optional)
             metadata: {
                 [key: string]: any,  // object (optional)

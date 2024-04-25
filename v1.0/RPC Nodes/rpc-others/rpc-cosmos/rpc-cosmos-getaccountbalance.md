@@ -1,45 +1,60 @@
-
 ---
-title: "accountBalance"
-slug: "accountBalance"
+title: "getAccountBalance"
+slug: "rpc-cosmos-getaccountbalance"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Rosetta API for Cosmos"
+excerpt: "Cosmos RPC"
 hidden: false
 metadata:
+  description: "Fetches the balance of a Cosmos account at a specific block height."
   image: []
-  keywords: "Cosmos, account balance, Rosetta API"
+  keywords: "cosmos, rosetta, account balance, blockchain"
   robots: "index"
-createdAt: "Wed Apr 11 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Wed Apr 11 2024 10:00:00 GMT+0000 (Coordinated Universal Time)"
+createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 ---
 
 ## Overview
 
-The `/account/balance` method retrieves the balance of an account on the Cosmos network using the Rosetta API. It provides detailed information about the available and current spending balance of an account, including sub-accounts if specified.
+The `getAccountBalance` endpoint in the Cosmos Rosetta API allows fetching the balance for a specified account identifier at a given block. This endpoint returns the balance only for the requested account and block, without aggregating sub-account balances unless explicitly requested.
 
 ## Parameters
 
-| Name                | Type          | Required | Description                                                   |
-| ------------------- | ------------- | -------- | ------------------------------------------------------------- |
-| network_identifier  | object        | Yes      | Identifies the blockchain and network.                        |
-| account_identifier  | object        | Yes      | Identifies the account for which the balance is requested.    |
+| Name                   | Type                               | Required | Description                                                                   |
+| ---------------------- | ---------------------------------- | -------- | ----------------------------------------------------------------------------- |
+| `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.                         |
+| `blockchain`           | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                                |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.                    |
+| `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                                       |
+| `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                                    |
+| `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                                     |
+| `accountIdentifier`    | object                             | Yes      | Contains information about the account.                                       |
+| `address`              | string (from accountIdentifier)    | Yes      | The account address associated with the operation.                            |
+| `sub_account`          | object (from accountIdentifier)    | No       | Optional sub-account information.                                             |
+| `metadata`             | object (from accountIdentifier)    | No       | Optional metadata for the account, including public keys if relevant.         |
+| `address`              | string (from sub_account)          | Yes      | The sub-account address.                                                      |
+| `metadata`             | object (from sub_account)          | No       | Metadata for the sub-account.                                                 |
+| `blockIdentifier`      | object                             | No       | Information about the specific block.                                         |
+| `index`                | number (from blockIdentifier)      | No       | The index of the block (Type: number, Format: int64).                         |
+| `hash`                 | string (from blockIdentifier)      | No       | The hash of the block.                                                        |
+| `currency`             | object                             | Yes      | Specifies the currency details.                                               |
+| `symbol`               | string (from currency)             | Yes      | The symbol or code of the currency.                                           |
+| `decimals`             | number (from currency)             | Yes      | The number of decimal places for the currency.                                |
+| `metadata`             | object (from currency)             | No       | Additional information related to the currency, such as the contract address. |
 
 ## Returns
 
-The method returns the current balance of the specified account and sub-account (if provided):
-
-| Field           | Description                                                             |
-| --------------- | ----------------------------------------------------------------------- |
-| account_balance | The total balance of the account in the smallest unit of the currency.  |
-| sub_account_balance | (Optional) The balance of the sub-account, if applicable.           |
+| Field             | Type   | Description                                      |
+| ----------------- | ------ | ------------------------------------------------ |
+| `blockIdentifier` | object | The block at which the balance was fetched.      |
+| `balances`        | array  | A list of balances found at the specified block. |
 
 ## Example Result
 
 ```json
 {
-  "block_identifier": {
-    "index": 123456,
-    "hash": "b10a8db164e0754105b7a99be72e3fe5"
+  "blockIdentifier": {
+    "index": 1000000,
+    "hash": "C2F9D..."
   },
   "balances": [
     {
@@ -49,51 +64,52 @@ The method returns the current balance of the specified account and sub-account 
         "decimals": 6
       }
     }
-  ],
-  "metadata": {}
+  ]
 }
 ```
 
 ## Request Example
 
-```json cURL
-curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/' \
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/account/balance' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: {API_KEY}' \
 --data '{
-    "network_identifier": {
+    "networkIdentifier": {
         "blockchain": "cosmos",
-        "network": "mainnet"
+        "network": "cosmos-mainnet"
     },
-    "account_identifier": {
-        "address": "cosmos1l0znsvddllw9knha3yx2svnlxny676d8ns7uys",
-        "sub_account": {
-            "address": "cosmos1dq72ndqvcfnfgptud5puvys46y0zma5pvt37gz"
-        }
+    "accountIdentifier": {
+      "address": "{{address}}",
     }
 }'
 ```
 ```typescript
-// yarn add @tatumio/tatum
-
+// Import required libraries and modules from Tatum SDK
 import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-const cosmos = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAINNET });
-
-const accountBalance = await tatum.rpc.getAccountBalance({
-  network_identifier: {
-    blockchain: "cosmos",
-    network: "mainnet"
-  },
-  account_identifier: {
-    address: "cosmos1l0znsvddllw9knha3yx2svnlxny676d8ns7uys",
-    sub_account: {
-      address: "cosmos1dq72ndqvcfnfgptud5puvys46y0zma5pvt37gz"
-    }
-  }
+// Initialize the Tatum SDK for Cosmos
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_MAINNET,
 });
 
-console.log(accountBalance);
+// Define the input parameters with only required fields
+const params = {
+  networkIdentifier: {
+    blockchain: "COSMOS",
+    network: "COSMOS_MAINNET",
+  },
+  accountIdentifier: {
+    address: "{{address}}",
+  },
+};
 
-await cosmos.destroy(); // Destroy Tatum SDK - needed for stopping background jobs
+// Fetch the account balance
+const accountBalance = await tatum.rpc.getAccountBalance(params);
+
+// Log the account balance
+console.log("Account Balance:", accountBalance);
+
+// Always destroy the Tatum SDK instance when done to stop any background processes
+await tatum.destroy();
 ```

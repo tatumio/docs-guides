@@ -1,6 +1,6 @@
 ---
 title: "Dogecoin"
-slug: "rpc-degecoin"
+slug: "rpc-dogecoin"
 excerpt: ""
 hidden: false
 createdAt: "Wed Mar 06 2024 10:39:28 GMT+0000 (Coordinated Universal Time)"

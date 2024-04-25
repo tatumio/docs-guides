@@ -1,89 +1,95 @@
 ---
 title: "deriveAccount"
-slug: "rpc-cardano-deriveaccount"
+slug: "rpc-cosmos-deriveaccount"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Cosmos RPC"
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `deriveAccount` method enables you to derive a Cosmos account identifier from a public key, facilitating the association of public keys with specific blockchain addresses.
+
+## Parameters
+
+| Name                   | Type                               | Required | Description                                                          |
+| ---------------------- | ---------------------------------- | -------- | -------------------------------------------------------------------- |
+| `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.                |
+| `blockchain`           | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                       |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.           |
+| `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                              |
+| `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                           |
+| `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                            |
+| `publicKey`            | object                             | Yes      | Contains the public key information necessary to derive the account. |
+| `hexBytes`             | string (from publicKey)            | Yes      | Hexadecimal representation of the public key.                        |
+| `curveType`            | string (from publicKey)            | Yes      | The cryptographic curve type of the public key, e.g., "secp256k1".   |
+| `metadata`             | object                             | No       | Optional metadata related to the derivation process.                 |
+
+## Returns
+
+| Field               | Type   | Description                                                                   |
+| ------------------- | ------ | ----------------------------------------------------------------------------- |
+| `accountIdentifier` | object | An object representing the derived account identifier for the Cosmos account. |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+  "accountIdentifier": "cosmos1..."
 }
-[/block]
+```
 
+## Request Example
 
-### How to use it
-
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construction/derive' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+    "networkIdentifier": {
+        "blockchain": "cosmos",
+        "network": "cosmos-mainnet"
+    },
+    "publicKeys": {
+        "hexBytes": "PUBLIC_KEY_HEX_BYTES",
+        "curveType": "secp256k1"
+    }
+}'
+```
 ```typescript
 // Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
+// Initialize the Tatum SDK for Cosmos
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_MAINNET,
+});
 
-// Define the input parameters in a single object
+// Define the input parameters with only required fields
 const params = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',  // string, required
-        network: 'NETWORK_NAME',  // string, required
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME',  // string (optional)
-            metadata: {
-                [key: string]: any,  // object (optional)
-            },
-        },
-    },
-    publicKeys: {
-        hexBytes: 'PUBLIC_KEY_HEX_BYTES', // string, required
-        curveType: 'secp256k1', // CurveType, required (Choose from: secp256k1, secp256k1_bip340, secp256r1, edwards25519, tweedle, pallas)
-    },
-    metadata: {
-        // metadata is optional object
-    }, 
+  networkIdentifier: {
+    blockchain: "COSMOS",
+    network: "COSMOS_MAINNET",
+  },
+  publicKeys: {
+    hexBytes: "PUBLIC_KEY_HEX_BYTES", // Hexadecimal representation of the public key.
+    curveType: "secp256k1", // Cryptographic curve type.
+  },
 };
 
-// Derive the account identifier from the public key
+// Derive the Cosmos account identifier from the public key
 const accountIdentifier = await tatum.rpc.deriveAccount(params);
 
-// Log the account identifier
-console.log('Account Identifier:', accountIdentifier);
+// Log the derived account identifier
+console.log("Account Identifier:", accountIdentifier);
 
 // Always destroy the Tatum SDK instance when done to stop any background processes
 await tatum.destroy();
 ```
-
-### Overview
-
-The `deriveAccount` method allows you to derive an account identifier (AccountIdentifier) from a public key.
-
-### Example Use Cases
-
-1. **Account Identification**: Developers can use this method to derive the account identifier associated with a public key.
-
-### Request Parameters
-
-The `deriveAccount` method requires the following parameter:
-
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `publicKey` (object, required): PublicKey contains a public key byte array for a particular CurveType encoded in hex. Note that there is no PrivateKey struct as this is NEVER the concern of an implementation.
-  - `hexBytes` (string, required): The hexadecimal representation of the public key.
-  - `curveType` (string, enum, required): The type of cryptographic curve associated with the public key (Choose from: secp256k1, secp256k1_bip340, secp256r1, edwards25519, tweedle, pallas).
-- `metadata` (object, optional): An optional metadata object.
-
-### Return Object
-
-The method returns an object representing the derived account identifier (AccountIdentifier) associated with the specified public key.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.

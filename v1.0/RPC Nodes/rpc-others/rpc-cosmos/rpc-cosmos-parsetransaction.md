@@ -1,82 +1,99 @@
 ---
 title: "parseTransaction"
-slug: "rpc-cardano-parsetransaction"
+slug: "rpc-cosmos-parsetransaction"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
 metadata: 
-  description: "Cardano RPC"
+  description: "Cosmos RPC"
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `parseTransaction` method allows you to parse either an unsigned or signed transaction and retrieve detailed information about its contents. This function is crucial for validating transaction details before submitting them to the Cosmos network.
+
+## Request Parameters
+
+| Name                    | Type                               | Required | Description                                                     |
+| ----------------------- | ---------------------------------- | -------- | --------------------------------------------------------------- |
+| `networkIdentifier`     | object                             | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`            | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                  |
+| `network`               | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.      |
+| `subNetworkIdentifier`  | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                         |
+| `network`               | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`              | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                       |
+| `signed`                | boolean                            | Yes      | Indicates whether the transaction is signed.                    |
+| `transaction`           | string                             | Yes      | The transaction blob (either unsigned or signed).               |
+
+## Returns
+
+| Field                    | Description                                       |
+| ------------------------ | ------------------------------------------------- |
+| `parsedTransaction`      | The details of the parsed transaction.            |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
-}
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const parseRequest = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',   // Specify the blockchain identifier ('CARDANO' for Cardano).
-        network: 'NETWORK_NAME', // Specify the network name.
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME', // Specify the sub-network name (optional).
-            metadata: {
-                // Optional metadata key-value pairs.
-            },
+  "parsedTransaction": {
+    "operations": [
+      {
+        "operation_identifier": {
+          "index": 0
         },
-    },
-    signed: true,                // Specify whether the transaction is signed (boolean).
-    transaction: 'TRANSACTION',  // Specify the transaction blob (either unsigned or signed).
-};
-
-// Parse the transaction
-const parsedTransaction = await tatum.rpc.transactionParse(parseRequest);
-
-// Log the parsed transaction
-console.log('Parsed Transaction:', parsedTransaction);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
+        "type": "TRANSFER",
+        "status": "SUCCESS",
+        "account": {
+          "address": "cosmos1..."
+        },
+        "amount": {
+          "value": "-1000",
+          "currency": {
+            "symbol": "ATOM",
+            "decimals": 6
+          }
+        }
+      }
+    ]
+  }
+}
 ```
 
-### Overview
+## Request Example
 
-The `transactionParse` method allows you to parse either an unsigned or signed transaction and retrieve information about the transaction. It is used to examine the details of a transaction without submitting it to the blockchain.
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construction/parse' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+  "network_identifier": {
+    "blockchain": "cosmos",
+    "network": "cosmos-mainnet"
+  },
+  "signed": true,
+  "transaction": "TRANSACTION_BLOB"
+}'
+```
+```typescript
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-### Example Use Cases
+const cosmos = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAINNET });
 
-1. **Transaction Inspection**: Developers can use this method to inspect and verify the details of a transaction before submitting it to the Cardano network.
+const transactionDetails = await cosmos.rpc.parseTransaction({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet"
+  },
+  signed: true,
+  transaction: "TRANSACTION_BLOB"
+});
 
-### Request Parameters
+console.log("Parsed Transaction Details:", transactionDetails);
 
-The `transactionParse` method requires the following parameters in the request body:
-
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `signed` (boolean, required): A boolean indicating whether the transaction is signed. Set to `true` for a signed transaction and `false` for an unsigned transaction.
-- `transaction` (string, required): The transaction blob, which must be either the unsigned transaction blob returned by `constructionPayloads` or the signed transaction blob returned by `constructionCombine`.
-
-### Return Object
-
-The method returns an object containing parsed information about the transaction, such as transaction inputs, outputs, and other details.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+await cosmos.destroy();
+```

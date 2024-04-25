@@ -2,7 +2,7 @@
 title: "getinfo"
 excerpt: "Kadena RPC"
 slug: "rpc-kadena-getinfo"
-category: "65c5e93c623cad004b45d505"
+category: "6620f7e31ea673003624a8cc"
 hidden: false
 metadata:
   description: "Kadena RPC"

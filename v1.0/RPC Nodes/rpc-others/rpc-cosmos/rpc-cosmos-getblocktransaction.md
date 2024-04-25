@@ -1,86 +1,119 @@
 ---
 title: "getBlockTransaction"
-slug: "rpc-cardano-getblocktransaction"
+slug: "rpc-cosmos-getblocktransaction"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Cosmos RPC"
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `getBlockTransaction` method is used to retrieve detailed information about a specific transaction within a Cosmos block, utilizing the transaction's unique identifier and the block's identifier.
+
+## Description
+
+Retrieve a specific transaction by its identifier from a Cosmos block. This request needs to specify the block by its hash or index and the transaction by its hash. If the transaction is found within the specified block, its details are returned.
+
+## Request Parameters
+
+| Name                    | Type                               | Required | Description                                                     |
+| ----------------------- | ---------------------------------- | -------- | --------------------------------------------------------------- |
+| `networkIdentifier`     | object                             | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`            | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "cosmos".                  |
+| `network`               | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.      |
+| `subNetworkIdentifier`  | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                         |
+| `network`               | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`              | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                       |
+| `blockIdentifier`       | object                             | Yes      | The identifier of the block to fetch. Can be by hash or height. |
+| `index`                 | number (from blockIdentifier)      | No       | The height of the block (optional if hash is provided).         |
+| `hash`                  | string (from blockIdentifier)      | No       | The hash of the block (optional if index is provided).          |
+| `transactionIdentifier` | object                             | Yes      | Identifies the transaction within the specified block.          |
+| `hash`                  | string                             | Yes      | The hash of the transaction.                                    |
+
+## Returns
+
+| Field                    | Description                                       |
+| ------------------------ | ------------------------------------------------- |
+| `transaction`            | The details of the requested transaction.         |
+| `transaction_identifier` | The unique identifier of the transaction.         |
+| `operations`             | A list of operations involved in the transaction. |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
-}
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const params = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',  // string, required
-        network: 'NETWORK_NAME',  // string, required
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME',
-            metadata: {
-              [key: string]: any
-            }  // string (optional)
+  "transaction": {
+    "transaction_identifier": {
+      "hash": "TRANSACTION_HASH"
+    },
+    "operations": [
+      {
+        "operation_identifier": {
+          "index": 0
         },
-    },
-    blockIdentifier: {
-        index: 1123941,  // number (int64), required
-        hash: '0x1f2cc6c5027d2f201a5453ad1119574d2aed23a392654742ac3c78783c071f85',  // string, required
-    },
-    transactionIdentifier: {
-        hash: 'TRANSACTION_HASH',  // string, required
-    },
-};
-
-// Call the getBlockTransaction
-const transaction = await tatum.rpc.getBlockTransaction(params);
-
-// Log the transaction details
-console.log('Transaction:', transaction);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
+        "type": "TRANSFER",
+        "status": "SUCCESS",
+        "account": {
+          "address": "cosmos1..."
+        },
+        "amount": {
+          "value": "-1000",
+          "currency": {
+            "symbol": "ATOM",
+            "decimals": 6
+          }
+        }
+      }
+    ]
+  }
+}
 ```
 
-### Overview
+## Request Example
 
-The `getBlockTransaction` method allows you to retrieve information about a specific transaction within a Cardano block based on the provided parameters.
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/block/transaction' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+  "network_identifier": {
+    "blockchain": "cosmos",
+    "network": "mainnet"
+  },
+  "block_identifier": {
+    "hash": "0x1f2cc6c5027d2f201a5453ad1119574d2aed23a392654742ac3c78783c071f85"
+  },
+  "transaction_identifier": {
+    "hash": "TRANSACTION_HASH"
+  }
+}
+```
+```typescript
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-### Request Body
+const cosmos = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAINNET });
 
-The request body should contain the following parameters:
+const transactionDetails = await tatum.rpc.getBlockTransaction({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet",
+  },
+  blockIdentifier: {
+    index: 19865674,
+  },
+  transactionIdentifier: {
+    hash: "TRANSACTION_HASH",
+  },
+});
 
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `blockIdentifier` (object, required): An object containing information about the block to which the transaction belongs.
-  - `index` (number, required): The index of the block (Type: number, Format: int64).
-  - `hash` (string, required): The hash of the block.
-- `transactionIdentifier` (object, required): An object containing information about the transaction.
-  - `hash` (string, required): The hash of the transaction.
+console.log("Transaction Details:", transactionDetails);
 
-### Response
-
-The response will contain details about the specified Cardano transaction.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+await tatum.destroy();
+```

@@ -1,81 +1,119 @@
 ---
 title: "getBlock"
-slug: "rpc-cardano-getblock"
+slug: "rpc-cosmos-getblock"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "Retrieve a block in the Cosmos blockchain by Block Identifier."
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rosetta, blockchain, block"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
-updatedAt: "Sat Apr 06 2024 13:09:02 GMT+0000 (Coordinated Universal Time)"
+updatedAt: "Sat Apr 06 2024 13:09:03 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `getBlock` endpoint is designed to fetch a block from the Cosmos blockchain using a specific Block Identifier. This can be done either by the block's hash or by its height. If transactions are available, they are included directly in the response; otherwise, Transaction Identifiers are provided for subsequent fetches.
+
+## Description
+
+Retrieve a block by its Block Identifier. If transactions are included in the response, they are part of the returned Block object. If the transactions are not included, an array of Transaction Identifiers is returned for further fetches. Requests by block hash must be idempotent, always returning the same block contents for the same hash. Requests by block height do not have this restriction due to the possibility of chain reorganizations.
+
+## Request Parameters
+
+| Name                   | Type                               | Required | Description                                                     |
+| ---------------------- | ---------------------------------- | -------- | --------------------------------------------------------------- |
+| `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.           |
+| `blockchain`           | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                  |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name on which the transaction is taking place.      |
+| `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                         |
+| `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                      |
+| `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                       |
+| `blockIdentifier`      | object                             | Yes      | The identifier of the block to fetch. Can be by hash or height. |
+| `index`                | number (from blockIdentifier)      | No       | The height of the block (optional if hash is provided).         |
+| `hash`                 | string (from blockIdentifier)      | No       | The hash of the block (optional if index is provided).          |
+
+## Returns
+
+| Field                     | Description                                                     |
+| ------------------------- | --------------------------------------------------------------- |
+| `block_identifier`        | Information about the current block, including index and hash.  |
+| `index`                   | The index (height) of the block.                                |
+| `hash`                    | The hash of the block.                                          |
+| `parent_block_identifier` | Information about the parent block, including index and hash.   |
+| `index`                   | The index (height) of the parent block.                         |
+| `hash`                    | The hash of the parent block.                                   |
+| `timestamp`               | The timestamp at which the block was proposed, in milliseconds. |
+| `transactions`            | An array of transactions included in the block.                 |
+| `transaction_identifier`  | Identifier for each transaction within the block.               |
+| `hash`                    | The hash of the transaction.                                    |
+| `operations`              | An array detailing operations within each transaction.          |
+
+Each transaction detail is further broken down into identifiers and operations, providing a comprehensive breakdown of the block's contents.
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
-}
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Define the input parameters in a single object
-const params = {
-    networkIdentifier: {
-        blockchain: 'CARDANO',  // string, required
-        network: 'NETWORK_NAME',  // string, required
-        subNetworkIdentifier: {
-            network: 'SUB_NETWORK_NAME',  // string (optional)
-            metadata: {
-                [key: string]: any,  // object (optional)
-            },
+  "block": {
+    "block_identifier": {
+      "index": 19865674,
+      "hash": "9035A963AA5A28729F0BA316801E901A4E8B1500B2E28301FA296C2D61816F53"
+    },
+    "parent_block_identifier": {
+      "index": 19865673,
+      "hash": "200CF85D862597295BB6D6E34888F94849B729C6D7AC688749ADCA387A57E9CD"
+    },
+    "timestamp": 1712310176442,
+    "transactions": [
+      {
+        "transaction_identifier": {
+          "hash": "txHash123456"
         },
-    },
-    blockIdentifier: {
-        index: 1123941,  // number (int64), required
-        hash: '0x1f2cc6c5027d2f201a5453ad1119574d2aed23a392654742ac3c78783c071f85',  // string (optional)
-    },
-};
+        "operations": [
+          // List of operations
+        ]
+      }
+    ]
+  }
+}
+```
+## Request Example
 
-// Call the getBlock
-const block = await tatum.rpc.getBlock(params);
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/block' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{
+  "network_identifier": {
+    "blockchain": "cosmos",
+    "network": "mainnet"
+  },
+  "block_identifier": {
+    "hash": "9035A963AA5A28729F0BA316801E901A4E8B1500B2E28301FA296C2D61816F53"
+  }
+}
+```
+```typescript
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-// Log the block details
-console.log('Block:', block);
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_MAINNET,
+});
 
-// Always destroy the Tatum SDK instance when done to stop any background processes
+const blockInfo = await tatum.rpc.getBlock({
+  networkIdentifier: {
+    blockchain: "cosmos",
+    network: "mainnet",
+  },
+  block_identifier: {
+    hash: "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890", // Optional if you know the block hash
+  },
+});
+
+console.log("Block Information:", blockInfo);
+
 await tatum.destroy();
 ```
-
-### Overview
-
-The `getBlock` method allows you to retrieve information about a specific Cardano block based on the provided parameters.
-
-### Request Body
-
-The request body should contain the following parameters:
-
-- `networkIdentifier` (object, required): An object containing information about the blockchain network.
-  - `blockchain` (string, required): The blockchain identifier, which should be set to `CARDANO` for Cardano.
-  - `network` (string, required): The network name for Cardano.
-  - `subNetworkIdentifier` (object, optional): An optional sub-network identifier object.
-    - `network` (string, required): The name of the sub-network within Cardano.
-    - `metadata` (object, optional): Metadata associated with the sub-network.
-- `blockIdentifier` (object): An object containing information about the block to retrieve.
-  - `index` (number, required): The index of the block (Type: number, Format: int64).
-  - `hash` (string): The hash of the block (optional).
-
-### Response
-
-The response will contain details about the specified Cardano block.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.

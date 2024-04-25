@@ -1,64 +1,69 @@
 ---
 title: "getNetworkList"
-slug: "rpc-cardano-getnetworklist"
+slug: "rpc-cosmos-getnetworklist"
 category: "6620f7e31ea673003624a8cc"
-excerpt: "Cardano RPC"
+excerpt: "Cosmos RPC"
 hidden: false
-metadata: 
-  description: "Cardano RPC"
+metadata:
+  description: "List all networks supported by the Cosmos Rosetta interface."
   image: []
-  keywords: "cardano, rpc"
+  keywords: "cosmos, rpc, network list"
   robots: "index"
 createdAt: "Wed Mar 06 2024 10:35:44 GMT+0000 (Coordinated Universal Time)"
 updatedAt: "Sat Apr 06 2024 12:59:42 GMT+0000 (Coordinated Universal Time)"
 ---
-[block:html]
+
+## Overview
+
+The `getNetworkList` method fetches a list of all networks available through the Cosmos Rosetta API, allowing clients to discover the various blockchain networks they can interact with.
+
+## Parameters
+
+| Name       | Type   | Required | Description                     |
+| ---------- | ------ | -------- | ------------------------------- |
+| `metadata` | object | No       | Optional metadata if applicable |
+
+## Returns
+
+The method returns a comprehensive list of all supported networks, including essential network-specific information.
+
+| Field                | Description                                                          |
+| -------------------- | -------------------------------------------------------------------- |
+| `network_identifier` | Identifier for each network, including blockchain and network names. |
+| `blockchain`         | The blockchain name for the network, e.g., "cosmos".                 |
+| `network`            | The specific network name, e.g., "mainnet".                          |
+
+## Example Result
+
+```json
 {
-  "html": "<div style=\"padding: 10px 20px; border-radius: 5px; background-color: #e6e2ff; margin: 0 0 30px 0;\">\n  <h5>Archive Method</h5>\n  <p>Only on the full archive nodes. Complex queries might take longer and incur additional cost</p>\n</div>"
+  "network_identifiers": [
+    {
+      "blockchain": "cosmos",
+      "network": "mainnet"
+    }
+  ]
 }
-[/block]
-
-
-### How to use it
-
-```typescript
-// Import required libraries and modules from Tatum SDK
-import { TatumSDK, CardanoRosetta, Network } from '@tatumio/tatum';
-
-// Initialize the Tatum SDK for Cardano
-const tatum = await TatumSDK.init<CardanoRosetta>({ network: Network.CARDANO_ROSETTA });
-
-// Optional metadata parameter
-const params = metadata: {
-                [key: string]: any,  // object (optional)
-            }, 
-
-// Call the `getNetworkList` method
-const networkList = await tatum.rpc.getNetworkList(params);
-
-// Log the network list
-console.log('Network List:', networkList);
-
-// Always destroy the Tatum SDK instance when done to stop any background processes
-await tatum.destroy();
 ```
 
-### Overview
+## Request Example
 
-The `getNetworkList` method allows you to retrieve a list of available networks that the Rosetta server supports.
+```json
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/network/list' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {API_KEY}' \
+--data '{}
+```
+```typescript
+import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";
 
-### Example Use Cases
+const cosmos = await TatumSDK.init<Cosmos>({
+  network: Network.COSMOS_ROSETTA,
+});
 
-1. **Supported Networks**: Developers can use this method to retrieve the list of networks supported by the Rosetta server.
+const networkList = await tatum.rpc.getNetworkList();
 
-### Request Parameters
+console.log("Network List:", networkList);
 
-The `getNetworkList` method has only optional metadata object.
-
-- `metadata` (object, optional)
-
-### Return Object
-
-The method returns an object representing the list of available networks supported by the Rosetta server.
-
-Structure and behavior of this method may vary with different versions of the Cardano service. Always refer to the documentation specific to the version you are using for the most accurate information.
+await tatum.destroy();
+```
