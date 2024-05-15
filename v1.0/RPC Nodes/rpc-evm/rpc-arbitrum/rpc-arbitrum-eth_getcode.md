@@ -35,7 +35,7 @@ await tatum.destroy() // Destroy Tatum SDK - needed for stopping background jobs
 
 The `eth_getCode` method is part of the JSON-RPC API, which allows users to interact with the blockchain. This method is specifically used to retrieve the contract code (bytecode) of an account at a specific block number. It is helpful when developers need to examine the bytecode of a deployed contract or validate that the contract code on the blockchain matches the intended code.
 
-Use cases for this method could include:
+Use cases for this method could include the following:
 
 - Debugging a smart contract
 - Verifying the integrity of a deployed contract
