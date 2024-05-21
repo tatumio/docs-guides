@@ -2,6 +2,7 @@
 title: "decoderawtransaction"
 slug: "rpc-btc-decoderawtransaction"
 excerpt: "Bitcoin RPC"
+category: "6620f7e31ea673003624a8ce"
 hidden: false
 metadata: 
   description: "Bitcoin RPC"
