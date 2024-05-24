@@ -90,8 +90,6 @@ An object containing the decoded raw transaction information:
 
 Request example:
 
-{% code overflow="wrap" lineNumbers="true" %}
-
 ```json
 {
   "jsonrpc": "2.0",
@@ -99,13 +97,7 @@ Request example:
   "params": ["02000000013412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab3412cdab0000000000fdffffff0140420f00000000001976a91462e907b15cbf27d5425399ebf6f0fb50ebb88f1888ac00000000"],
   "id": 1
 }
-```
-
-{% endcode %}
-
 Response example:
-
-{% code overflow="wrap" lineNumbers="true" %}
 
 ```json
 {
@@ -146,7 +138,3 @@ Response example:
     "id": 1
 }
 ```
-
-{% endcode %}
-
-\\
