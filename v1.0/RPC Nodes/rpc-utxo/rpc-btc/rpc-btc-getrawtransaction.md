@@ -3,8 +3,7 @@ title: "getrawtransaction"
 slug: "rpc-btc-getrawtransaction"
 excerpt: "Bitcoin RPC"
 hidden: false
-category: 
-parentDoc: 
+category: "6620f7e31ea673003624a8ce"
 metadata: 
   description: "Bitcoin RPC"
   image: []
