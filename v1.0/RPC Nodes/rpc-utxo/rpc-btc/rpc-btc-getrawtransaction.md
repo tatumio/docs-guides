@@ -92,7 +92,9 @@ If `verbose` is `false`, the method returns a hex-encoded string representing th
 
 ### JSON Examples
 
-Request example:```json
+Request example:
+
+```json
 {
   "jsonrpc": "2.0",
   "method": "getrawtransaction",
@@ -184,4 +186,3 @@ Response example:
     "id": 1
 }
 ```
-\\
