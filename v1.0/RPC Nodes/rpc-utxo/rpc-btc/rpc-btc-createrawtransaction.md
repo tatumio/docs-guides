@@ -80,8 +80,6 @@ The `createrawtransaction` RPC method creates an unsigned raw transaction that s
 
 Request example:
 
-{% code overflow="wrap" lineNumbers="true" %}
-
 ```json
 {
   "jsonrpc": "2.0",
@@ -99,13 +97,7 @@ Request example:
     }
   ]
 }
-```
-
-{% endcode %}
-
 Response example:
-
-{% code overflow="wrap" lineNumbers="true" %}
 
 ```json
 {
@@ -115,7 +107,3 @@ Response example:
 }
 
 ```
-
-{% endcode %}
-
-\\
