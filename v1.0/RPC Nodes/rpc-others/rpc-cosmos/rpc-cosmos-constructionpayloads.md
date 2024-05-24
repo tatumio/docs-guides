@@ -2,6 +2,7 @@
 title: "constructionPayloads"
 slug: "rpc-cosmos-constructionpayloads"
 category: "6620f7e31ea673003624a8ce"
+parentDoc: "662a3ee8730164006e9b0cd5"
 excerpt: "Rosetta API for Cosmos"
 hidden: false
 metadata:

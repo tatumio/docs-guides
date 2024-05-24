@@ -2,6 +2,7 @@
 title: "Cosmos"
 slug: "rpc-cosmos"
 category: "6620f7e31ea673003624a8ce"
+parentDoc: "65e846d78fb43800120f2f9c"
 excerpt: ""
 hidden: false
 createdAt: "Wed Mar 06 2024 10:35:18 GMT+0000 (Coordinated Universal Time)"

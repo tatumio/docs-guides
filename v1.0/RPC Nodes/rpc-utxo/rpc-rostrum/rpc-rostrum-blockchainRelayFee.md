@@ -2,6 +2,7 @@
 title: "blockchainRelayFee"
 slug: "rpc-rostrum-blockchainRelayFee"
 category: "6620f7e31ea673003624a8ce"
+parentDoc: "662a3ee9ea8e770036f3c937"
 excerpt: "Rostrum Electrum for Bitcoin Cash"
 hidden: false
 metadata:
