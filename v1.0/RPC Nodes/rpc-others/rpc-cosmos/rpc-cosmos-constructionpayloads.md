@@ -85,7 +85,7 @@ The `constructionPayloads` contains the network, a slice of operations, and arbi
 ## Request Example
 
 ```json
-curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos/' \
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construction/payloads' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: {API_KEY}' \
 --data '{

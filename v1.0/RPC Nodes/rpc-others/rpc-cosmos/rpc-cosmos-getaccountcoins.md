@@ -81,11 +81,11 @@ curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/account/
 --header 'x-api-key: {API_KEY}' \
 --data '{
     "networkIdentifier": {
-        "blockchain": "{{blockchain}}",
-        "network": "{{network}}"
+        "blockchain": "cosmos",
+        "network": "mainnet"
     },
     "accountIdentifier": {
-        "address": "{{address}}",
+        "address": "cosmos1...",
     },
     "include_mempool": true
 }'
@@ -99,11 +99,11 @@ const {{blockchain}} = await TatumSDK.init<Cosmos>({ network: Network.COSMOS_MAI
 
 const accountCoins = await tatum.rpc.getAccountCoins({
   networkIdentifier: {
-    blockchain: "{{blockchain}}",
-    network: "{{network}}"
+    blockchain: "cosmos",
+    network: "mainnet"
   },
   accountIdentifier: {
-    address: "{{address}}",
+    address: "cosmos1...",
   },
   include_mempool: true
 });

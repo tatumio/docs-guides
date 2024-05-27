@@ -56,7 +56,7 @@ curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construc
 --data '{
     "networkIdentifier": {
         "blockchain": "cosmos",
-        "network": "cosmos-mainnet"
+        "network": "mainnet"
     },
     "publicKeys": {
         "hexBytes": "PUBLIC_KEY_HEX_BYTES",
@@ -76,8 +76,8 @@ const cosmos = await TatumSDK.init<Cosmos>({
 // Define the input parameters with only required fields
 const params = {
   networkIdentifier: {
-    blockchain: "COSMOS",
-    network: "COSMOS_MAINNET",
+    blockchain: "cosmos",
+    network: "mainnet",
   },
   publicKeys: {
     hexBytes: "PUBLIC_KEY_HEX_BYTES", // Hexadecimal representation of the public key.
