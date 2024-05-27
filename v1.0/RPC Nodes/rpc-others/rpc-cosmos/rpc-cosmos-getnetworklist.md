@@ -53,7 +53,12 @@ The method returns a comprehensive list of all supported networks, including ess
 curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/network/list' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: {API_KEY}' \
---data '{}
+--data '{
+    "network_identifier": {
+        "blockchain": "cosmos",
+        "network": "mainnet"
+    }
+}'
 ```
 ```typescript
 import { TatumSDK, Cosmos, Network } from "@tatumio/tatum";

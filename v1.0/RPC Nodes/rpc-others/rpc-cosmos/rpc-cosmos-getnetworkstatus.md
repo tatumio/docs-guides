@@ -24,7 +24,7 @@ The `getNetworkStatus` method provides real-time information about the operation
 | ---------------------- | ---------------------------------- | -------- | --------------------------------------------------------------- |
 | `networkIdentifier`    | object                             | Yes      | Identifies the Cosmos blockchain and network details.           |
 | `blockchain`           | string (from networkIdentifier)    | Yes      | The blockchain identifier, typically "Cosmos".                  |
-| `network`              | string (from networkIdentifier)    | Yes      | The network name, e.g., "cosmos-mainnet".                       |
+| `network`              | string (from networkIdentifier)    | Yes      | The network name, e.g., "mainnet".                       |
 | `subNetworkIdentifier` | object (from networkIdentifier)    | No       | Optional sub-network identifier object.                         |
 | `network`              | string (from subNetworkIdentifier) | Yes      | The name of the sub-network within Cosmos.                      |
 | `metadata`             | object (from subNetworkIdentifier) | No       | Metadata associated with the sub-network.                       |
@@ -108,7 +108,7 @@ const cosmos = await TatumSDK.init<Cosmos>({
 const networkStatus = await tatum.rpc.getNetworkStatus({
   networkIdentifier: {
     blockchain: "cosmos",
-    network: "cosmos-mainnet",
+    network: "mainnet",
   },
 });
 

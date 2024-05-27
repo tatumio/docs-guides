@@ -78,7 +78,7 @@ curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/account/
 --data '{
     "networkIdentifier": {
         "blockchain": "cosmos",
-        "network": "cosmos-mainnet"
+        "network": "mainnet"
     },
     "accountIdentifier": {
       "address": "{{address}}",
@@ -97,8 +97,8 @@ const cosmos = await TatumSDK.init<Cosmos>({
 // Define the input parameters with only required fields
 const params = {
   networkIdentifier: {
-    blockchain: "COSMOS",
-    network: "COSMOS_MAINNET",
+    blockchain: "cosmos",
+    network: "mainnet",
   },
   accountIdentifier: {
     address: "{{address}}",

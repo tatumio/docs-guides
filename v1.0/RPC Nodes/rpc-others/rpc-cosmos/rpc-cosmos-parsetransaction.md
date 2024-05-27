@@ -74,7 +74,7 @@ curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construc
 --data '{
   "network_identifier": {
     "blockchain": "cosmos",
-    "network": "cosmos-mainnet"
+    "network": "mainnet"
   },
   "signed": true,
   "transaction": "TRANSACTION_BLOB"

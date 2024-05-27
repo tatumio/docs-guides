@@ -58,7 +58,7 @@ The `constructionMetadata` method retrieves metadata necessary to construct tran
 ## Request Example
 
 ```json
-curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos/' \
+curl --location 'https://api.tatum.io/v3/blockchain/node/cosmos-mainnet/construction/metadata' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: {API_KEY}' \
 --data '{
